@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis History</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar">
+    <a href="{{ url_for('index') }}" class="sidebar-item {% if request.path == '/' %}active{% endif %}">
+      <i class="fas fa-rocket"></i> Analyze
+    </a>
+    <a href="{{ url_for('view_logs') }}" class="sidebar-item {% if request.path == '/logs' %}active{% endif %}">
+      <i class="fas fa-file-alt"></i> Logs
+    </a>
+    <a href="{{ url_for('view_history') }}" class="sidebar-item {% if request.path == '/history' %}active{% endif %}">
+      <i class="fas fa-history"></i> History
+    </a>
+  </div>
+  
+  <div class="main-content">
+    <div class="cyber-container">
+      <div class="cyber-card">
+        <h1 class="cyber-title glitch">Analysis History</h1>
+        
+        <div class="cyber-search-container">
+          <i class="fas fa-search cyber-search-icon"></i>
+          <input type="text" id="searchInput" class="cyber-search-input" placeholder="Search reports...">
+          <div class="cyber-search-border"></div>
+        </div>
+        
+        <div class="history-list" id="historyList">
+          {% if reports %}
+            {% for report in reports %}
+              <div class="history-item">
+                <div class="history-info">
+                  <i class="fas fa-file-alt"></i>
+                  <div class="file-info">
+                    <span class="filename" style="color: var(--cyber-accent);">
+                      {{ report.original_name }}</span>
+                    <span class="history-date">{{ report.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</span>
+                  </div>
+                </div>
+                <div class="history-actions">
+                  <a href="{{ url_for('view_report', filename=report.filename) }}" class="cyber-button small">
+                    <span class="button-text">View Report</span>
+                  </a>
+                  {% if report.pdf_filename %}
+                  <a href="{{ url_for('serve_report', filename=report.pdf_filename) }}" 
+                    class="cyber-button small" 
+                    target="_blank">
+                    <span class="button-text">PDF</span>
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="no-history">No historical reports found</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/history.js') }}"></script>
+</body>
+</html>

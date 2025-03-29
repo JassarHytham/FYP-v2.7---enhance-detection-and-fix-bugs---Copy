@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Network Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!--<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
+    <!--<script src="https://d3js.org/d3.v7.min.js"></script>      -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>-->>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="{{ url_for('index') }}" class="sidebar-item {% if request.path == '/' %}active{% endif %}">
+        <i class="fas fa-rocket"></i> Analyze
+      </a>
+      <a href="{{ url_for('view_logs') }}" class="sidebar-item {% if request.path == '/logs' %}active{% endif %}">
+        <i class="fas fa-file-alt"></i> Logs
+      </a>
+      <a href="{{ url_for('view_history') }}" class="sidebar-item {% if request.path == '/history' %}active{% endif %}">
+          <i class="fas fa-history"></i> History
+      </a>
+    </div>
+    <div class="main-content">
+      <div class="cyber-container">
+        <div class="cyber-card pulse-on-hover">
+        <h1 class="cyber-title scanline">NETWORK TRAFFIC ANALYSIS</h1>
+        
+        <form method="post" action="{{ url_for('analyze') }}" enctype="multipart/form-data" class="upload-zone">
+          
+          <div class="file-input-wrapper">
+            <input type="file" name="file" accept=".pcap,.pcapng" id="fileInput" required>
+            <label for="fileInput" class="file-label">
+              <div class="upload-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </div>
+              <span class="upload-text">DRAG & DROP PCAP FILE</span>
+              <span class="upload-subtext">OR CLICK TO BROWSE</span>
+            </label>
+          </div>
+          <div class="cyber-toggle">
+            <label class="cyber-checkbox">
+              <input type="checkbox" name="generate_pdf" id="pdfToggle" checked>
+              <span class="cyber-checkmark"></span>
+              <span class="cyber-label">GENERATE PDF REPORT</span>
+            </label>
+          </div>
+          
+          <div class="button-container">
+            <button type="submit" class="cyber-button hologram">
+              <span class="button-text">ANALYZE TRAFFIC</span>
+              <div class="button-lights">
+                  <span class="light red"></span>
+                  <span class="light yellow"></span>
+                  <span class="light green"></span>
+              </div>
+          </button>
+          </div>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-error neon-flash">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+      </div>
+    </div>
+  </body>
+</html>

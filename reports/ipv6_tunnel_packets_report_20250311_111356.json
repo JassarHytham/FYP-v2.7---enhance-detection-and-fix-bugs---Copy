@@ -1,0 +1,16 @@
+
+{
+    "file_path": "nmap_captuers_ecir\\ipv6_tunnel_packets.pcap",
+    "analysis_date": "2025-03-11T11:13:56.930592",
+    "packet_reports": [],
+    "attack_stats": {
+        "total_packets": 0,
+        "tcp_packets": 0,
+        "udp_packets": 0,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 0,
+        "unique_destination_ips": 0
+    }
+}

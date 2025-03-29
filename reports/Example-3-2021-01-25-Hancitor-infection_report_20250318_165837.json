@@ -1,0 +1,1872 @@
+{
+    "file_path": "uploads\\Example-3-2021-01-25-Hancitor-infection.pcap",
+    "analysis_date": "2025-03-18T16:58:37.039606",
+    "packet_reports": [
+        {
+            "packet_number": 10,
+            "timestamp": "2021-01-26T00:29:43.063476",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 11,
+            "timestamp": "2021-01-26T00:29:43.064851",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 12,
+            "timestamp": "2021-01-26T00:29:43.170522",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=68, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 13,
+            "timestamp": "2021-01-26T00:29:43.170870",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=68, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 14,
+            "timestamp": "2021-01-26T00:29:43.172129",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.70)"
+            ]
+        },
+        {
+            "packet_number": 15,
+            "timestamp": "2021-01-26T00:29:43.172438",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.70)"
+            ]
+        },
+        {
+            "packet_number": 50,
+            "timestamp": "2021-01-26T00:29:43.414062",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 52,
+            "timestamp": "2021-01-26T00:29:43.414644",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 67,
+            "timestamp": "2021-01-26T00:29:43.587097",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.83)"
+            ]
+        },
+        {
+            "packet_number": 68,
+            "timestamp": "2021-01-26T00:29:43.587428",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.83)"
+            ]
+        },
+        {
+            "packet_number": 172,
+            "timestamp": "2021-01-26T00:29:43.744516",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.83)"
+            ]
+        },
+        {
+            "packet_number": 173,
+            "timestamp": "2021-01-26T00:29:43.744831",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.83)"
+            ]
+        },
+        {
+            "packet_number": 204,
+            "timestamp": "2021-01-26T00:29:44.067343",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=58, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 205,
+            "timestamp": "2021-01-26T00:29:44.067596",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=58, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 399,
+            "timestamp": "2021-01-26T00:29:45.479200",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=68, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 400,
+            "timestamp": "2021-01-26T00:29:45.479656",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=68, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 480,
+            "timestamp": "2021-01-26T00:29:45.791926",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 481,
+            "timestamp": "2021-01-26T00:29:45.792229",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 488,
+            "timestamp": "2021-01-26T00:29:48.668423",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=4.62)"
+            ]
+        },
+        {
+            "packet_number": 489,
+            "timestamp": "2021-01-26T00:29:48.668948",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=4.62)"
+            ]
+        },
+        {
+            "packet_number": 492,
+            "timestamp": "2021-01-26T00:29:48.672815",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.57)"
+            ]
+        },
+        {
+            "packet_number": 493,
+            "timestamp": "2021-01-26T00:29:48.673200",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.57)"
+            ]
+        },
+        {
+            "packet_number": 725,
+            "timestamp": "2021-01-26T00:29:52.805152",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=30, entropy=3.74)"
+            ]
+        },
+        {
+            "packet_number": 726,
+            "timestamp": "2021-01-26T00:29:52.858754",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=30, entropy=3.74)"
+            ]
+        },
+        {
+            "packet_number": 757,
+            "timestamp": "2021-01-26T00:29:53.389080",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 758,
+            "timestamp": "2021-01-26T00:29:53.433829",
+            "minute": "2021-01-26 00:29",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 898,
+            "timestamp": "2021-01-26T00:30:04.295750",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 899,
+            "timestamp": "2021-01-26T00:30:04.296269",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 987,
+            "timestamp": "2021-01-26T00:30:15.171152",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.48)"
+            ]
+        },
+        {
+            "packet_number": 988,
+            "timestamp": "2021-01-26T00:30:15.216153",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.48)"
+            ]
+        },
+        {
+            "packet_number": 1011,
+            "timestamp": "2021-01-26T00:30:16.132594",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 1012,
+            "timestamp": "2021-01-26T00:30:16.132912",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 1028,
+            "timestamp": "2021-01-26T00:30:17.153517",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 1031,
+            "timestamp": "2021-01-26T00:30:17.199769",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 1088,
+            "timestamp": "2021-01-26T00:30:17.698176",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 1093,
+            "timestamp": "2021-01-26T00:30:17.747321",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 1250,
+            "timestamp": "2021-01-26T00:30:20.957254",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 1251,
+            "timestamp": "2021-01-26T00:30:20.957603",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 1252,
+            "timestamp": "2021-01-26T00:30:20.958622",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=31, entropy=4.11)"
+            ]
+        },
+        {
+            "packet_number": 1253,
+            "timestamp": "2021-01-26T00:30:20.958845",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.94)"
+            ]
+        },
+        {
+            "packet_number": 1254,
+            "timestamp": "2021-01-26T00:30:20.958853",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=31, entropy=4.11)"
+            ]
+        },
+        {
+            "packet_number": 1258,
+            "timestamp": "2021-01-26T00:30:20.960308",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.94)"
+            ]
+        },
+        {
+            "packet_number": 1279,
+            "timestamp": "2021-01-26T00:30:22.582088",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.39)"
+            ]
+        },
+        {
+            "packet_number": 1280,
+            "timestamp": "2021-01-26T00:30:22.692371",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.39)"
+            ]
+        },
+        {
+            "packet_number": 1298,
+            "timestamp": "2021-01-26T00:30:25.151382",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 1299,
+            "timestamp": "2021-01-26T00:30:25.151773",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 2317,
+            "timestamp": "2021-01-26T00:30:31.255047",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.97)"
+            ]
+        },
+        {
+            "packet_number": 2452,
+            "timestamp": "2021-01-26T00:30:31.338200",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.97)"
+            ]
+        },
+        {
+            "packet_number": 2533,
+            "timestamp": "2021-01-26T00:30:31.585441",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=4.28)"
+            ]
+        },
+        {
+            "packet_number": 2535,
+            "timestamp": "2021-01-26T00:30:31.586374",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.41)"
+            ]
+        },
+        {
+            "packet_number": 2717,
+            "timestamp": "2021-01-26T00:30:31.740845",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.41)"
+            ]
+        },
+        {
+            "packet_number": 2724,
+            "timestamp": "2021-01-26T00:30:31.744796",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=4.28)"
+            ]
+        },
+        {
+            "packet_number": 3119,
+            "timestamp": "2021-01-26T00:30:32.540028",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.78)"
+            ]
+        },
+        {
+            "packet_number": 3120,
+            "timestamp": "2021-01-26T00:30:32.544173",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.76)"
+            ]
+        },
+        {
+            "packet_number": 3121,
+            "timestamp": "2021-01-26T00:30:32.547726",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.61)"
+            ]
+        },
+        {
+            "packet_number": 3124,
+            "timestamp": "2021-01-26T00:30:32.596564",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.61)"
+            ]
+        },
+        {
+            "packet_number": 3125,
+            "timestamp": "2021-01-26T00:30:32.603169",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.78)"
+            ]
+        },
+        {
+            "packet_number": 3126,
+            "timestamp": "2021-01-26T00:30:32.607562",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.76)"
+            ]
+        },
+        {
+            "packet_number": 3403,
+            "timestamp": "2021-01-26T00:30:33.604752",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 3405,
+            "timestamp": "2021-01-26T00:30:33.647413",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 3536,
+            "timestamp": "2021-01-26T00:30:33.870298",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=36, entropy=4.11)"
+            ]
+        },
+        {
+            "packet_number": 3551,
+            "timestamp": "2021-01-26T00:30:33.946561",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=36, entropy=4.11)"
+            ]
+        },
+        {
+            "packet_number": 3891,
+            "timestamp": "2021-01-26T00:30:34.591669",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.80)"
+            ]
+        },
+        {
+            "packet_number": 4115,
+            "timestamp": "2021-01-26T00:30:34.745961",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.80)"
+            ]
+        },
+        {
+            "packet_number": 4188,
+            "timestamp": "2021-01-26T00:30:34.809993",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.75)"
+            ]
+        },
+        {
+            "packet_number": 4200,
+            "timestamp": "2021-01-26T00:30:34.862831",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.75)"
+            ]
+        },
+        {
+            "packet_number": 4568,
+            "timestamp": "2021-01-26T00:30:35.481919",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=38, entropy=4.33)"
+            ]
+        },
+        {
+            "packet_number": 4569,
+            "timestamp": "2021-01-26T00:30:35.547265",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=38, entropy=4.33)"
+            ]
+        },
+        {
+            "packet_number": 4584,
+            "timestamp": "2021-01-26T00:30:35.778438",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=4.24)"
+            ]
+        },
+        {
+            "packet_number": 4587,
+            "timestamp": "2021-01-26T00:30:35.834395",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=4.24)"
+            ]
+        },
+        {
+            "packet_number": 5537,
+            "timestamp": "2021-01-26T00:30:36.806408",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.91)"
+            ]
+        },
+        {
+            "packet_number": 5540,
+            "timestamp": "2021-01-26T00:30:36.811007",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.58)"
+            ]
+        },
+        {
+            "packet_number": 5765,
+            "timestamp": "2021-01-26T00:30:36.973815",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.58)"
+            ]
+        },
+        {
+            "packet_number": 5766,
+            "timestamp": "2021-01-26T00:30:36.973835",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.91)"
+            ]
+        },
+        {
+            "packet_number": 7464,
+            "timestamp": "2021-01-26T00:30:38.439251",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.88)"
+            ]
+        },
+        {
+            "packet_number": 7481,
+            "timestamp": "2021-01-26T00:30:38.459449",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.63)"
+            ]
+        },
+        {
+            "packet_number": 7741,
+            "timestamp": "2021-01-26T00:30:38.729203",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.88)"
+            ]
+        },
+        {
+            "packet_number": 7742,
+            "timestamp": "2021-01-26T00:30:38.729222",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.63)"
+            ]
+        },
+        {
+            "packet_number": 8061,
+            "timestamp": "2021-01-26T00:30:39.183095",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.70)"
+            ]
+        },
+        {
+            "packet_number": 8105,
+            "timestamp": "2021-01-26T00:30:39.349108",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.70)"
+            ]
+        },
+        {
+            "packet_number": 8113,
+            "timestamp": "2021-01-26T00:30:39.386294",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.62)"
+            ]
+        },
+        {
+            "packet_number": 8132,
+            "timestamp": "2021-01-26T00:30:39.441578",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.62)"
+            ]
+        },
+        {
+            "packet_number": 8299,
+            "timestamp": "2021-01-26T00:30:42.157998",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.77)"
+            ]
+        },
+        {
+            "packet_number": 8300,
+            "timestamp": "2021-01-26T00:30:42.158591",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.70)"
+            ]
+        },
+        {
+            "packet_number": 8306,
+            "timestamp": "2021-01-26T00:30:42.222061",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.77)"
+            ]
+        },
+        {
+            "packet_number": 8307,
+            "timestamp": "2021-01-26T00:30:42.222874",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.48)"
+            ]
+        },
+        {
+            "packet_number": 8326,
+            "timestamp": "2021-01-26T00:30:42.266570",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.70)"
+            ]
+        },
+        {
+            "packet_number": 8351,
+            "timestamp": "2021-01-26T00:30:42.303376",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.48)"
+            ]
+        },
+        {
+            "packet_number": 8594,
+            "timestamp": "2021-01-26T00:30:42.648039",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.54)"
+            ]
+        },
+        {
+            "packet_number": 8607,
+            "timestamp": "2021-01-26T00:30:42.683638",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.54)"
+            ]
+        },
+        {
+            "packet_number": 8850,
+            "timestamp": "2021-01-26T00:30:52.844591",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=68, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 8851,
+            "timestamp": "2021-01-26T00:30:52.845114",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=68, entropy=4.16)"
+            ]
+        },
+        {
+            "packet_number": 8929,
+            "timestamp": "2021-01-26T00:30:55.212769",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.41)"
+            ]
+        },
+        {
+            "packet_number": 8951,
+            "timestamp": "2021-01-26T00:30:55.321128",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.41)"
+            ]
+        },
+        {
+            "packet_number": 8992,
+            "timestamp": "2021-01-26T00:30:55.839491",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 8993,
+            "timestamp": "2021-01-26T00:30:55.841171",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.56)"
+            ]
+        },
+        {
+            "packet_number": 8994,
+            "timestamp": "2021-01-26T00:30:55.890310",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.65)"
+            ]
+        },
+        {
+            "packet_number": 8996,
+            "timestamp": "2021-01-26T00:30:55.904207",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.56)"
+            ]
+        },
+        {
+            "packet_number": 9170,
+            "timestamp": "2021-01-26T00:30:58.639157",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.77)"
+            ]
+        },
+        {
+            "packet_number": 9171,
+            "timestamp": "2021-01-26T00:30:58.639461",
+            "minute": "2021-01-26 00:30",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.77)"
+            ]
+        },
+        {
+            "packet_number": 9209,
+            "timestamp": "2021-01-26T00:31:04.303606",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 9210,
+            "timestamp": "2021-01-26T00:31:04.304014",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.73)"
+            ]
+        },
+        {
+            "packet_number": 9211,
+            "timestamp": "2021-01-26T00:31:05.264904",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=30, entropy=3.74)"
+            ]
+        },
+        {
+            "packet_number": 9212,
+            "timestamp": "2021-01-26T00:31:05.317343",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=30, entropy=3.74)"
+            ]
+        },
+        {
+            "packet_number": 9251,
+            "timestamp": "2021-01-26T00:31:20.993255",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 9252,
+            "timestamp": "2021-01-26T00:31:21.050285",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 9270,
+            "timestamp": "2021-01-26T00:31:21.394552",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 9271,
+            "timestamp": "2021-01-26T00:31:21.394864",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 9389,
+            "timestamp": "2021-01-26T00:31:56.619295",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.71)"
+            ]
+        },
+        {
+            "packet_number": 9390,
+            "timestamp": "2021-01-26T00:31:57.013670",
+            "minute": "2021-01-26 00:31",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.71)"
+            ]
+        },
+        {
+            "packet_number": 13975,
+            "timestamp": "2021-01-26T00:32:12.201095",
+            "minute": "2021-01-26 00:32",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.66)"
+            ]
+        },
+        {
+            "packet_number": 13976,
+            "timestamp": "2021-01-26T00:32:12.319202",
+            "minute": "2021-01-26 00:32",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.66)"
+            ]
+        },
+        {
+            "packet_number": 14071,
+            "timestamp": "2021-01-26T00:32:40.941524",
+            "minute": "2021-01-26 00:32",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.45)"
+            ]
+        },
+        {
+            "packet_number": 14072,
+            "timestamp": "2021-01-26T00:32:40.975361",
+            "minute": "2021-01-26 00:32",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.101",
+            "dst_ip": "10.1.25.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.33)"
+            ]
+        },
+        {
+            "packet_number": 14073,
+            "timestamp": "2021-01-26T00:32:41.011940",
+            "minute": "2021-01-26 00:32",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.45)"
+            ]
+        },
+        {
+            "packet_number": 14075,
+            "timestamp": "2021-01-26T00:32:41.025129",
+            "minute": "2021-01-26 00:32",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.1.25.2",
+            "dst_ip": "10.1.25.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.33)"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 116,
+        "tcp_packets": 0,
+        "udp_packets": 116,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 116,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 2
+    }
+}

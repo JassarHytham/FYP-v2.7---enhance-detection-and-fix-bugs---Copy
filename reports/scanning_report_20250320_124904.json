@@ -1,0 +1,31 @@
+{
+    "file_path": "uploads\\scanning.pcapng",
+    "analysis_date": "2025-03-20T12:49:04.585536",
+    "packet_reports": [
+        {
+            "packet_number": 209,
+            "timestamp": "2025-03-20T12:47:31.635098",
+            "minute": "2025-03-20 12:47",
+            "protocols": [
+                "UDP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "UDP scan detected: Packet length <= 8"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 1,
+        "tcp_packets": 0,
+        "udp_packets": 1,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 1,
+        "unique_destination_ips": 1
+    }
+}

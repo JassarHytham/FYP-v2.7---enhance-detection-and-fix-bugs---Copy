@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analysis Logs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="{{ url_for('index') }}" class="sidebar-item {% if request.path == '/' %}active{% endif %}">
+        <i class="fas fa-rocket"></i> Analyze
+      </a>
+      <a href="{{ url_for('view_logs') }}" class="sidebar-item {% if request.path == '/logs' %}active{% endif %}">
+        <i class="fas fa-file-alt"></i> Logs
+      </a>
+      <a href="{{ url_for('view_history') }}" class="sidebar-item {% if request.path == '/history' %}active{% endif %}">
+          <i class="fas fa-history"></i> History
+      </a>
+    </div>
+
+    <div class="main-content">
+      <div class="cyber-container">
+        <div class="cyber-card">
+        <h1 class="cyber-title">System Logs</h1>     
+        <div class="log-container">
+          {% for entry in log_entries %}
+          <div class="log-entry">
+            <div class="log-timestamp">
+              {{ entry.split(' - ')[0] }}
+            </div>
+            <div class="log-content">
+              {{ entry.split(' - ', 1)[1]|safe }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

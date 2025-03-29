@@ -1,0 +1,86 @@
+{
+    "file_path": "uploads\\bad_ip_version.pcap",
+    "analysis_date": "2025-03-16T20:27:36.242600",
+    "packet_reports": [
+        {
+            "packet_number": 18,
+            "timestamp": "2034-12-25T20:54:59.512862",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "192.168.1.4",
+            "dst_ip": "192.168.1.6",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=159, entropy=6.78)"
+            ]
+        },
+        {
+            "packet_number": 57,
+            "timestamp": "2034-12-25T20:55:02.036696",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "192.168.1.4",
+            "dst_ip": "192.168.1.6",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=70, entropy=5.85)"
+            ]
+        },
+        {
+            "packet_number": 100,
+            "timestamp": "2034-12-25T20:55:05.220512",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "192.168.1.4",
+            "dst_ip": "192.168.1.6",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=233, entropy=7.13)"
+            ]
+        },
+        {
+            "packet_number": 125,
+            "timestamp": "2034-12-25T20:55:07.179980",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "192.168.1.4",
+            "dst_ip": "192.168.1.6",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=496, entropy=7.65)"
+            ]
+        },
+        {
+            "packet_number": 130,
+            "timestamp": "2034-12-25T20:55:07.540402",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "192.168.1.4",
+            "dst_ip": "192.168.1.6",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=528, entropy=7.58)"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 5,
+        "tcp_packets": 0,
+        "udp_packets": 0,
+        "icmp_packets": 5,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 1,
+        "unique_destination_ips": 1
+    }
+}

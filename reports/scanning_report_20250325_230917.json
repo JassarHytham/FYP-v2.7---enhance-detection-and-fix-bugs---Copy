@@ -1,0 +1,106 @@
+{
+    "file_path": "uploads\\scanning.pcapng",
+    "analysis_date": "2025-03-25T23:09:17.245064",
+    "packet_reports": [
+        {
+            "packet_number": 199,
+            "timestamp": "2025-03-20T07:47:31.388726",
+            "minute": "2025-03-20 07:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "SYN scan detected: SYN flag with window size <= 1024"
+            ]
+        },
+        {
+            "packet_number": 201,
+            "timestamp": "2025-03-20T07:47:31.437189",
+            "minute": "2025-03-20 07:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 203,
+            "timestamp": "2025-03-20T07:47:31.489040",
+            "minute": "2025-03-20 07:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "XMAS scan detected"
+            ]
+        },
+        {
+            "packet_number": 205,
+            "timestamp": "2025-03-20T07:47:31.541120",
+            "minute": "2025-03-20 07:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "NULL scan detected"
+            ]
+        },
+        {
+            "packet_number": 207,
+            "timestamp": "2025-03-20T07:47:31.588889",
+            "minute": "2025-03-20 07:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "FIN scan detected"
+            ]
+        },
+        {
+            "packet_number": 209,
+            "timestamp": "2025-03-20T07:47:31.635098",
+            "minute": "2025-03-20 07:47",
+            "protocols": [
+                "UDP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "UDP scan detected: Packet length <= 8"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 6,
+        "tcp_packets": 5,
+        "udp_packets": 1,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 1,
+        "unique_destination_ips": 1
+    }
+}

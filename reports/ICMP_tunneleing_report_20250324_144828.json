@@ -1,0 +1,354 @@
+{
+    "file_path": "uploads\\ICMP_tunneleing.pcap",
+    "analysis_date": "2025-03-24T14:48:28.430184",
+    "packet_reports": [
+        {
+            "packet_number": 226,
+            "timestamp": "2025-03-14T07:14:56.113791",
+            "minute": "2025-03-14 07:14",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 227,
+            "timestamp": "2025-03-14T07:14:56.137435",
+            "minute": "2025-03-14 07:14",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 236,
+            "timestamp": "2025-03-14T07:15:57.855561",
+            "minute": "2025-03-14 07:15",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=28, entropy=3.53)"
+            ]
+        },
+        {
+            "packet_number": 237,
+            "timestamp": "2025-03-14T07:15:57.957007",
+            "minute": "2025-03-14 07:15",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=28, entropy=3.53)"
+            ]
+        },
+        {
+            "packet_number": 254,
+            "timestamp": "2025-03-14T07:17:07.470886",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.48)"
+            ]
+        },
+        {
+            "packet_number": 255,
+            "timestamp": "2025-03-14T07:17:07.471354",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.48)"
+            ]
+        },
+        {
+            "packet_number": 259,
+            "timestamp": "2025-03-14T07:17:15.310828",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.49)"
+            ]
+        },
+        {
+            "packet_number": 260,
+            "timestamp": "2025-03-14T07:17:15.311133",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.49)"
+            ]
+        },
+        {
+            "packet_number": 263,
+            "timestamp": "2025-03-14T07:17:18.774914",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.48)"
+            ]
+        },
+        {
+            "packet_number": 264,
+            "timestamp": "2025-03-14T07:17:18.775376",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.48)"
+            ]
+        },
+        {
+            "packet_number": 267,
+            "timestamp": "2025-03-14T07:17:20.666948",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.58)"
+            ]
+        },
+        {
+            "packet_number": 268,
+            "timestamp": "2025-03-14T07:17:20.667394",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.58)"
+            ]
+        },
+        {
+            "packet_number": 271,
+            "timestamp": "2025-03-14T07:17:22.070648",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.46)"
+            ]
+        },
+        {
+            "packet_number": 272,
+            "timestamp": "2025-03-14T07:17:22.071117",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.46)"
+            ]
+        },
+        {
+            "packet_number": 275,
+            "timestamp": "2025-03-14T07:17:23.354708",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.43)"
+            ]
+        },
+        {
+            "packet_number": 276,
+            "timestamp": "2025-03-14T07:17:23.355006",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.43)"
+            ]
+        },
+        {
+            "packet_number": 279,
+            "timestamp": "2025-03-14T07:17:24.682874",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.53)"
+            ]
+        },
+        {
+            "packet_number": 280,
+            "timestamp": "2025-03-14T07:17:24.683246",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "ICMP"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential ICMP tunneling detected (byte length=128, entropy=6.53)"
+            ]
+        },
+        {
+            "packet_number": 286,
+            "timestamp": "2025-03-14T07:17:43.028175",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=4.00)"
+            ]
+        },
+        {
+            "packet_number": 287,
+            "timestamp": "2025-03-14T07:17:43.244628",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=4.00)"
+            ]
+        },
+        {
+            "packet_number": 290,
+            "timestamp": "2025-03-14T07:17:44.906420",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.80)"
+            ]
+        },
+        {
+            "packet_number": 291,
+            "timestamp": "2025-03-14T07:17:44.916563",
+            "minute": "2025-03-14 07:17",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.80)"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 22,
+        "tcp_packets": 0,
+        "udp_packets": 8,
+        "icmp_packets": 14,
+        "arp_packets": 0,
+        "dns_packets": 8,
+        "unique_source_ips": 3,
+        "unique_destination_ips": 3
+    }
+}

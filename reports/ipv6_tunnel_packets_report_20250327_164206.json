@@ -1,0 +1,157 @@
+{
+    "file_path": "uploads\\ipv6_tunnel_packets.pcap",
+    "analysis_date": "2025-03-27T16:42:06.712217",
+    "packet_reports": [
+        {
+            "packet_number": 1,
+            "timestamp": "2009-03-25T21:02:13.074226",
+            "minute": "2009-03-25 21:02",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "64.233.169.104",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 8,
+            "timestamp": "2009-03-25T21:02:33.647367",
+            "minute": "2009-03-25 21:02",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "64.233.169.104",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 55,
+            "timestamp": "2009-03-25T21:02:41.721536",
+            "minute": "2009-03-25 21:02",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "74.125.45.100",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 159,
+            "timestamp": "2009-03-25T21:02:58.910572",
+            "minute": "2009-03-25 21:02",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "192.168.73.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.52)"
+            ]
+        },
+        {
+            "packet_number": 160,
+            "timestamp": "2009-03-25T21:02:59.143110",
+            "minute": "2009-03-25 21:02",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.2",
+            "dst_ip": "192.168.73.148",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.52)"
+            ]
+        },
+        {
+            "packet_number": 165,
+            "timestamp": "2009-03-25T21:03:04.075270",
+            "minute": "2009-03-25 21:03",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "192.168.73.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.52)"
+            ]
+        },
+        {
+            "packet_number": 166,
+            "timestamp": "2009-03-25T21:03:04.075832",
+            "minute": "2009-03-25 21:03",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.2",
+            "dst_ip": "192.168.73.148",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.52)"
+            ]
+        },
+        {
+            "packet_number": 167,
+            "timestamp": "2009-03-25T21:03:05.264983",
+            "minute": "2009-03-25 21:03",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "192.168.73.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.52)"
+            ]
+        },
+        {
+            "packet_number": 168,
+            "timestamp": "2009-03-25T21:03:05.265620",
+            "minute": "2009-03-25 21:03",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.2",
+            "dst_ip": "192.168.73.148",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.52)"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 9,
+        "tcp_packets": 3,
+        "udp_packets": 6,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 6,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 4
+    }
+}

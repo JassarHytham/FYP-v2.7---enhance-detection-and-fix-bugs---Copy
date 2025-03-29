@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analysis Results | DeepSeek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+    <div id="reportFilename" data-report="{{ report_filename | default('latest_analysis.json') }}"></div>
+    
+    <div class="sidebar">
+      <a href="{{ url_for('index') }}" class="sidebar-item {% if request.path == '/' %}active{% endif %}">
+        <i class="fas fa-rocket"></i> Analyze
+      </a>
+      <a href="{{ url_for('view_logs') }}" class="sidebar-item {% if request.path == '/logs' %}active{% endif %}">
+        <i class="fas fa-file-alt"></i> Logs
+      </a>
+      <a href="{{ url_for('view_history') }}" class="sidebar-item {% if request.path == '/history' %}active{% endif %}">
+          <i class="fas fa-history"></i> History
+      </a>
+    </div>
+    
+    <div class="main-content">
+      <div class="cyber-container">
+        <div class="cyber-card scanline">
+            <h1 class="cyber-title">
+                <i class="fas fa-shield-alt"></i> TRAFFIC ANALYSIS REPORT
+            </h1>
+            
+            <!-- Report Metadata -->
+            <div class="result-section">
+                <div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+                    <div class="result-item">
+                        <i class="fas fa-file-alt"></i> <strong>File:</strong> {{ file_path}}
+                    </div>
+                    <div class="result-item">
+                        <i class="fas fa-calendar"></i> <strong>Date:</strong> {{ analysis_date }}
+                    </div>
+                    <div class="result-item">
+                        <i class="fas fa-clock"></i> <strong>Duration:</strong> {{ analysis_duration }}
+                    </div>
+                    <div class="result-item">
+                        <i class="fas fa-network-wired"></i> <strong>Packets:</strong> {{ total_packets }}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Threat Severity Overview -->
+            <div class="result-section">
+                <h2 class="section-title" style="border-left: 3px solid var(--cyber-danger);">
+                    <i class="fas fa-exclamation-triangle"></i> THREAT SEVERITY OVERVIEW
+                </h2>
+                <div class="severity-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+                    <div class="severity-item critical">
+                        <i class="fas fa-skull"></i>
+                        <span class="count">{{ critical_count }}</span>
+                        <span class="label">Critical</span>
+                    </div>
+                    <div class="severity-item high">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="count">{{ high_count }}</span>
+                        <span class="label">High</span>
+                    </div>
+                    <div class="severity-item medium">
+                        <i class="fas fa-minus-circle"></i>
+                        <span class="count">{{ medium_count }}</span>
+                        <span class="label">Medium</span>
+                    </div>
+                    <div class="severity-item low">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="count">{{ low_count }}</span>
+                        <span class="label">Low</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Analysis Results Sections -->
+            <div class="analysis-results">
+              {% for section in analysis_output|format_output if section.strip() %}
+                <div class="result-section" style="transition: all 0.3s ease;">
+                  {% for line in section.split('\n') %}
+                    {% set trimmed = line.strip() %}
+                    {% if trimmed.startswith('=== ANALYSIS RESULTS SUMMARY ===') %}
+                      <!-- Skip header -->
+                    {% elif trimmed.startswith('=== END OF REPORT ===') %}
+                      <!-- Skip footer -->
+                    {% elif trimmed.startswith('• Network Scan Detection') %}
+                      <h2 class="section-title" style="border-left: 3px solid var(--cyber-warning);">
+                          <i class="fas fa-search"></i> NETWORK SCAN DETECTION
+                      </h2>
+                    {% elif trimmed.startswith('• ARP Security Analysis') %}
+                      <h2 class="section-title" style="border-left: 3px solid var(--cyber-danger);">
+                          <i class="fas fa-ghost"></i> ARP SECURITY ANALYSIS
+                      </h2>
+                    {% elif trimmed.startswith('• Covert Channel Analysis') %}
+                      <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
+                          <i class="fas fa-user-secret"></i> COVERT CHANNELS
+                      </h2>
+                    {% elif trimmed.startswith('• Traffic Anomalies') %}
+                      <h2 class="section-title" style="border-left: 3px solid var(--cyber-danger);">
+                          <i class="fas fa-radiation"></i> TRAFFIC ANOMALIES
+                      </h2>
+                    {% elif trimmed.startswith('• Security Posture Assessment') %}
+                      <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
+                          <i class="fas fa-shield-virus"></i> SECURITY POSTURE
+                      </h2>
+                    {% elif '[CRITICAL]' in trimmed %}
+                      <div class="result-item" style="background: rgba(255, 0, 60, 0.1); border-left: 3px solid var(--cyber-danger);">
+                          <i class="fas fa-skull-crossbones" style="color: var(--cyber-danger);"></i> 
+                          {{ trimmed|replace("[CRITICAL]", "") }}
+                      </div>
+                    {% elif '[WARNING]' in trimmed %}
+                      <div class="result-item" style="background: rgba(255, 211, 0, 0.1); border-left: 3px solid var(--cyber-warning);">
+                          <i class="fas fa-exclamation-circle" style="color: var(--cyber-warning);"></i> 
+                          {{ trimmed|replace("[WARNING]", "") }}
+                      </div>
+                    {% elif '[INFO]' in trimmed %}
+                      <div class="result-item" style="background: rgba(0, 243, 255, 0.1); border-left: 3px solid var(--cyber-accent);">
+                          <i class="fas fa-info-circle" style="color: var(--cyber-accent);"></i> 
+                          {{ trimmed|replace("[INFO]", "") }}
+                      </div>
+                    {% elif '[RECOMMENDATION]' in trimmed %}
+                      <div class="result-item" style="background: rgba(0, 157, 255, 0.1); border-left: 3px solid #009dff; font-style: italic;">
+                          <i class="fas fa-lightbulb" style="color: #009dff;"></i> 
+                          <strong>Recommendation:</strong> {{ trimmed|replace("[RECOMMENDATION]", "") }}
+                      </div>
+                    {% elif 'Technical Detail:' in trimmed %}
+                      <div class="result-item" style="background: rgba(255,255,255,0.05);">
+                          <i class="fas fa-microscope" style="color: var(--cyber-accent);"></i> 
+                          {{ trimmed }}
+                      </div>
+                    {% elif 'Overall Network Security Posture' in trimmed %}
+                      <div class="result-item" style="background: rgba(0,0,0,0.3); text-align: center; font-size: 1.2rem; border: 1px solid var(--cyber-accent);">
+                          <strong>{{ trimmed }}</strong>
+                      </div>
+                    {% elif trimmed %}
+                      <div class="result-item">{{ trimmed }}</div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endfor %}
+            </div>
+            
+            <!-- Visualizations Section -->
+            <div class="cyber-viz">
+                <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
+                    <i class="fas fa-chart-line"></i> TRAFFIC TIMELINE
+                </h2>
+                <div id="timelineViz"></div>
+            </div>
+
+            <div class="cyber-viz">
+                <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
+                    <i class="fas fa-chart-pie"></i> PROTOCOL DISTRIBUTION
+                </h2>
+                <div id="protocolChart"></div>
+            </div>
+            
+            <div class="cyber-viz">
+                <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
+                    <i class="fas fa-project-diagram"></i> NETWORK TOPOLOGY
+                </h2>
+                <div id="topologyViz"></div>
+            </div>
+
+            <!-- Report Footer -->
+            <div class="result-section" style="text-align: center; background: rgba(0,0,0,0.5);">
+                <i class="fas fa-terminal"></i> Report generated at {{ analysis_date }} by DeepSeek Traffic Analyzer
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="button-group" style="text-align: center; margin-top: 2rem;">
+                <a href="{{ url_for('index') }}" class="cyber-button">
+                    <i class="fas fa-redo"></i> New Analysis
+                </a>
+                {% if pdf_filename %}
+                <a href="{{ url_for('serve_report', filename=pdf_filename) }}" 
+                   class="cyber-button"
+                   target="_blank">
+                    <i class="fas fa-file-pdf"></i> Download PDF
+                </a>
+                {% endif %}
+                <a href="#" class="cyber-button" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print Report
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    <script>
+        // Add interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make IP addresses clickable for investigation
+            document.querySelectorAll('.entity-ip').forEach(ipElement => {
+                ipElement.addEventListener('click', function() {
+                    const ip = this.textContent.trim();
+                    alert(`Would normally query threat intelligence for IP: ${ip}\nThis could open a detailed investigation panel.`);
+                });
+                ipElement.style.cursor = 'pointer';
+                ipElement.title = 'Click to investigate this IP';
+            });
+            
+            // Add hover effects to severity items
+            document.querySelectorAll('.severity-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 5px 15px var(--cyber-glow)';
+                });
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

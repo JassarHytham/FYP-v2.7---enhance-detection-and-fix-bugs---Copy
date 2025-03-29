@@ -1,0 +1,106 @@
+{
+    "file_path": "nmap_captuers_ecir\\ipv6_tunnel_packets.pcap",
+    "analysis_date": "2025-03-12T11:02:58.261344",
+    "packet_reports": [
+        {
+            "packet_number": 159,
+            "timestamp": "2009-03-26T02:02:58.910572",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "192.168.73.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected"
+            ]
+        },
+        {
+            "packet_number": 160,
+            "timestamp": "2009-03-26T02:02:59.143110",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.2",
+            "dst_ip": "192.168.73.148",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected"
+            ]
+        },
+        {
+            "packet_number": 165,
+            "timestamp": "2009-03-26T02:03:04.075270",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "192.168.73.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected"
+            ]
+        },
+        {
+            "packet_number": 166,
+            "timestamp": "2009-03-26T02:03:04.075832",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.2",
+            "dst_ip": "192.168.73.148",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected"
+            ]
+        },
+        {
+            "packet_number": 167,
+            "timestamp": "2009-03-26T02:03:05.264983",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.148",
+            "dst_ip": "192.168.73.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected"
+            ]
+        },
+        {
+            "packet_number": 168,
+            "timestamp": "2009-03-26T02:03:05.265620",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.73.2",
+            "dst_ip": "192.168.73.148",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 6,
+        "tcp_packets": 0,
+        "udp_packets": 6,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 6,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 2
+    }
+}

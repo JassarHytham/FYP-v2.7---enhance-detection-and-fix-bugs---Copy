@@ -1,0 +1,276 @@
+{
+    "file_path": "nmap_captuers_ecir\\ICMP_tunneleing.pcap",
+    "analysis_date": "2025-03-14T12:19:09.340137",
+    "packet_reports": [
+        {
+            "packet_number": 225,
+            "timestamp": "2025-03-14T12:14:53.019357",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 226,
+            "timestamp": "2025-03-14T12:14:56.113791",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 227,
+            "timestamp": "2025-03-14T12:14:56.137435",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 230,
+            "timestamp": "2025-03-14T12:15:38.022180",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 236,
+            "timestamp": "2025-03-14T12:15:57.855561",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=28, entropy=3.53)"
+            ]
+        },
+        {
+            "packet_number": 237,
+            "timestamp": "2025-03-14T12:15:57.957007",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=28, entropy=3.53)"
+            ]
+        },
+        {
+            "packet_number": 245,
+            "timestamp": "2025-03-14T12:16:38.030453",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 258,
+            "timestamp": "2025-03-14T12:17:15.287178",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.9 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 262,
+            "timestamp": "2025-03-14T12:17:18.755851",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.9 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 266,
+            "timestamp": "2025-03-14T12:17:20.635217",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.9 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 270,
+            "timestamp": "2025-03-14T12:17:22.031195",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.9 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 274,
+            "timestamp": "2025-03-14T12:17:23.331075",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.9 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 278,
+            "timestamp": "2025-03-14T12:17:24.668067",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.9 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 284,
+            "timestamp": "2025-03-14T12:17:38.013539",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 172.20.10.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 286,
+            "timestamp": "2025-03-14T12:17:43.028175",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=4.00)"
+            ]
+        },
+        {
+            "packet_number": 287,
+            "timestamp": "2025-03-14T12:17:43.244628",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=4.00)"
+            ]
+        },
+        {
+            "packet_number": 290,
+            "timestamp": "2025-03-14T12:17:44.906420",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.80)"
+            ]
+        },
+        {
+            "packet_number": 291,
+            "timestamp": "2025-03-14T12:17:44.916563",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "172.20.10.1",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.80)"
+            ]
+        }
+    ],
+    "attack_stats": {
+        "total_packets": 18,
+        "tcp_packets": 0,
+        "udp_packets": 8,
+        "icmp_packets": 0,
+        "arp_packets": 10,
+        "dns_packets": 8,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 2
+    }
+}
