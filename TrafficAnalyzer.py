@@ -431,7 +431,7 @@ class TrafficAnalyzer:
                 "metadata": {
                     "file_path": self.file_path,
                     "analysis_date": datetime.now().isoformat(),
-                    "analysis_duration": str(datetime.now() - datetime.fromisoformat(packet_reports[0]['timestamp']))
+                    "analysis_duration": str(datetime.now() - datetime.fromisoformat(packet_reports[0]['timestamp'])) 
                         if packet_reports and 'timestamp' in packet_reports[0] else "N/A",
                     "total_packets": len(packet_reports),
                     "first_packet": packet_reports[0]['timestamp'] if packet_reports else None,

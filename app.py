@@ -52,8 +52,19 @@ def analyze():
     try:
         # Pass the generate_pdf flag to the analysis
         analyzer.run_analysis(generate_pdf=generate_pdf)
+        
+        # Load the generated JSON report
+        with open('reports/latest_analysis.json') as f:
+            report_data = json.load(f)
+            
+        # Extract metadata and threat counts
+        metadata = report_data.get('metadata', {})
+        threat_scores = report_data.get('threat_analysis', {}).get('scores', {})
+        
     except Exception as e:
         print(f"Error during analysis: {e}")
+        flash(f"Analysis error: {str(e)}")
+        return redirect(url_for('index'))
     finally:
         sys.stdout = old_stdout  # Restore stdout
         
@@ -63,8 +74,16 @@ def analyze():
     pdf_filename = os.path.basename(analyzer.pdf_file) if generate_pdf and analyzer.pdf_file else None
     
     return render_template('results.html', 
-                           analysis_output=analysis_output,
-                           pdf_filename=pdf_filename)
+                         analysis_output=analysis_output,
+                         pdf_filename=pdf_filename,
+                         file_path=metadata.get('file_path', 'Unknown'),
+                         analysis_date=metadata.get('analysis_date', 'Unknown'),
+                         analysis_duration=metadata.get('analysis_duration', 'Unknown'),
+                         total_packets=metadata.get('total_packets', 0),
+                         critical_count=threat_scores.get('critical', 0),
+                         high_count=threat_scores.get('high', 0),
+                         medium_count=threat_scores.get('medium', 0),
+                         low_count=threat_scores.get('low', 0))
 
 # In get_visualization_data() endpoint
 @app.route('/get_visualization_data')
@@ -296,9 +315,9 @@ def view_report(filename):
             analysis_duration=report_data.get('metadata', {}).get('analysis_duration', 'Unknown'),
             total_packets=report_data.get('statistics', {}).get('total_packets', 0),
             critical_count=calculate_critical_count(report_data),
-            #high_count=calculate_high_count(report_data),
-            #medium_count=calculate_medium_count(report_data),
-            #low_count=calculate_low_count(report_data)
+            high_count=calculate_high_count(report_data),
+            medium_count=calculate_medium_count(report_data),
+            low_count=calculate_low_count(report_data)
         )
         
     except Exception as e:
@@ -328,7 +347,55 @@ def generate_analysis_output(report_data):
     else:
         output.append("  [INFO] No ARP spoofing detected")
     
-    # ... add other sections similarly ...
+    # 3. Covert Channel Analysis
+    output.append("\n• Covert Channel Analysis:")
+    icmp_count = report_data.get('icmp_tunnel', 0)
+    dns_count = report_data.get('dns_tunnel', 0)
+    
+    if icmp_count > 5:
+        output.append(f"  [CRITICAL] ICMP tunneling detected ({icmp_count} packets)")
+    elif icmp_count > 0:
+        output.append(f"  [HIGH] Suspicious ICMP activity ({icmp_count} packets)")
+        
+    if dns_count > 3:
+        output.append(f"  [CRITICAL] DNS tunneling detected ({dns_count} packets)")
+    elif dns_count > 0:
+        output.append(f"  [HIGH] Suspicious DNS activity ({dns_count} packets)")
+        
+    if icmp_count == 0 and dns_count == 0:
+        output.append("  [INFO] No covert channel activity detected")
+    
+    # 4. Traffic Anomalies
+    output.append("\n• Traffic Anomalies:")
+    if 'src_ip_anomaly' in report_data and report_data['src_ip_anomaly']:
+        anomalies = Counter(report_data['src_ip_anomaly'])
+        for ip, count in anomalies.most_common(5):
+            if count > 10:
+                output.append(f"  [CRITICAL] Anomalous traffic from {ip} ({count} packets)")
+            elif count > 5:
+                output.append(f"  [HIGH] Suspicious activity from {ip} ({count} packets)")
+            else:
+                output.append(f"  [MEDIUM] Unusual traffic from {ip} ({count} packets)")
+    else:
+        output.append("  [INFO] No significant traffic anomalies detected")
+    
+    # 5. Security Posture
+    output.append("\n• Security Posture Assessment:")
+    total_threats = sum([
+        len(report_data.get('nmap_scan_types', [])),
+        len(report_data.get('arp_poisoning', [])),
+        report_data.get('icmp_tunnel', 0),
+        report_data.get('dns_tunnel', 0)
+    ])
+    
+    if total_threats > 10:
+        output.append("  [CRITICAL] Critical security posture - Immediate action required!")
+    elif total_threats > 5:
+        output.append("  [HIGH] High risk environment - Urgent remediation needed")
+    elif total_threats > 2:
+        output.append("  [MEDIUM] Moderate risk - Review recommendations")
+    else:
+        output.append("  [LOW] Low risk - Normal network activity")
     
     output.append("\n=== END OF REPORT ===")
     return "\n".join(output)
@@ -344,7 +411,47 @@ def calculate_critical_count(report_data):
         count += 1
     return count
 
-# Similar functions for high_count, medium_count, low_count
+def calculate_high_count(report_data):
+    """Count high severity findings"""
+    count = 0
+    # ICMP tunneling (below critical threshold)
+    if 3 < report_data.get('icmp_tunnel', 0) <= 5:
+        count += 1
+    # DNS tunneling (below critical threshold)
+    if 1 < report_data.get('dns_tunnel', 0) <= 3:
+        count += 1
+    # High anomaly counts
+    if report_data.get('src_ip_anomaly'):
+        count += len([ip for ip in report_data['src_ip_anomaly'] if ip])
+    return count
+
+def calculate_medium_count(report_data):
+    """Count medium severity findings"""
+    count = 0
+    # ICMP tunneling (low level)
+    if 1 < report_data.get('icmp_tunnel', 0) <= 3:
+        count += 1
+    # DNS tunneling (low level)
+    if report_data.get('dns_tunnel', 0) == 1:
+        count += 1
+    # Moderate scan activities
+    if report_data.get('nmap_scan_types'):
+        count += len(report_data['nmap_scan_types']) // 2  # Half of scan types
+    return count
+
+def calculate_low_count(report_data):
+    """Count low severity findings"""
+    count = 0
+    # Any tunneling below medium thresholds
+    if report_data.get('icmp_tunnel', 0) == 1:
+        count += 1
+    if report_data.get('dns_tunnel', 0) == 1:
+        count += 1
+    # Low-level anomalies
+    if report_data.get('src_ip_anomaly'):
+        count += len(report_data['src_ip_anomaly']) // 2
+    return count
+# do Similar functions for high_count, medium_count, low_count
 
 def _format_historical_report(report_data):
     """Convert stored JSON data to formatted analysis output"""
