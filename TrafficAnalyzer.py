@@ -407,9 +407,9 @@ class TrafficAnalyzer:
             self.logger.debug(traceback.format_exc())
             raise
 
-    def generate_json_report(self, packet_reports: List[Dict[str, Any]]) -> None:
+    def generate_json_report(self, packet_reports: List[Dict[str, Any]]) -> str:
         """
-        Generate an enhanced JSON report with detailed analysis.
+        Generate an enhanced JSON report with detailed analysis and modular threat scoring.
         """
         self.logger.info("Generating enhanced JSON report")
         try:
@@ -418,15 +418,23 @@ class TrafficAnalyzer:
             output_filename = f"reports/{filename_without_ext}_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
             output_path = os.path.join(os.getcwd(), output_filename)
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
-            
-            # Generate enhanced statistics
+
+            # Generate all analysis components
             stats = self.generate_attack_stats(packet_reports)
             temporal_stats = self.generate_temporal_stats(packet_reports)
             protocol_dist = self.generate_protocol_distribution(packet_reports)
             top_talkers = self.generate_top_talkers(packet_reports)
             conversations = self.generate_conversation_analysis(packet_reports)
             threat_scores = self.generate_threat_scores(packet_reports)
-            
+            suspicious_ips = self.get_suspicious_ips(packet_reports)
+            recommendations = self.generate_recommendations(packet_reports)
+
+            # Filter critical findings by specific keywords
+            keyword_critical_findings = [
+                d for p in packet_reports for d in p.get('detection_details', [])
+                if any(pattern in d.lower() for pattern in ['poisoning', 'tunneling', 'xmas', 'null'])
+            ]
+
             report = {
                 "metadata": {
                     "file_path": self.file_path,
@@ -435,7 +443,7 @@ class TrafficAnalyzer:
                         if packet_reports and 'timestamp' in packet_reports[0] else "N/A",
                     "total_packets": len(packet_reports),
                     "first_packet": packet_reports[0]['timestamp'] if packet_reports else None,
-                    "last_packet": packet_reports[-1]['timestamp'] if packet_reports else None
+                    "last_packet": packet_reports[-1]['timestamp'] if packet_reports else None,
                 },
                 "statistics": stats,
                 "temporal_analysis": temporal_stats,
@@ -445,26 +453,68 @@ class TrafficAnalyzer:
                 "top_talkers": top_talkers,
                 "conversations": conversations,
                 "threat_analysis": {
-                    "scores": threat_scores,
-                    "critical_findings": self.get_critical_findings(packet_reports),
-                    "suspicious_ips": self.get_suspicious_ips(packet_reports)
+                    "scores": {
+                        "critical": threat_scores.get("critical", 0),
+                        "high": threat_scores.get("high", 0),
+                        "medium": threat_scores.get("medium", 0),
+                        "low": threat_scores.get("low", 0),
+                        "scanning_score": threat_scores.get("scanning_score", 0),
+                        "tunneling_score": threat_scores.get("tunneling_score", 0),
+                        "anomaly_score": threat_scores.get("anomaly_score", 0),
+                        "overall_score": threat_scores.get("overall_score", 0),
+                        "severity": threat_scores.get("severity", "Unknown")
+                    },
+                    "critical_findings": keyword_critical_findings,
+                    "suspicious_ips": suspicious_ips
                 },
                 "detailed_findings": packet_reports,
-                "recommendations": self.generate_recommendations(packet_reports)
+                "recommendations": recommendations
             }
-            
+
+            # Save the report
             with open(output_path, 'w') as json_file:
                 json.dump(report, json_file, indent=4)
+
+            # Save a copy as the latest
             with open('reports/latest_analysis.json', 'w') as f:
                 json.dump(report, f)
-                
+
             self.logger.info(f"Enhanced JSON report generated: {output_path}")
             print(Fore.CYAN + f"\nEnhanced JSON report generated: {output_path}")
-            
+
+            return output_path
+
         except Exception as e:
             self.logger.error(f"JSON report generation failed: {str(e)}")
             self.logger.debug(traceback.format_exc())
             raise
+
+
+    def calculate_scanning_score(self, packet_reports):
+        return sum(1 for p in packet_reports 
+                if any('scan' in d.lower() for d in p.get('detection_details', [])))
+
+    def calculate_tunneling_score(self, packet_reports):
+        return sum(1 for p in packet_reports 
+                if any('tunneling' in d.lower() for d in p.get('detection_details', [])))
+
+    def calculate_overall_score(self, threat_scores):
+        # Weighted calculation
+        return (threat_scores['critical'] * 4 + 
+                threat_scores['high'] * 3 +
+                threat_scores['medium'] * 2 +
+                threat_scores['low'] * 1)
+
+    def determine_severity(self, threat_scores):
+        total = threat_scores['critical'] + threat_scores['high'] + threat_scores['medium'] + threat_scores['low']
+        if threat_scores['critical'] > 0 or total > 10:
+            return "Critical"
+        elif threat_scores['high'] > 0 or total > 5:
+            return "High"
+        elif threat_scores['medium'] > 0 or total > 2:
+            return "Medium"
+        return "Low"
+
 
     def generate_temporal_stats(self, packet_reports: List[Dict[str, Any]]) -> Dict[str, Any]:
         """Generate temporal statistics by minute"""
@@ -598,64 +648,91 @@ class TrafficAnalyzer:
         }
 
     def generate_threat_scores(self, packet_reports: List[Dict[str, Any]]) -> Dict[str, Any]:
-        """Calculate threat scores for different aspects with severity breakdown"""
+        """Calculate threat scores with severity breakdown and weighted metrics"""
         scores = {
-            'scanning_score': 0,
-            'tunneling_score': 0,
-            'anomaly_score': 0,
-            'overall_score': 0,
             'critical': 0,
             'high': 0,
             'medium': 0,
-            'low': 0
+            'low': 0,
+            'scanning_score': 0,
+            'tunneling_score': 0,
+            'anomaly_score': 0
         }
-        
-        # Calculate scanning score based on scan detections
+
+        # Combined patterns from both versions
+        severity_patterns = {
+            'critical': [
+                'arp poisoning', 'icmp tunneling', 'dns tunneling',
+                'xmas scan', 'null scan', 'anomalous activity',
+                'tunneling detected', 'poisoning'
+            ],
+            'high': [
+                'syn scan', 'udp scan', 'high payload entropy',
+                'multiple mac', 'suspicious arp', 'high entropy'
+            ],
+            'medium': [
+                'unusual port', 'unusual protocol',
+                'high packet rate', 'unusual packet size',
+                'unusual activity', 'suspicious pattern'
+            ],
+            'low': [
+                'uncommon user agent', 'dns query',
+                'http request', 'common scan pattern',
+                'informational', 'common scan'
+            ]
+        }
+
         scan_types = ['syn', 'xmas', 'null', 'fin', 'udp']
+
         for packet in packet_reports:
             for detection in packet.get('detection_details', []):
-                if any(scan in detection.lower() for scan in scan_types):
+                detection_lower = detection.lower()
+
+                # Sub-score calculation
+                if any(scan in detection_lower for scan in scan_types):
                     scores['scanning_score'] += 1
-                elif 'tunnel' in detection.lower():
+                if 'tunnel' in detection_lower:
                     scores['tunneling_score'] += 1
-                elif 'anomal' in detection.lower():
+                if 'anomal' in detection_lower:
                     scores['anomaly_score'] += 1
 
-        # Normalize scores based on packet count
+                # Severity matching
+                if any(pattern in detection_lower for pattern in severity_patterns['critical']):
+                    scores['critical'] += 1
+                elif any(pattern in detection_lower for pattern in severity_patterns['high']):
+                    scores['high'] += 1
+                elif any(pattern in detection_lower for pattern in severity_patterns['medium']):
+                    scores['medium'] += 1
+                elif any(pattern in detection_lower for pattern in severity_patterns['low']):
+                    scores['low'] += 1
+                else:
+                    # Default fallback
+                    scores['medium'] += 1
+
+        # Normalize scoring based on total packet count
         total_packets = len(packet_reports)
         if total_packets > 0:
-            for key in scores:
+            for key in ['scanning_score', 'tunneling_score', 'anomaly_score']:
                 scores[key] = min(100, int((scores[key] / total_packets) * 1000))
 
-        # Calculate overall score (weighted average)
+        # Calculate overall threat score (weighted)
         weights = {'scanning_score': 0.4, 'tunneling_score': 0.3, 'anomaly_score': 0.3}
         scores['overall_score'] = int(sum(scores[k] * weights[k] for k in weights))
 
-        # Add severity level
+        # Determine severity level from overall score
         overall = scores['overall_score']
         if overall >= 80:
-            severity = "Critical"
+            scores['severity'] = "Critical"
         elif overall >= 50:
-            severity = "High"
+            scores['severity'] = "High"
         elif overall >= 20:
-            severity = "Medium"
+            scores['severity'] = "Medium"
         else:
-            severity = "Low"
+            scores['severity'] = "Low"
 
-        scores['severity'] = severity
-
-        for packet in packet_reports:
-            for detection in packet.get('detection_details', []):
-                if 'CRITICAL' in detection:
-                    scores['critical'] += 1
-                elif 'HIGH' in detection:
-                    scores['high'] += 1
-                elif 'MEDIUM' in detection:
-                    scores['medium'] += 1
-                elif 'LOW' in detection:
-                    scores['low'] += 1
-
+        self.logger.info(f"Calculated threat scores: {scores}")
         return scores
+
 
     def get_critical_findings(self, packet_reports: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Extract the most critical findings from the analysis"""
