@@ -301,10 +301,7 @@ def view_report(filename):
             
         with open(report_path) as f:
             report_data = json.load(f)
-        
-        # Extract all required data
-        metadata = report_data.get('metadata', {})
-        threat_scores = report_data.get('threat_analysis', {}).get('scores', {})
+
         analysis_output = generate_analysis_output(report_data)  # Your existing function
         
         # Get PDF filename if available
@@ -318,144 +315,140 @@ def view_report(filename):
         
         return render_template('results.html',
             analysis_output=analysis_output,
-            pdf_filename=pdf_filename,
-            report_filename=filename,
-            file_path=metadata.get('file_path', 'Unknown'),
-            analysis_date=metadata.get('analysis_date', 'Unknown'),
-            analysis_duration=metadata.get('analysis_duration', 'Unknown'),
-            total_packets=metadata.get('total_packets', 0),
-            critical_count=threat_scores.get('critical', 0),
-            high_count=threat_scores.get('high', 0),
-            medium_count=threat_scores.get('medium', 0),
-            low_count=threat_scores.get('low', 0)
+            pdf_filename=f"security_report_{filename.split('_')[-1].replace('.json', '.pdf')}",
+            file_path=report_data.get('metadata', {}).get('file_path', 'Unknown'),
+            analysis_date=report_data.get('metadata', {}).get('analysis_date', 'Unknown'),
+            analysis_duration=report_data.get('metadata', {}).get('analysis_duration', 'Unknown'),
+            total_packets=report_data.get('metadata', {}).get('total_packets', 0),
+            critical_count=report_data.get('threat_analysis', {}).get('scores', {}).get('critical', 0),
+            high_count=report_data.get('threat_analysis', {}).get('scores', {}).get('high', 0),
+            medium_count=report_data.get('threat_analysis', {}).get('scores', {}).get('medium', 0),
+            low_count=report_data.get('threat_analysis', {}).get('scores', {}).get('low', 0),
+            report_filename=filename
         )
-        
     except Exception as e:
-        app.logger.error(f"Error loading report {filename}: {str(e)}")
-        flash('Error loading report', 'error')
+        flash(f"Error loading report: {str(e)}", 'error')
         return redirect(url_for('view_history'))
 
 def generate_analysis_output(report_data):
-    """Generate formatted analysis output from stored report data"""
+    """Generate formatted analysis output with properly organized findings"""
     output = []
     
-    # Add metadata section
-    output.append(f"=== Report Metadata ===")
-    output.append(f"File: {report_data.get('metadata', {}).get('file_path', 'Unknown')}")
-    output.append(f"Analysis Date: {report_data.get('metadata', {}).get('analysis_date', 'Unknown')}")
+    # Start with the standard header
+    output.append("=== ANALYSIS RESULTS SUMMARY ===")
     
-    # Add threat summary
-    threat_scores = report_data.get('threat_analysis', {}).get('scores', {})
-    output.append("\n=== Threat Summary ===")
-    output.append(f"Critical: {threat_scores.get('critical', 0)}")
-    output.append(f"High: {threat_scores.get('high', 0)}")
-    output.append(f"Medium: {threat_scores.get('medium', 0)}")
-    output.append(f"Low: {threat_scores.get('low', 0)}")
+    # Initialize detection storage by category
+    detections = {
+        'scan': [],
+        'arp': [],
+        'tunneling': [],
+        'anomalies': []
+    }
     
-    # Add detailed findings
+    # Categorize all detections first
     if 'detailed_findings' in report_data:
-        output.append("\n=== Detailed Findings ===")
-        for finding in report_data['detailed_findings'][:50]:  # Limit to 50 findings
-            if finding.get('detection_details'):
-                output.append(f"\nPacket #{finding.get('packet_number')}:")
-                output.extend(f"  - {detail}" for detail in finding['detection_details'])
+        for finding in report_data['detailed_findings']:
+            for detail in finding.get('detection_details', []):
+                detail_lower = detail.lower()
+                if 'scan' in detail_lower:
+                    detections['scan'].append(detail)
+                elif 'arp' in detail_lower or 'poisoning' in detail_lower:
+                    detections['arp'].append(detail)
+                elif 'tunneling' in detail_lower:
+                    detections['tunneling'].append(detail)
+                else:
+                    detections['anomalies'].append(detail)
     
+    # 1. Network Scan Detection
+    output.append("\n• Network Scan Detection:")
+    if detections['scan']:
+        for detection in detections['scan']:
+            if 'syn scan' in detection.lower():
+                output.append(f"  [CRITICAL] {detection}")
+            elif 'udp scan' in detection.lower():
+                output.append(f"  [HIGH] {detection}")
+            else:
+                output.append(f"  [WARNING] {detection}")
+    else:
+        output.append("  [INFO] No network scanning activity detected")
+    
+    # 2. ARP Security Analysis
+    output.append("\n• ARP Security Analysis:")
+    if detections['arp']:
+        output.append("  [CRITICAL] ARP cache poisoning detected!")
+        for detection in detections['arp']:
+            output.append(f"    - {detection}")
+    else:
+        output.append("  [INFO] No ARP spoofing detected")
+    
+    # 3. Covert Channel Analysis
+    output.append("\n• Covert Channel Analysis:")
+    if detections['tunneling']:
+        icmp_count = sum(1 for d in detections['tunneling'] if 'icmp' in d.lower())
+        dns_count = sum(1 for d in detections['tunneling'] if 'dns' in d.lower())
+        
+        if icmp_count > 0:
+            output.append(f"  [CRITICAL] ICMP tunneling detected ({icmp_count} packets)")
+        if dns_count > 0:
+            output.append(f"  [CRITICAL] DNS tunneling detected ({dns_count} packets)")
+        
+        # Show first 3 examples of each type
+        shown_icmp = 0
+        shown_dns = 0
+        for detection in detections['tunneling']:
+            if 'icmp' in detection.lower() and shown_icmp < 3:
+                output.append(f"    - {detection}")
+                shown_icmp += 1
+            elif 'dns' in detection.lower() and shown_dns < 3:
+                output.append(f"    - {detection}")
+                shown_dns += 1
+    else:
+        output.append("  [INFO] No covert channel activity detected")
+    
+    # 4. Traffic Anomalies
+    output.append("\n• Traffic Anomalies:")
+    if detections['anomalies']:
+        anomaly_counts = Counter(detections['anomalies'])
+        for detection, count in anomaly_counts.most_common(3):
+            if count > 10:
+                output.append(f"  [CRITICAL] {detection} ({count} occurrences)")
+            elif count > 5:
+                output.append(f"  [HIGH] {detection} ({count} occurrences)")
+            else:
+                output.append(f"  [MEDIUM] {detection} ({count} occurrences)")
+    else:
+        output.append("  [INFO] No significant traffic anomalies detected")
+    
+    # 5. Security Posture Assessment
+    output.append("\n• Security Posture Assessment:")
+    severity = report_data.get('threat_analysis', {}).get('scores', {}).get('severity', 'Low')
+    output.append(f"  [INFO] Overall Network Security Posture: {severity.upper()}")
+    
+    output.append("\n=== END OF REPORT ===")
     return "\n".join(output)
 
-def _format_historical_report(report_data):
-    """Convert stored JSON data to formatted analysis output"""
-    # Use the pre-generated analysis summary if available
-    if 'analysis_summary' in report_data:
-        return report_data['analysis_summary']
-    
-    # Fallback to original formatting if summary missing
-    output = []
-    
-    # Reconstruct analysis summary from packet data
-    nmap_counts = Counter()
-    arp_entries = set()
-    anomalies = set()
-    icmp_count = 0
-    dns_count = 0
-
-    # Extract stats from attack_stats instead of recalculating
-    stats = report_data.get('attack_stats', {})
-    
-    for packet in report_data.get('packet_reports', []):
-        for detail in packet.get('detection_details', []):
-            if 'scan detected' in detail:
-                if 'TCP connect' in detail:
-                    nmap_counts['tcp_connect'] += 1
-                elif 'SYN scan' in detail:
-                    nmap_counts['syn'] += 1
-                elif 'XMAS scan' in detail:
-                    nmap_counts['xmas'] += 1
-            elif 'ARP poisoning' in detail:
-                arp_entries.add(detail.split('IP ')[1].split(' ')[0])
-            elif 'anomaly' in detail.lower():
-                anomalies.add(detail.split('IP ')[1].split(' ')[0])
-            elif 'ICMP tunneling' in detail:
-                icmp_count += 1
-            elif 'DNS tunneling' in detail:
-                dns_count += 1
-
-    # Build output to match live analysis format
-    output.append("=== Analysis Results ===")
-    
-    output.append("\nNmap Scan Detection:")
-    for scan_type, count in nmap_counts.items():
-        output.append(f"  {scan_type.replace('_', ' ')} scans detected: {count}")
-    
-    output.append("\nARP Poisoning Detection:")
-    if arp_entries:
-        for ip in arp_entries:
-            output.append(f"  Suspicious ARP Entry: IP - {ip}")
-    else:
-        output.append("  No ARP poisoning detected.")
-    
-    output.append("\nICMP Tunneling Detection:")
-    output.append(f"  Potential ICMP tunneling activities detected: {icmp_count}")
-    
-    output.append("\nDNS Tunneling Detection:")
-    output.append(f"  Potential DNS tunneling activities detected: {dns_count}")
-    
-    output.append("\nAnomaly Detection:")
-    for ip in anomalies:
-        output.append(f"  Anomalous activity detected from IP: {ip}")
-
-    # Add statistics section
-    output.append("\n=== Statistics ===")
-    output.append(f"Total packets analyzed: {stats.get('total_packets', 0)}")
-    output.append(f"TCP packets: {stats.get('tcp_packets', 0)}")
-    output.append(f"UDP packets: {stats.get('udp_packets', 0)}")
-    output.append(f"ICMP packets: {stats.get('icmp_packets', 0)}")
-    output.append(f"Unique source IPs: {stats.get('unique_source_ips', 0)}")
-    
-    return '\n'.join(output)
-
-    
 
 @app.template_filter('format_output')
 def format_output(text):
-    # Remove ANSI escape codes
+    if isinstance(text, dict):
+        # Handle JSON report data
+        output = []
+        output.append("=== ANALYSIS RESULTS SUMMARY ===")
+        
+        # Add sections from JSON data
+        if text.get('threat_analysis'):
+            output.append("\n• Threat Analysis:")
+            for level, count in text['threat_analysis']['scores'].items():
+                if count > 0:
+                    output.append(f"  [{level.upper()}] {count} {level} severity findings")
+        
+        # Add other sections...
+        return [section for section in output if section.strip()]
+    
+    # Original text processing for console output
     ansi_escape = re.compile(r'\x1B\[[0-?]*[ -/]*[@-~]')
     cleaned = ansi_escape.sub('', text)
-    
-    # Split into sections based on lines ending with ===
-    sections = []
-    current_section = []
-    
-    for line in cleaned.split('\n'):
-        if line.strip().endswith('==='):
-            if current_section:
-                sections.append('\n'.join(current_section))
-                current_section = []
-        current_section.append(line)
-    
-    if current_section:
-        sections.append('\n'.join(current_section))
-    
-    return sections
+    return [section for section in cleaned.split('\n\n') if section.strip()]
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,1705 @@
+{
+    "metadata": {
+        "file_path": "uploads\\arpspoof.pcap",
+        "analysis_date": "2025-04-08T20:46:32.802780",
+        "analysis_duration": "20186 days, 17:40:16.673661",
+        "total_packets": 91,
+        "first_packet": "1970-01-01T03:06:16.129140",
+        "last_packet": "1970-01-01T03:09:02.879832"
+    },
+    "statistics": {
+        "total_packets": 91,
+        "tcp_packets": 0,
+        "udp_packets": 0,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 22,
+        "unique_ports": 0,
+        "packets_with_detections": 91,
+        "total_detections": 91,
+        "average_packets_per_second": 0.5457248717144755,
+        "busiest_minute": {
+            "minute": "1970-01-01 03:08",
+            "packet_count": 59,
+            "percentage": 64.83516483516483
+        }
+    },
+    "temporal_analysis": {
+        "1970-01-01 03:06": {
+            "count": 28,
+            "protocols": {},
+            "detections": [
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ],
+            "unique_src_ips": 1
+        },
+        "1970-01-01 03:08": {
+            "count": 59,
+            "protocols": {},
+            "detections": [
+                "UDP scan detected: Packet length <= 8",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ],
+            "unique_src_ips": 3
+        },
+        "1970-01-01 03:09": {
+            "count": 4,
+            "protocols": {},
+            "detections": [
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ],
+            "unique_src_ips": 1
+        }
+    },
+    "tcp_packets": 0,
+    "udp_packets": 0,
+    "protocol_distribution": {
+        "protocols": {},
+        "protocol_pairs": {},
+        "most_common_protocol": null
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "192.168.1.104",
+                "packet_count": 64,
+                "detection_count": 64,
+                "protocols": [],
+                "unique_detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "ip": "192.168.1.105",
+                "packet_count": 1,
+                "detection_count": 1,
+                "protocols": [],
+                "unique_detections": [
+                    "UDP scan detected: Packet length <= 8"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "192.168.1.104",
+                "packet_count": 64,
+                "detection_count": 64,
+                "protocols": [],
+                "unique_detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "ip": "192.168.1.105",
+                "packet_count": 1,
+                "detection_count": 1,
+                "protocols": [],
+                "unique_detections": [
+                    "UDP scan detected: Packet length <= 8"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "151.101.1.140",
+                    "192.168.1.104"
+                ],
+                "packet_count": 13,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.129.140",
+                    "192.168.1.104"
+                ],
+                "packet_count": 10,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.65.140",
+                    "192.168.1.104"
+                ],
+                "packet_count": 9,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.193.140",
+                    "192.168.1.104"
+                ],
+                "packet_count": 8,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "216.58.203.98"
+                ],
+                "packet_count": 5,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "117.18.237.29",
+                    "192.168.1.104"
+                ],
+                "packet_count": 2,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "172.217.167.106",
+                    "192.168.1.104"
+                ],
+                "packet_count": 2,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "104.74.36.68",
+                    "192.168.1.104"
+                ],
+                "packet_count": 2,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "60.254.148.81"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "52.26.8.178"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "60.254.148.81"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "52.26.8.178"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "117.18.237.29",
+                    "192.168.1.104"
+                ],
+                "packet_count": 2,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "54.230.243.184"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "34.209.199.162"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "172.217.167.106",
+                    "192.168.1.104"
+                ],
+                "packet_count": 2,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "216.58.203.99"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.104",
+                    "52.85.43.70"
+                ],
+                "packet_count": 1,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.65.140",
+                    "192.168.1.104"
+                ],
+                "packet_count": 9,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.129.140",
+                    "192.168.1.104"
+                ],
+                "packet_count": 10,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 26,
+            "high": 1,
+            "medium": 64,
+            "low": 0,
+            "scanning_score": 100,
+            "tunneling_score": 0,
+            "anomaly_score": 0,
+            "overall_score": 40,
+            "severity": "Medium"
+        },
+        "critical_findings": [
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+        ],
+        "suspicious_ips": [
+            {
+                "ip": "192.168.1.104",
+                "score": 64
+            },
+            {
+                "ip": "192.168.1.105",
+                "score": 1
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 398,
+            "timestamp": "1970-01-01T03:06:16.129140",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "60.254.148.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 409,
+            "timestamp": "1970-01-01T03:06:16.476079",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "52.26.8.178",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 428,
+            "timestamp": "1970-01-01T03:06:17.586925",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "117.18.237.29",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 446,
+            "timestamp": "1970-01-01T03:06:18.302412",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "54.230.243.184",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 473,
+            "timestamp": "1970-01-01T03:06:19.389712",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "34.209.199.162",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 493,
+            "timestamp": "1970-01-01T03:06:19.853444",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "117.18.237.29",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 560,
+            "timestamp": "1970-01-01T03:06:22.215272",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "172.217.167.106",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 575,
+            "timestamp": "1970-01-01T03:06:22.578153",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "216.58.203.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 608,
+            "timestamp": "1970-01-01T03:06:23.307550",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "52.85.43.70",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 634,
+            "timestamp": "1970-01-01T03:06:26.805627",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 648,
+            "timestamp": "1970-01-01T03:06:26.914668",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 899,
+            "timestamp": "1970-01-01T03:06:29.711935",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 906,
+            "timestamp": "1970-01-01T03:06:29.714087",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 907,
+            "timestamp": "1970-01-01T03:06:29.714417",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 911,
+            "timestamp": "1970-01-01T03:06:29.715043",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 912,
+            "timestamp": "1970-01-01T03:06:29.715335",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 913,
+            "timestamp": "1970-01-01T03:06:29.715617",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 920,
+            "timestamp": "1970-01-01T03:06:29.739274",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 921,
+            "timestamp": "1970-01-01T03:06:29.739574",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1034,
+            "timestamp": "1970-01-01T03:06:29.778433",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1036,
+            "timestamp": "1970-01-01T03:06:29.779513",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1037,
+            "timestamp": "1970-01-01T03:06:29.779693",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1678,
+            "timestamp": "1970-01-01T03:06:29.979732",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1679,
+            "timestamp": "1970-01-01T03:06:29.980024",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1680,
+            "timestamp": "1970-01-01T03:06:29.980372",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3139,
+            "timestamp": "1970-01-01T03:06:32.989635",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3140,
+            "timestamp": "1970-01-01T03:06:32.989858",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3361,
+            "timestamp": "1970-01-01T03:06:33.235685",
+            "minute": "1970-01-01 03:06",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3562,
+            "timestamp": "1970-01-01T03:08:01.328908",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.105",
+            "dst_ip": "192.168.1.104",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "UDP scan detected: Packet length <= 8"
+            ]
+        },
+        {
+            "packet_number": 3564,
+            "timestamp": "1970-01-01T03:08:02.328575",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3565,
+            "timestamp": "1970-01-01T03:08:04.329536",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3566,
+            "timestamp": "1970-01-01T03:08:06.330364",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3569,
+            "timestamp": "1970-01-01T03:08:08.331399",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3575,
+            "timestamp": "1970-01-01T03:08:10.332497",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3576,
+            "timestamp": "1970-01-01T03:08:12.333407",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3577,
+            "timestamp": "1970-01-01T03:08:14.334130",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3578,
+            "timestamp": "1970-01-01T03:08:16.335331",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3586,
+            "timestamp": "1970-01-01T03:08:18.336677",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3587,
+            "timestamp": "1970-01-01T03:08:20.337969",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3588,
+            "timestamp": "1970-01-01T03:08:22.339141",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3594,
+            "timestamp": "1970-01-01T03:08:24.339890",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3600,
+            "timestamp": "1970-01-01T03:08:24.971103",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "184.84.165.123",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3609,
+            "timestamp": "1970-01-01T03:08:26.340792",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3623,
+            "timestamp": "1970-01-01T03:08:28.342078",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3670,
+            "timestamp": "1970-01-01T03:08:30.343037",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3675,
+            "timestamp": "1970-01-01T03:08:30.565438",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3676,
+            "timestamp": "1970-01-01T03:08:30.565694",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3702,
+            "timestamp": "1970-01-01T03:08:32.344525",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3708,
+            "timestamp": "1970-01-01T03:08:33.909029",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3730,
+            "timestamp": "1970-01-01T03:08:34.345013",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3826,
+            "timestamp": "1970-01-01T03:08:36.385928",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3904,
+            "timestamp": "1970-01-01T03:08:36.696822",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3909,
+            "timestamp": "1970-01-01T03:08:36.704221",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3912,
+            "timestamp": "1970-01-01T03:08:36.711409",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3914,
+            "timestamp": "1970-01-01T03:08:36.718380",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3917,
+            "timestamp": "1970-01-01T03:08:36.723663",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3920,
+            "timestamp": "1970-01-01T03:08:36.736783",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.1.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3958,
+            "timestamp": "1970-01-01T03:08:36.802117",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4146,
+            "timestamp": "1970-01-01T03:08:38.350686",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 4161,
+            "timestamp": "1970-01-01T03:08:38.702335",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "104.74.36.68",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4307,
+            "timestamp": "1970-01-01T03:08:39.593066",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4308,
+            "timestamp": "1970-01-01T03:08:39.593318",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4396,
+            "timestamp": "1970-01-01T03:08:40.056585",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4397,
+            "timestamp": "1970-01-01T03:08:40.056853",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4556,
+            "timestamp": "1970-01-01T03:08:40.396969",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 4606,
+            "timestamp": "1970-01-01T03:08:40.520963",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "216.58.203.98",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4623,
+            "timestamp": "1970-01-01T03:08:40.586749",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "54.230.241.12",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4700,
+            "timestamp": "1970-01-01T03:08:41.005850",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "172.217.167.67",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 4719,
+            "timestamp": "1970-01-01T03:08:41.143483",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "104.74.40.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 5024,
+            "timestamp": "1970-01-01T03:08:41.817573",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 5288,
+            "timestamp": "1970-01-01T03:08:42.354949",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 5498,
+            "timestamp": "1970-01-01T03:08:42.736309",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "172.217.167.98",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 5563,
+            "timestamp": "1970-01-01T03:08:42.874242",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "104.74.36.68",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 5862,
+            "timestamp": "1970-01-01T03:08:43.413667",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "216.58.203.98",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 6358,
+            "timestamp": "1970-01-01T03:08:44.403309",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 7422,
+            "timestamp": "1970-01-01T03:08:46.408153",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 7480,
+            "timestamp": "1970-01-01T03:08:46.533877",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 7906,
+            "timestamp": "1970-01-01T03:08:47.412860",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 8415,
+            "timestamp": "1970-01-01T03:08:48.394581",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 8478,
+            "timestamp": "1970-01-01T03:08:48.523716",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 8805,
+            "timestamp": "1970-01-01T03:08:49.138855",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.129.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 9420,
+            "timestamp": "1970-01-01T03:08:50.404105",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9465,
+            "timestamp": "1970-01-01T03:08:50.514360",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.65.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 9789,
+            "timestamp": "1970-01-01T03:08:51.136584",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "151.101.193.140",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 10340,
+            "timestamp": "1970-01-01T03:08:52.410712",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.1.1 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 12288,
+            "timestamp": "1970-01-01T03:08:56.089987",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "192.168.1.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 13039,
+            "timestamp": "1970-01-01T03:08:57.341967",
+            "minute": "1970-01-01 03:08",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "54.230.243.201",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 15068,
+            "timestamp": "1970-01-01T03:09:01.032241",
+            "minute": "1970-01-01 03:09",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "216.58.203.98",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 15077,
+            "timestamp": "1970-01-01T03:09:01.046073",
+            "minute": "1970-01-01 03:09",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "216.58.203.98",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 15491,
+            "timestamp": "1970-01-01T03:09:01.785025",
+            "minute": "1970-01-01 03:09",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "216.58.203.98",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 16059,
+            "timestamp": "1970-01-01T03:09:02.879832",
+            "minute": "1970-01-01 03:09",
+            "protocols": [],
+            "src_ip": "192.168.1.104",
+            "dst_ip": "172.217.167.106",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        }
+    ],
+    "recommendations": [
+        "Implement ARP inspection on network switches",
+        "Consider deploying ARP spoofing detection tools",
+        "Enable DHCP snooping if not already enabled",
+        "Review firewall rules to ensure only necessary ports are open",
+        "Implement intrusion detection/prevention systems",
+        "Consider implementing port knocking for sensitive services",
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}

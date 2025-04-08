@@ -1,0 +1,218 @@
+{
+    "metadata": {
+        "file_path": "uploads\\ICMP_tunneleing.pcap",
+        "analysis_date": "2025-04-08T20:39:56.974397",
+        "analysis_duration": "25 days, 13:25:00.860613",
+        "total_packets": 4,
+        "first_packet": "2025-03-14T07:14:56.113791",
+        "last_packet": "2025-03-14T07:17:44.906420"
+    },
+    "statistics": {
+        "total_packets": 4,
+        "tcp_packets": 0,
+        "udp_packets": 0,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 1,
+        "unique_destination_ips": 1,
+        "unique_ports": 0,
+        "packets_with_detections": 4,
+        "total_detections": 4,
+        "average_packets_per_second": 0.023697717274135235,
+        "busiest_minute": {
+            "minute": "2025-03-14 07:17",
+            "packet_count": 2,
+            "percentage": 50.0
+        }
+    },
+    "temporal_analysis": {
+        "2025-03-14 07:14": {
+            "count": 1,
+            "protocols": {},
+            "detections": [
+                "Potential DNS tunneling detected (length=26, entropy=3.84)"
+            ],
+            "unique_src_ips": 1
+        },
+        "2025-03-14 07:15": {
+            "count": 1,
+            "protocols": {},
+            "detections": [
+                "Potential DNS tunneling detected (length=28, entropy=3.53)"
+            ],
+            "unique_src_ips": 1
+        },
+        "2025-03-14 07:17": {
+            "count": 2,
+            "protocols": {},
+            "detections": [
+                "Potential DNS tunneling detected (length=25, entropy=4.00)",
+                "Potential DNS tunneling detected (length=32, entropy=3.80)"
+            ],
+            "unique_src_ips": 1
+        }
+    },
+    "tcp_packets": 0,
+    "udp_packets": 0,
+    "protocol_distribution": {
+        "protocols": {},
+        "protocol_pairs": {},
+        "most_common_protocol": null
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "172.20.10.9",
+                "packet_count": 4,
+                "detection_count": 4,
+                "protocols": [],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=28, entropy=3.53)",
+                    "Potential DNS tunneling detected (length=32, entropy=3.80)",
+                    "Potential DNS tunneling detected (length=26, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=25, entropy=4.00)"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "172.20.10.9",
+                "packet_count": 4,
+                "detection_count": 4,
+                "protocols": [],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=28, entropy=3.53)",
+                    "Potential DNS tunneling detected (length=32, entropy=3.80)",
+                    "Potential DNS tunneling detected (length=26, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=25, entropy=4.00)"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "172.20.10.1",
+                    "172.20.10.9"
+                ],
+                "packet_count": 4,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 4,
+                "detections": [
+                    "Potential DNS tunneling detected (length=28, entropy=3.53)",
+                    "Potential DNS tunneling detected (length=32, entropy=3.80)",
+                    "Potential DNS tunneling detected (length=26, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=25, entropy=4.00)"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "172.20.10.1",
+                    "172.20.10.9"
+                ],
+                "packet_count": 4,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 4,
+                "detections": [
+                    "Potential DNS tunneling detected (length=28, entropy=3.53)",
+                    "Potential DNS tunneling detected (length=32, entropy=3.80)",
+                    "Potential DNS tunneling detected (length=26, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=25, entropy=4.00)"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 4,
+            "high": 0,
+            "medium": 0,
+            "low": 0,
+            "scanning_score": 0,
+            "tunneling_score": 100,
+            "anomaly_score": 0,
+            "overall_score": 30,
+            "severity": "Medium"
+        },
+        "critical_findings": [
+            "Potential DNS tunneling detected (length=26, entropy=3.84)",
+            "Potential DNS tunneling detected (length=28, entropy=3.53)",
+            "Potential DNS tunneling detected (length=25, entropy=4.00)",
+            "Potential DNS tunneling detected (length=32, entropy=3.80)"
+        ],
+        "suspicious_ips": [
+            {
+                "ip": "172.20.10.9",
+                "score": 4
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 226,
+            "timestamp": "2025-03-14T07:14:56.113791",
+            "minute": "2025-03-14 07:14",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=26, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 236,
+            "timestamp": "2025-03-14T07:15:57.855561",
+            "minute": "2025-03-14 07:15",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=28, entropy=3.53)"
+            ]
+        },
+        {
+            "packet_number": 286,
+            "timestamp": "2025-03-14T07:17:43.028175",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=4.00)"
+            ]
+        },
+        {
+            "packet_number": 290,
+            "timestamp": "2025-03-14T07:17:44.906420",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=32, entropy=3.80)"
+            ]
+        }
+    ],
+    "recommendations": [
+        "Inspect ICMP and DNS traffic for unusual patterns",
+        "Implement rate limiting for ICMP and DNS queries",
+        "Consider using a next-gen firewall with tunneling detection",
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}

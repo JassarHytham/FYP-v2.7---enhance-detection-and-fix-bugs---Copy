@@ -1,0 +1,5183 @@
+{
+    "metadata": {
+        "file_path": "uploads\\arp_poisoning.pcap",
+        "analysis_date": "2025-04-08T23:51:47.455955",
+        "analysis_duration": "2729 days, 18:23:38.642113",
+        "total_packets": 277,
+        "first_packet": "2017-10-18T05:28:08.813858",
+        "last_packet": "2017-10-18T05:32:53.092922"
+    },
+    "statistics": {
+        "total_packets": 277,
+        "tcp_packets": 129,
+        "udp_packets": 28,
+        "icmp_packets": 0,
+        "arp_packets": 120,
+        "dns_packets": 28,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 75,
+        "unique_ports": 0,
+        "packets_with_detections": 277,
+        "total_detections": 277,
+        "average_packets_per_second": 0.9743946532763313,
+        "busiest_minute": {
+            "minute": "2017-10-18 05:28",
+            "packet_count": 160,
+            "percentage": 57.761732851985556
+        }
+    },
+    "temporal_analysis": {
+        "2017-10-18 05:28": {
+            "count": 160,
+            "protocols": {
+                "TCP": 129,
+                "UDP": 28,
+                "DNS": 28,
+                "ARP": 3
+            },
+            "detections": [
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=24, entropy=3.27)",
+                "Potential DNS tunneling detected (length=24, entropy=3.27)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ],
+            "unique_src_ips": 3
+        },
+        "2017-10-18 05:29": {
+            "count": 30,
+            "protocols": {
+                "ARP": 30
+            },
+            "detections": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ],
+            "unique_src_ips": 1
+        },
+        "2017-10-18 05:30": {
+            "count": 30,
+            "protocols": {
+                "ARP": 30
+            },
+            "detections": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ],
+            "unique_src_ips": 1
+        },
+        "2017-10-18 05:31": {
+            "count": 30,
+            "protocols": {
+                "ARP": 30
+            },
+            "detections": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ],
+            "unique_src_ips": 1
+        },
+        "2017-10-18 05:32": {
+            "count": 27,
+            "protocols": {
+                "ARP": 27
+            },
+            "detections": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ],
+            "unique_src_ips": 1
+        }
+    },
+    "tcp_packets": 129,
+    "udp_packets": 28,
+    "protocol_distribution": {
+        "protocols": {
+            "TCP": 129,
+            "ARP": 120,
+            "UDP": 28,
+            "DNS": 28
+        },
+        "protocol_pairs": {
+            "DNS-UDP": 28
+        },
+        "most_common_protocol": "TCP"
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "192.168.153.154",
+                "packet_count": 143,
+                "detection_count": 143,
+                "protocols": [
+                    "DNS",
+                    "UDP",
+                    "TCP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                    "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                    "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                    "TCP connect scan detected: SYN flag with window size > 1024",
+                    "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                    "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.27)"
+                ]
+            },
+            {
+                "ip": "192.168.153.2",
+                "packet_count": 14,
+                "detection_count": 14,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                    "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                    "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                    "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                    "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.27)"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "192.168.153.154",
+                "packet_count": 143,
+                "detection_count": 143,
+                "protocols": [
+                    "DNS",
+                    "UDP",
+                    "TCP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                    "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                    "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                    "TCP connect scan detected: SYN flag with window size > 1024",
+                    "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                    "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.27)"
+                ]
+            },
+            {
+                "ip": "192.168.153.2",
+                "packet_count": 14,
+                "detection_count": 14,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                    "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                    "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                    "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                    "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.27)"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "192.168.153.2"
+                ],
+                "packet_count": 28,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "ports": [],
+                "detection_count": 14,
+                "detections": [
+                    "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                    "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                    "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                    "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                    "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.27)"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "23.35.213.109"
+                ],
+                "packet_count": 8,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "23.50.187.27"
+                ],
+                "packet_count": 8,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "188.121.36.239",
+                    "192.168.153.154"
+                ],
+                "packet_count": 6,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "213.139.38.16"
+                ],
+                "packet_count": 4,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "87.248.114.12"
+                ],
+                "packet_count": 4,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "217.12.15.83"
+                ],
+                "packet_count": 4,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "216.58.210.226"
+                ],
+                "packet_count": 4,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "178.255.83.1",
+                    "192.168.153.154"
+                ],
+                "packet_count": 4,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.2.49",
+                    "192.168.153.154"
+                ],
+                "packet_count": 4,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "192.168.153.2"
+                ],
+                "packet_count": 28,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "ports": [],
+                "detection_count": 14,
+                "detections": [
+                    "Potential DNS tunneling detected (length=37, entropy=3.92)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.78)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.38)",
+                    "Potential DNS tunneling detected (length=27, entropy=3.88)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.32)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.52)",
+                    "Potential DNS tunneling detected (length=23, entropy=3.59)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.43)",
+                    "Potential DNS tunneling detected (length=21, entropy=3.46)",
+                    "Potential DNS tunneling detected (length=27, entropy=4.09)",
+                    "Potential DNS tunneling detected (length=29, entropy=3.84)",
+                    "Potential DNS tunneling detected (length=22, entropy=3.79)",
+                    "Potential DNS tunneling detected (length=25, entropy=3.51)",
+                    "Potential DNS tunneling detected (length=24, entropy=3.27)"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "204.79.197.203"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "204.79.197.200"
+                ],
+                "packet_count": 3,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "213.139.38.16"
+                ],
+                "packet_count": 4,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.121.108",
+                    "192.168.153.154"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "185.33.223.215",
+                    "192.168.153.154"
+                ],
+                "packet_count": 3,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "207.46.194.10"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "2.17.98.127"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.153.154",
+                    "40.127.142.76"
+                ],
+                "packet_count": 2,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "151.101.0.249",
+                    "192.168.153.154"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 148,
+            "high": 0,
+            "medium": 129,
+            "low": 0,
+            "scanning_score": 100,
+            "tunneling_score": 100,
+            "anomaly_score": 0,
+            "overall_score": 70,
+            "severity": "High"
+        },
+        "critical_findings": [
+            "Potential DNS tunneling detected (length=37, entropy=3.92)",
+            "Potential DNS tunneling detected (length=37, entropy=3.92)",
+            "Potential DNS tunneling detected (length=24, entropy=3.27)",
+            "Potential DNS tunneling detected (length=24, entropy=3.27)",
+            "Potential DNS tunneling detected (length=29, entropy=3.84)",
+            "Potential DNS tunneling detected (length=24, entropy=3.38)",
+            "Potential DNS tunneling detected (length=29, entropy=3.84)",
+            "Potential DNS tunneling detected (length=24, entropy=3.38)",
+            "Potential DNS tunneling detected (length=21, entropy=3.78)",
+            "Potential DNS tunneling detected (length=23, entropy=3.59)",
+            "Potential DNS tunneling detected (length=23, entropy=3.52)",
+            "Potential DNS tunneling detected (length=23, entropy=3.59)",
+            "Potential DNS tunneling detected (length=21, entropy=3.78)",
+            "Potential DNS tunneling detected (length=21, entropy=3.46)",
+            "Potential DNS tunneling detected (length=21, entropy=3.46)",
+            "Potential DNS tunneling detected (length=23, entropy=3.52)",
+            "Potential DNS tunneling detected (length=24, entropy=3.43)",
+            "Potential DNS tunneling detected (length=24, entropy=3.43)",
+            "Potential DNS tunneling detected (length=23, entropy=3.32)",
+            "Potential DNS tunneling detected (length=23, entropy=3.32)",
+            "Potential DNS tunneling detected (length=25, entropy=3.51)",
+            "Potential DNS tunneling detected (length=27, entropy=4.09)",
+            "Potential DNS tunneling detected (length=27, entropy=3.88)",
+            "Potential DNS tunneling detected (length=27, entropy=3.88)",
+            "Potential DNS tunneling detected (length=27, entropy=4.09)",
+            "Potential DNS tunneling detected (length=25, entropy=3.51)",
+            "Potential DNS tunneling detected (length=22, entropy=3.79)",
+            "Potential DNS tunneling detected (length=22, entropy=3.79)",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses.",
+            "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+        ],
+        "suspicious_ips": [
+            {
+                "ip": "192.168.153.154",
+                "score": 143
+            },
+            {
+                "ip": "192.168.153.2",
+                "score": 14
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 33,
+            "timestamp": "2017-10-18T05:28:08.813858",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "204.79.197.203",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 40,
+            "timestamp": "2017-10-18T05:28:08.897855",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "204.79.197.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 221,
+            "timestamp": "2017-10-18T05:28:09.240873",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=37, entropy=3.92)"
+            ]
+        },
+        {
+            "packet_number": 297,
+            "timestamp": "2017-10-18T05:28:09.335845",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=37, entropy=3.92)"
+            ]
+        },
+        {
+            "packet_number": 298,
+            "timestamp": "2017-10-18T05:28:09.336478",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "213.139.38.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 431,
+            "timestamp": "2017-10-18T05:28:09.439889",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "213.139.38.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 754,
+            "timestamp": "2017-10-18T05:28:09.635881",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "151.101.121.108",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 767,
+            "timestamp": "2017-10-18T05:28:10.363902",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "213.139.38.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 772,
+            "timestamp": "2017-10-18T05:28:10.398900",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "213.139.38.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 797,
+            "timestamp": "2017-10-18T05:28:10.772907",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.33.223.215",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 798,
+            "timestamp": "2017-10-18T05:28:10.773409",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.33.223.215",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 821,
+            "timestamp": "2017-10-18T05:28:11.101919",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "207.46.194.10",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 833,
+            "timestamp": "2017-10-18T05:28:11.367929",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "204.79.197.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 855,
+            "timestamp": "2017-10-18T05:28:12.848972",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "204.79.197.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 860,
+            "timestamp": "2017-10-18T05:28:12.928967",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.27)"
+            ]
+        },
+        {
+            "packet_number": 872,
+            "timestamp": "2017-10-18T05:28:13.027934",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.27)"
+            ]
+        },
+        {
+            "packet_number": 873,
+            "timestamp": "2017-10-18T05:28:13.028966",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "2.17.98.127",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 880,
+            "timestamp": "2017-10-18T05:28:13.043986",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "40.127.142.76",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 919,
+            "timestamp": "2017-10-18T05:28:13.395820",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "151.101.0.249",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 943,
+            "timestamp": "2017-10-18T05:28:13.948999",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "50.19.232.30",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 951,
+            "timestamp": "2017-10-18T05:28:14.048999",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "40.127.142.76",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 972,
+            "timestamp": "2017-10-18T05:28:15.265033",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "98.139.180.149",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 982,
+            "timestamp": "2017-10-18T05:28:15.766064",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.125.80.145",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1003,
+            "timestamp": "2017-10-18T05:28:16.430330",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.125.80.144",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1051,
+            "timestamp": "2017-10-18T05:28:17.136694",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "87.248.114.12",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1052,
+            "timestamp": "2017-10-18T05:28:17.136964",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "87.248.114.12",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1189,
+            "timestamp": "2017-10-18T05:28:17.722250",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "87.248.114.12",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1237,
+            "timestamp": "2017-10-18T05:28:18.460833",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "217.12.13.41",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1297,
+            "timestamp": "2017-10-18T05:28:19.129882",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 1300,
+            "timestamp": "2017-10-18T05:28:19.206396",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "217.12.15.54",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1302,
+            "timestamp": "2017-10-18T05:28:19.208896",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "217.12.15.83",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1303,
+            "timestamp": "2017-10-18T05:28:19.209395",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "217.12.15.83",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1304,
+            "timestamp": "2017-10-18T05:28:19.209895",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "217.12.15.83",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1305,
+            "timestamp": "2017-10-18T05:28:19.212398",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.38)"
+            ]
+        },
+        {
+            "packet_number": 1307,
+            "timestamp": "2017-10-18T05:28:19.218892",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=29, entropy=3.84)"
+            ]
+        },
+        {
+            "packet_number": 1308,
+            "timestamp": "2017-10-18T05:28:19.219895",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "216.58.210.226",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1314,
+            "timestamp": "2017-10-18T05:28:19.313406",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.215.133",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1315,
+            "timestamp": "2017-10-18T05:28:19.313407",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.215.133",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1316,
+            "timestamp": "2017-10-18T05:28:19.313542",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.38)"
+            ]
+        },
+        {
+            "packet_number": 1317,
+            "timestamp": "2017-10-18T05:28:19.314404",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1318,
+            "timestamp": "2017-10-18T05:28:19.314906",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1492,
+            "timestamp": "2017-10-18T05:28:19.813953",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "217.12.15.83",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1523,
+            "timestamp": "2017-10-18T05:28:19.980976",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "217.12.13.40",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1536,
+            "timestamp": "2017-10-18T05:28:20.084571",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "216.58.210.226",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1538,
+            "timestamp": "2017-10-18T05:28:20.088979",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "216.58.210.226",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1540,
+            "timestamp": "2017-10-18T05:28:20.101481",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "173.241.248.10",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1576,
+            "timestamp": "2017-10-18T05:28:20.223491",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "37.252.172.39",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1578,
+            "timestamp": "2017-10-18T05:28:20.224996",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "195.93.42.12",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1580,
+            "timestamp": "2017-10-18T05:28:20.229992",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "37.157.4.15",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1682,
+            "timestamp": "2017-10-18T05:28:20.776548",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "77.238.185.35",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1696,
+            "timestamp": "2017-10-18T05:28:21.021570",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.78)"
+            ]
+        },
+        {
+            "packet_number": 1698,
+            "timestamp": "2017-10-18T05:28:21.032071",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.59)"
+            ]
+        },
+        {
+            "packet_number": 1699,
+            "timestamp": "2017-10-18T05:28:21.033072",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "77.238.185.35",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1704,
+            "timestamp": "2017-10-18T05:28:21.087577",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.52)"
+            ]
+        },
+        {
+            "packet_number": 1706,
+            "timestamp": "2017-10-18T05:28:21.103573",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.59)"
+            ]
+        },
+        {
+            "packet_number": 1708,
+            "timestamp": "2017-10-18T05:28:21.107081",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "204.2.197.204",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1709,
+            "timestamp": "2017-10-18T05:28:21.111494",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.78)"
+            ]
+        },
+        {
+            "packet_number": 1710,
+            "timestamp": "2017-10-18T05:28:21.112083",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.46)"
+            ]
+        },
+        {
+            "packet_number": 1711,
+            "timestamp": "2017-10-18T05:28:21.112675",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "52.212.225.60",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1715,
+            "timestamp": "2017-10-18T05:28:21.117582",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "52.209.109.231",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1716,
+            "timestamp": "2017-10-18T05:28:21.119582",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "72.251.245.181",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1720,
+            "timestamp": "2017-10-18T05:28:21.121078",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.134.29",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1721,
+            "timestamp": "2017-10-18T05:28:21.121079",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "77.238.185.35",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1724,
+            "timestamp": "2017-10-18T05:28:21.138581",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "52.19.43.104",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1726,
+            "timestamp": "2017-10-18T05:28:21.157585",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "159.253.128.188",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1728,
+            "timestamp": "2017-10-18T05:28:21.162584",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "176.34.121.127",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1734,
+            "timestamp": "2017-10-18T05:28:21.174587",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "34.203.49.129",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1736,
+            "timestamp": "2017-10-18T05:28:21.187586",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "18.194.46.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1740,
+            "timestamp": "2017-10-18T05:28:21.195088",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "198.47.127.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1745,
+            "timestamp": "2017-10-18T05:28:21.209092",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "64.124.217.61",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1747,
+            "timestamp": "2017-10-18T05:28:21.210090",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "141.170.25.54",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1748,
+            "timestamp": "2017-10-18T05:28:21.216754",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=21, entropy=3.46)"
+            ]
+        },
+        {
+            "packet_number": 1752,
+            "timestamp": "2017-10-18T05:28:21.218199",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "52.53.67.64",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1793,
+            "timestamp": "2017-10-18T05:28:21.286212",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.52)"
+            ]
+        },
+        {
+            "packet_number": 1794,
+            "timestamp": "2017-10-18T05:28:21.287596",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "205.180.85.172",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1815,
+            "timestamp": "2017-10-18T05:28:21.330600",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "2.19.21.86",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 1997,
+            "timestamp": "2017-10-18T05:28:21.778645",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.43)"
+            ]
+        },
+        {
+            "packet_number": 2018,
+            "timestamp": "2017-10-18T05:28:21.875463",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=24, entropy=3.43)"
+            ]
+        },
+        {
+            "packet_number": 2019,
+            "timestamp": "2017-10-18T05:28:21.882654",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2020,
+            "timestamp": "2017-10-18T05:28:21.882655",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2032,
+            "timestamp": "2017-10-18T05:28:21.896158",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2066,
+            "timestamp": "2017-10-18T05:28:22.125178",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.29.133.52",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2104,
+            "timestamp": "2017-10-18T05:28:22.271192",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "205.180.85.172",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2105,
+            "timestamp": "2017-10-18T05:28:22.276193",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.32)"
+            ]
+        },
+        {
+            "packet_number": 2111,
+            "timestamp": "2017-10-18T05:28:22.325196",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.62.216.248",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2114,
+            "timestamp": "2017-10-18T05:28:22.326697",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.121.36.239",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2115,
+            "timestamp": "2017-10-18T05:28:22.327196",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "178.255.83.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2116,
+            "timestamp": "2017-10-18T05:28:22.327197",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "104.16.93.188",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2117,
+            "timestamp": "2017-10-18T05:28:22.327693",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "93.184.220.29",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2118,
+            "timestamp": "2017-10-18T05:28:22.327693",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.121.36.239",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2119,
+            "timestamp": "2017-10-18T05:28:22.328198",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.121.36.239",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2128,
+            "timestamp": "2017-10-18T05:28:22.371077",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=23, entropy=3.32)"
+            ]
+        },
+        {
+            "packet_number": 2137,
+            "timestamp": "2017-10-18T05:28:22.394704",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.33.223.215",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2139,
+            "timestamp": "2017-10-18T05:28:22.403711",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2143,
+            "timestamp": "2017-10-18T05:28:22.411707",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.51)"
+            ]
+        },
+        {
+            "packet_number": 2150,
+            "timestamp": "2017-10-18T05:28:22.413203",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=27, entropy=4.09)"
+            ]
+        },
+        {
+            "packet_number": 2155,
+            "timestamp": "2017-10-18T05:28:22.414207",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "151.101.2.49",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2156,
+            "timestamp": "2017-10-18T05:28:22.415706",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=27, entropy=3.88)"
+            ]
+        },
+        {
+            "packet_number": 2160,
+            "timestamp": "2017-10-18T05:28:22.416203",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "216.58.210.226",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2207,
+            "timestamp": "2017-10-18T05:28:22.533092",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=27, entropy=3.88)"
+            ]
+        },
+        {
+            "packet_number": 2211,
+            "timestamp": "2017-10-18T05:28:22.539953",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=27, entropy=4.09)"
+            ]
+        },
+        {
+            "packet_number": 2216,
+            "timestamp": "2017-10-18T05:28:22.544032",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=25, entropy=3.51)"
+            ]
+        },
+        {
+            "packet_number": 2228,
+            "timestamp": "2017-10-18T05:28:22.567723",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.31.128.207",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2229,
+            "timestamp": "2017-10-18T05:28:22.568722",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "213.155.156.168",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2244,
+            "timestamp": "2017-10-18T05:28:22.573721",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "8.41.222.241",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2245,
+            "timestamp": "2017-10-18T05:28:22.574220",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "109.123.210.64",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2258,
+            "timestamp": "2017-10-18T05:28:22.582726",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "34.226.60.227",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2259,
+            "timestamp": "2017-10-18T05:28:22.583220",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "146.148.25.194",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2261,
+            "timestamp": "2017-10-18T05:28:22.584224",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "208.146.36.220",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2262,
+            "timestamp": "2017-10-18T05:28:22.584723",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "152.163.56.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2263,
+            "timestamp": "2017-10-18T05:28:22.585252",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "159.127.42.172",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2265,
+            "timestamp": "2017-10-18T05:28:22.588731",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "152.163.50.3",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2272,
+            "timestamp": "2017-10-18T05:28:22.593223",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "67.231.251.189",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2299,
+            "timestamp": "2017-10-18T05:28:22.639229",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "54.199.204.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2322,
+            "timestamp": "2017-10-18T05:28:22.688732",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.64.189.236",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2323,
+            "timestamp": "2017-10-18T05:28:22.689732",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.64.189.236",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2334,
+            "timestamp": "2017-10-18T05:28:22.693232",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "151.101.2.49",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2346,
+            "timestamp": "2017-10-18T05:28:22.711733",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "198.47.127.15",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2482,
+            "timestamp": "2017-10-18T05:28:22.886750",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2495,
+            "timestamp": "2017-10-18T05:28:22.923755",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.134.29",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2500,
+            "timestamp": "2017-10-18T05:28:22.937258",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "178.255.83.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2505,
+            "timestamp": "2017-10-18T05:28:22.952260",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2514,
+            "timestamp": "2017-10-18T05:28:22.972257",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.35.213.109",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2528,
+            "timestamp": "2017-10-18T05:28:22.983553",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "151.101.2.49",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2579,
+            "timestamp": "2017-10-18T05:28:23.066764",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "198.47.127.15",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2647,
+            "timestamp": "2017-10-18T05:28:23.158277",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "198.47.127.17",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2685,
+            "timestamp": "2017-10-18T05:28:23.287291",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.64.189.236",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2762,
+            "timestamp": "2017-10-18T05:28:23.441807",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "54.230.9.174",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2770,
+            "timestamp": "2017-10-18T05:28:23.448808",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "151.101.2.49",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2802,
+            "timestamp": "2017-10-18T05:28:23.601156",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "130.211.106.137",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2825,
+            "timestamp": "2017-10-18T05:28:23.685826",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "185.64.189.236",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2918,
+            "timestamp": "2017-10-18T05:28:23.948360",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "159.127.42.172",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 2952,
+            "timestamp": "2017-10-18T05:28:24.086867",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "35.190.74.53",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3022,
+            "timestamp": "2017-10-18T05:28:24.394382",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "198.47.127.17",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3039,
+            "timestamp": "2017-10-18T05:28:24.604924",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.121.36.239",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3040,
+            "timestamp": "2017-10-18T05:28:24.624923",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "192.168.153.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.79)"
+            ]
+        },
+        {
+            "packet_number": 3047,
+            "timestamp": "2017-10-18T05:28:24.746811",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "192.168.153.2",
+            "dst_ip": "192.168.153.154",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=22, entropy=3.79)"
+            ]
+        },
+        {
+            "packet_number": 3059,
+            "timestamp": "2017-10-18T05:28:24.749430",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.121.36.239",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3110,
+            "timestamp": "2017-10-18T05:28:25.169975",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.121.36.239",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3123,
+            "timestamp": "2017-10-18T05:28:25.283481",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "87.248.114.11",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3307,
+            "timestamp": "2017-10-18T05:28:41.055134",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3317,
+            "timestamp": "2017-10-18T05:28:41.270030",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3328,
+            "timestamp": "2017-10-18T05:28:41.621150",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "216.58.210.238",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3341,
+            "timestamp": "2017-10-18T05:28:42.645071",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "178.255.83.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3355,
+            "timestamp": "2017-10-18T05:28:42.995981",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3365,
+            "timestamp": "2017-10-18T05:28:43.442164",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.181.163",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3378,
+            "timestamp": "2017-10-18T05:28:44.180218",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "93.184.220.29",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3405,
+            "timestamp": "2017-10-18T05:28:44.848481",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3413,
+            "timestamp": "2017-10-18T05:28:44.995789",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "178.255.83.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3425,
+            "timestamp": "2017-10-18T05:28:45.284756",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3435,
+            "timestamp": "2017-10-18T05:28:45.673600",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3447,
+            "timestamp": "2017-10-18T05:28:46.105167",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "213.139.38.24",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3457,
+            "timestamp": "2017-10-18T05:28:46.256843",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "216.58.210.238",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3467,
+            "timestamp": "2017-10-18T05:28:46.525811",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "23.50.187.27",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3481,
+            "timestamp": "2017-10-18T05:28:46.897418",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "87.248.114.12",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3504,
+            "timestamp": "2017-10-18T05:28:47.478846",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.125.80.138",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3563,
+            "timestamp": "2017-10-18T05:28:48.666460",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.153.154",
+            "dst_ip": "188.125.80.138",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 3614,
+            "timestamp": "2017-10-18T05:28:54.970577",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3620,
+            "timestamp": "2017-10-18T05:28:56.970568",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3625,
+            "timestamp": "2017-10-18T05:28:58.971788",
+            "minute": "2017-10-18 05:28",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3631,
+            "timestamp": "2017-10-18T05:29:00.972654",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3637,
+            "timestamp": "2017-10-18T05:29:02.974029",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3643,
+            "timestamp": "2017-10-18T05:29:04.974855",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3665,
+            "timestamp": "2017-10-18T05:29:06.976547",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 3801,
+            "timestamp": "2017-10-18T05:29:08.976969",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 4051,
+            "timestamp": "2017-10-18T05:29:10.978098",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 4296,
+            "timestamp": "2017-10-18T05:29:12.979033",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 4565,
+            "timestamp": "2017-10-18T05:29:14.980037",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 4864,
+            "timestamp": "2017-10-18T05:29:16.981107",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 5153,
+            "timestamp": "2017-10-18T05:29:18.982214",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 5454,
+            "timestamp": "2017-10-18T05:29:20.984812",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 5740,
+            "timestamp": "2017-10-18T05:29:22.985352",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 6221,
+            "timestamp": "2017-10-18T05:29:24.986533",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 6792,
+            "timestamp": "2017-10-18T05:29:26.987375",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 7395,
+            "timestamp": "2017-10-18T05:29:28.988404",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 8023,
+            "timestamp": "2017-10-18T05:29:30.989519",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 8670,
+            "timestamp": "2017-10-18T05:29:32.990489",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9317,
+            "timestamp": "2017-10-18T05:29:34.991204",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9619,
+            "timestamp": "2017-10-18T05:29:36.991752",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9626,
+            "timestamp": "2017-10-18T05:29:38.992733",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9633,
+            "timestamp": "2017-10-18T05:29:40.993772",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9639,
+            "timestamp": "2017-10-18T05:29:42.994787",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9645,
+            "timestamp": "2017-10-18T05:29:44.996342",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9652,
+            "timestamp": "2017-10-18T05:29:46.997129",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9662,
+            "timestamp": "2017-10-18T05:29:48.997954",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9672,
+            "timestamp": "2017-10-18T05:29:50.998977",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9707,
+            "timestamp": "2017-10-18T05:29:53.000093",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9753,
+            "timestamp": "2017-10-18T05:29:55.001163",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9821,
+            "timestamp": "2017-10-18T05:29:57.002266",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9906,
+            "timestamp": "2017-10-18T05:29:59.003303",
+            "minute": "2017-10-18 05:29",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 9992,
+            "timestamp": "2017-10-18T05:30:01.004295",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10077,
+            "timestamp": "2017-10-18T05:30:03.005340",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10164,
+            "timestamp": "2017-10-18T05:30:05.006393",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10251,
+            "timestamp": "2017-10-18T05:30:07.007446",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10360,
+            "timestamp": "2017-10-18T05:30:09.008604",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10487,
+            "timestamp": "2017-10-18T05:30:11.009505",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10615,
+            "timestamp": "2017-10-18T05:30:13.010627",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10744,
+            "timestamp": "2017-10-18T05:30:15.011104",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 10914,
+            "timestamp": "2017-10-18T05:30:17.011834",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 11150,
+            "timestamp": "2017-10-18T05:30:19.012768",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 11438,
+            "timestamp": "2017-10-18T05:30:21.013917",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 11726,
+            "timestamp": "2017-10-18T05:30:23.014890",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 12034,
+            "timestamp": "2017-10-18T05:30:25.016239",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 12362,
+            "timestamp": "2017-10-18T05:30:27.016973",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 12688,
+            "timestamp": "2017-10-18T05:30:29.018006",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 13014,
+            "timestamp": "2017-10-18T05:30:31.019060",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 13344,
+            "timestamp": "2017-10-18T05:30:33.020416",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 13670,
+            "timestamp": "2017-10-18T05:30:35.021206",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 13996,
+            "timestamp": "2017-10-18T05:30:37.022227",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 14321,
+            "timestamp": "2017-10-18T05:30:39.023328",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 14647,
+            "timestamp": "2017-10-18T05:30:41.024506",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 14972,
+            "timestamp": "2017-10-18T05:30:43.025473",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 15298,
+            "timestamp": "2017-10-18T05:30:45.026465",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 15624,
+            "timestamp": "2017-10-18T05:30:47.027551",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 15951,
+            "timestamp": "2017-10-18T05:30:49.028553",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 16279,
+            "timestamp": "2017-10-18T05:30:51.030268",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 16605,
+            "timestamp": "2017-10-18T05:30:53.030655",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 16931,
+            "timestamp": "2017-10-18T05:30:55.031799",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 17258,
+            "timestamp": "2017-10-18T05:30:57.033093",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 17583,
+            "timestamp": "2017-10-18T05:30:59.033850",
+            "minute": "2017-10-18 05:30",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 17946,
+            "timestamp": "2017-10-18T05:31:01.034915",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 18312,
+            "timestamp": "2017-10-18T05:31:03.036037",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 18680,
+            "timestamp": "2017-10-18T05:31:05.036993",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 19048,
+            "timestamp": "2017-10-18T05:31:07.038060",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 19413,
+            "timestamp": "2017-10-18T05:31:09.039106",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 19779,
+            "timestamp": "2017-10-18T05:31:11.040197",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 20144,
+            "timestamp": "2017-10-18T05:31:13.041194",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 20510,
+            "timestamp": "2017-10-18T05:31:15.042316",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 20876,
+            "timestamp": "2017-10-18T05:31:17.043280",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 21241,
+            "timestamp": "2017-10-18T05:31:19.044370",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 21608,
+            "timestamp": "2017-10-18T05:31:21.045428",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 21955,
+            "timestamp": "2017-10-18T05:31:23.046564",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 22321,
+            "timestamp": "2017-10-18T05:31:25.047678",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 22688,
+            "timestamp": "2017-10-18T05:31:27.048923",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 23053,
+            "timestamp": "2017-10-18T05:31:29.049790",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 23419,
+            "timestamp": "2017-10-18T05:31:31.049965",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 23784,
+            "timestamp": "2017-10-18T05:31:33.050816",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 24150,
+            "timestamp": "2017-10-18T05:31:35.051835",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 24516,
+            "timestamp": "2017-10-18T05:31:37.052866",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 24881,
+            "timestamp": "2017-10-18T05:31:39.053897",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 25247,
+            "timestamp": "2017-10-18T05:31:41.054975",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 25612,
+            "timestamp": "2017-10-18T05:31:43.056090",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 25978,
+            "timestamp": "2017-10-18T05:31:45.057097",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 26344,
+            "timestamp": "2017-10-18T05:31:47.058444",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 26709,
+            "timestamp": "2017-10-18T05:31:49.059260",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 27075,
+            "timestamp": "2017-10-18T05:31:51.060337",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 27424,
+            "timestamp": "2017-10-18T05:31:53.061364",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 27790,
+            "timestamp": "2017-10-18T05:31:55.062435",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 28158,
+            "timestamp": "2017-10-18T05:31:57.063592",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 28523,
+            "timestamp": "2017-10-18T05:31:59.064612",
+            "minute": "2017-10-18 05:31",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 28889,
+            "timestamp": "2017-10-18T05:32:01.065651",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 29268,
+            "timestamp": "2017-10-18T05:32:03.068054",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 29679,
+            "timestamp": "2017-10-18T05:32:05.068618",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 30086,
+            "timestamp": "2017-10-18T05:32:07.069644",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 30496,
+            "timestamp": "2017-10-18T05:32:09.070091",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 30888,
+            "timestamp": "2017-10-18T05:32:11.070838",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 31292,
+            "timestamp": "2017-10-18T05:32:13.071816",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 31699,
+            "timestamp": "2017-10-18T05:32:15.072917",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 32107,
+            "timestamp": "2017-10-18T05:32:17.074059",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 32513,
+            "timestamp": "2017-10-18T05:32:19.075506",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 32978,
+            "timestamp": "2017-10-18T05:32:21.076084",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 33506,
+            "timestamp": "2017-10-18T05:32:23.077340",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 34072,
+            "timestamp": "2017-10-18T05:32:25.078188",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 34668,
+            "timestamp": "2017-10-18T05:32:27.079185",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 35273,
+            "timestamp": "2017-10-18T05:32:29.080413",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 35879,
+            "timestamp": "2017-10-18T05:32:31.082377",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 36484,
+            "timestamp": "2017-10-18T05:32:33.083366",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 37090,
+            "timestamp": "2017-10-18T05:32:35.084423",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 37696,
+            "timestamp": "2017-10-18T05:32:37.085647",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 38301,
+            "timestamp": "2017-10-18T05:32:39.087170",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 38907,
+            "timestamp": "2017-10-18T05:32:41.087616",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 39540,
+            "timestamp": "2017-10-18T05:32:43.088628",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 40186,
+            "timestamp": "2017-10-18T05:32:45.089850",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 40846,
+            "timestamp": "2017-10-18T05:32:47.090758",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 41533,
+            "timestamp": "2017-10-18T05:32:49.090920",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 42219,
+            "timestamp": "2017-10-18T05:32:51.091829",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        },
+        {
+            "packet_number": 42904,
+            "timestamp": "2017-10-18T05:32:53.092922",
+            "minute": "2017-10-18 05:32",
+            "protocols": [
+                "ARP"
+            ],
+            "src_ip": null,
+            "dst_ip": null,
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "ARP poisoning detected: IP 192.168.153.2 has multiple MAC addresses."
+            ]
+        }
+    ],
+    "recommendations": [
+        "Inspect ICMP and DNS traffic for unusual patterns",
+        "Implement rate limiting for ICMP and DNS queries",
+        "Consider using a next-gen firewall with tunneling detection",
+        "Review firewall rules to ensure only necessary ports are open",
+        "Implement intrusion detection/prevention systems",
+        "Consider implementing port knocking for sensitive services",
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}

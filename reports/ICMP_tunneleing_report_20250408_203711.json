@@ -1,0 +1,410 @@
+{
+    "metadata": {
+        "file_path": "uploads\\ICMP_tunneleing.pcap",
+        "analysis_date": "2025-04-08T20:37:11.256267",
+        "analysis_duration": "25 days, 13:20:03.785389",
+        "total_packets": 14,
+        "first_packet": "2025-03-14T07:17:07.470886",
+        "last_packet": "2025-03-14T07:17:24.683246"
+    },
+    "statistics": {
+        "total_packets": 14,
+        "tcp_packets": 0,
+        "udp_packets": 0,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 2,
+        "unique_ports": 0,
+        "packets_with_detections": 14,
+        "total_detections": 28,
+        "average_packets_per_second": 0.8133689976272864,
+        "busiest_minute": {
+            "minute": "2025-03-14 07:17",
+            "packet_count": 14,
+            "percentage": 100.0
+        }
+    },
+    "temporal_analysis": {
+        "2025-03-14 07:17": {
+            "count": 14,
+            "protocols": {},
+            "detections": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.51)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.51)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.64)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.64)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.52)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.52)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.50)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.50)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.59)",
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.59)"
+            ],
+            "unique_src_ips": 2
+        }
+    },
+    "tcp_packets": 0,
+    "udp_packets": 0,
+    "protocol_distribution": {
+        "protocols": {},
+        "protocol_pairs": {},
+        "most_common_protocol": null
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "172.20.10.2",
+                "packet_count": 7,
+                "detection_count": 14,
+                "protocols": [],
+                "unique_detections": [
+                    "High entropy payload (6.52)",
+                    "High entropy payload (6.59)",
+                    "Large ICMP payload: 134 bytes",
+                    "High entropy payload (6.64)",
+                    "High entropy payload (6.53)",
+                    "High entropy payload (6.51)",
+                    "High entropy payload (6.50)"
+                ]
+            },
+            {
+                "ip": "172.20.10.9",
+                "packet_count": 7,
+                "detection_count": 14,
+                "protocols": [],
+                "unique_detections": [
+                    "High entropy payload (6.52)",
+                    "High entropy payload (6.59)",
+                    "Large ICMP payload: 134 bytes",
+                    "High entropy payload (6.64)",
+                    "High entropy payload (6.53)",
+                    "High entropy payload (6.51)",
+                    "High entropy payload (6.50)"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "172.20.10.2",
+                "packet_count": 7,
+                "detection_count": 14,
+                "protocols": [],
+                "unique_detections": [
+                    "High entropy payload (6.52)",
+                    "High entropy payload (6.59)",
+                    "Large ICMP payload: 134 bytes",
+                    "High entropy payload (6.64)",
+                    "High entropy payload (6.53)",
+                    "High entropy payload (6.51)",
+                    "High entropy payload (6.50)"
+                ]
+            },
+            {
+                "ip": "172.20.10.9",
+                "packet_count": 7,
+                "detection_count": 14,
+                "protocols": [],
+                "unique_detections": [
+                    "High entropy payload (6.52)",
+                    "High entropy payload (6.59)",
+                    "Large ICMP payload: 134 bytes",
+                    "High entropy payload (6.64)",
+                    "High entropy payload (6.53)",
+                    "High entropy payload (6.51)",
+                    "High entropy payload (6.50)"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "172.20.10.2",
+                    "172.20.10.9"
+                ],
+                "packet_count": 14,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 7,
+                "detections": [
+                    "High entropy payload (6.52)",
+                    "High entropy payload (6.59)",
+                    "Large ICMP payload: 134 bytes",
+                    "High entropy payload (6.64)",
+                    "High entropy payload (6.53)",
+                    "High entropy payload (6.51)",
+                    "High entropy payload (6.50)"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "172.20.10.2",
+                    "172.20.10.9"
+                ],
+                "packet_count": 14,
+                "protocols": [],
+                "ports": [],
+                "detection_count": 7,
+                "detections": [
+                    "High entropy payload (6.52)",
+                    "High entropy payload (6.59)",
+                    "Large ICMP payload: 134 bytes",
+                    "High entropy payload (6.64)",
+                    "High entropy payload (6.53)",
+                    "High entropy payload (6.51)",
+                    "High entropy payload (6.50)"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 0,
+            "high": 14,
+            "medium": 14,
+            "low": 0,
+            "scanning_score": 0,
+            "tunneling_score": 0,
+            "anomaly_score": 0,
+            "overall_score": 0,
+            "severity": "Low"
+        },
+        "critical_findings": [],
+        "suspicious_ips": [
+            {
+                "ip": "172.20.10.2",
+                "score": 14
+            },
+            {
+                "ip": "172.20.10.9",
+                "score": 14
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 254,
+            "timestamp": "2025-03-14T07:17:07.470886",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.51)"
+            ]
+        },
+        {
+            "packet_number": 255,
+            "timestamp": "2025-03-14T07:17:07.471354",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.51)"
+            ]
+        },
+        {
+            "packet_number": 259,
+            "timestamp": "2025-03-14T07:17:15.310828",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)"
+            ]
+        },
+        {
+            "packet_number": 260,
+            "timestamp": "2025-03-14T07:17:15.311133",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)"
+            ]
+        },
+        {
+            "packet_number": 263,
+            "timestamp": "2025-03-14T07:17:18.774914",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)"
+            ]
+        },
+        {
+            "packet_number": 264,
+            "timestamp": "2025-03-14T07:17:18.775376",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.53)"
+            ]
+        },
+        {
+            "packet_number": 267,
+            "timestamp": "2025-03-14T07:17:20.666948",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.64)"
+            ]
+        },
+        {
+            "packet_number": 268,
+            "timestamp": "2025-03-14T07:17:20.667394",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.64)"
+            ]
+        },
+        {
+            "packet_number": 271,
+            "timestamp": "2025-03-14T07:17:22.070648",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.52)"
+            ]
+        },
+        {
+            "packet_number": 272,
+            "timestamp": "2025-03-14T07:17:22.071117",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.52)"
+            ]
+        },
+        {
+            "packet_number": 275,
+            "timestamp": "2025-03-14T07:17:23.354708",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.50)"
+            ]
+        },
+        {
+            "packet_number": 276,
+            "timestamp": "2025-03-14T07:17:23.355006",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.50)"
+            ]
+        },
+        {
+            "packet_number": 279,
+            "timestamp": "2025-03-14T07:17:24.682874",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.2",
+            "dst_ip": "172.20.10.9",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.59)"
+            ]
+        },
+        {
+            "packet_number": 280,
+            "timestamp": "2025-03-14T07:17:24.683246",
+            "minute": "2025-03-14 07:17",
+            "protocols": [],
+            "src_ip": "172.20.10.9",
+            "dst_ip": "172.20.10.2",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Large ICMP payload: 134 bytes",
+                "High entropy payload (6.59)"
+            ]
+        }
+    ],
+    "recommendations": [
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}

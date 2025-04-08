@@ -407,6 +407,8 @@ class TrafficAnalyzer:
             self.logger.debug(traceback.format_exc())
             raise
 
+
+
     def generate_json_report(self, packet_reports: List[Dict[str, Any]]) -> str:
         """
         Generate an enhanced JSON report with detailed analysis and modular threat scoring.
