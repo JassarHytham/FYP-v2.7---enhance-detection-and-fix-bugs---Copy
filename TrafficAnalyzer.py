@@ -88,7 +88,6 @@ class TrafficAnalyzer:
             self.generate_json_report(packet_reports)
             
             if generate_pdf:
-                self.logger.info("Generating PDF report")
                 self.pdf_file = self.generate_pdf_report(packet_reports)
             else:
                 self.logger.info("Skipping PDF report generation")

@@ -289,12 +289,13 @@ def view_history():
         flash(f'Error loading history: {str(e)}')
         return redirect(url_for('index'))
 
+from TrafficAnalyzer import TrafficAnalyzer  # adjust if needed
+
 @app.route('/view_report/<filename>')
 def view_report(filename):
     try:
         report_path = os.path.join(app.root_path, 'reports', filename)
         
-        # Verify report exists
         if not os.path.exists(report_path):
             flash('Report file not found', 'error')
             return redirect(url_for('view_history'))
@@ -302,9 +303,109 @@ def view_report(filename):
         with open(report_path) as f:
             report_data = json.load(f)
 
-        analysis_output = generate_analysis_output(report_data)  # Your existing function
-        
-        # Get PDF filename if available
+        analyzer = TrafficAnalyzer(file_path=report_data.get('metadata', {}).get('file_path', ''))
+
+        # Initialize counters
+        nmap_scans = Counter()
+        arp_entries = defaultdict(set)
+        icmp_tunnel = 0
+        dns_tunnel = 0
+        anomaly_ips = []
+        anomaly_counts = Counter()
+
+        # First check temporal_analysis for ARP poisoning detections
+        if 'temporal_analysis' in report_data:
+            for minute_data in report_data['temporal_analysis'].values():
+                for detection in minute_data.get('detections', []):
+                    if 'arp poisoning' in detection.lower():
+                        ip_match = re.search(r'IP ([\d.]+)', detection)
+                        if ip_match:
+                            ip = ip_match.group(1)
+                            arp_entries[ip].add("multiple")
+
+        # Parse detailed findings
+        for packet in report_data.get('detailed_findings', []):
+            for detail in packet.get('detection_details', []):
+                detail_lower = detail.lower()
+
+                # Scan detections
+                if 'scan' in detail_lower:
+                    if 'syn scan' in detail_lower:
+                        nmap_scans['syn'] += 1
+                    elif 'xmas scan' in detail_lower:
+                        nmap_scans['xmas'] += 1
+                    elif 'null scan' in detail_lower:
+                        nmap_scans['null'] += 1
+                    elif 'fin scan' in detail_lower:
+                        nmap_scans['fin'] += 1
+                    elif 'udp scan' in detail_lower:
+                        nmap_scans['udp'] += 1
+                    elif 'tcp connect' in detail_lower:
+                        nmap_scans['tcp_connect'] += 1
+
+                # ARP poisoning
+                elif 'arp poisoning' in detail_lower:
+                    ip_match = re.search(r'IP ([\d.]+)', detail)
+                    if ip_match:
+                        ip = ip_match.group(1)
+                        arp_entries[ip].add("multiple")
+                elif 'arp' in detail_lower or 'poisoning' in detail_lower:
+                    ip_mac = re.search(r'IP ([\d.]+).*MAC: ([\w:]+)', detail)
+                    if ip_mac:
+                        ip = ip_mac.group(1)
+                        mac = ip_mac.group(2)
+                        arp_entries[ip].add(mac)
+
+                # Tunneling
+                elif 'icmp tunnel' in detail_lower:
+                    icmp_tunnel += 1
+                elif 'dns tunnel' in detail_lower:
+                    dns_tunnel += 1
+
+                # Anomalies
+                elif 'anomal' in detail_lower or 'unusual' in detail_lower:
+                    ip_match = re.search(r'IP ([\d.]+)', detail)
+                    if ip_match:
+                        ip = ip_match.group(1)
+                        anomaly_counts[ip] += 1
+                        if ip not in anomaly_ips:
+                            anomaly_ips.append(ip)
+
+        # Convert ARP entries to poisoning cases
+        arp_poisoning_cases = {}
+        for ip, macs in arp_entries.items():
+            if len(macs) > 1 or "multiple" in macs:
+                arp_poisoning_cases[ip] = list(macs)
+
+        # Convert anomaly_counts to the format print_results expects
+        anomaly_ips_with_counts = []
+        for ip, count in anomaly_counts.items():
+            anomaly_ips_with_counts.extend([ip] * count)
+
+        # Capture the print_results output
+        output_stream = io.StringIO()
+        old_stdout = sys.stdout
+        sys.stdout = output_stream
+
+        analyzer.print_results(
+            nmap_scan_detected=nmap_scans,
+            arp_poisoning_seen=arp_poisoning_cases,
+            icmp_tunnel=icmp_tunnel,
+            dns_tunnel=dns_tunnel,
+            anomaly_detected=anomaly_ips_with_counts
+        )
+
+        sys.stdout = old_stdout
+        analysis_output = output_stream.getvalue()
+
+        metadata = report_data.get('metadata', {})
+        threat_scores = report_data.get('threat_analysis', {}).get('scores', {
+            'critical': 0,
+            'high': 0,
+            'medium': 0,
+            'low': 0
+        })
+
         pdf_filename = None
         if '_report_' in filename:
             timestamp_part = filename.split('_report_')[1].split('.')[0]
@@ -312,18 +413,18 @@ def view_report(filename):
             pdf_path = os.path.join(app.root_path, 'DeepSeek_Reports', pdf_filename)
             if not os.path.exists(pdf_path):
                 pdf_filename = None
-        
+
         return render_template('results.html',
             analysis_output=analysis_output,
-            pdf_filename=f"security_report_{filename.split('_')[-1].replace('.json', '.pdf')}",
-            file_path=report_data.get('metadata', {}).get('file_path', 'Unknown'),
-            analysis_date=report_data.get('metadata', {}).get('analysis_date', 'Unknown'),
-            analysis_duration=report_data.get('metadata', {}).get('analysis_duration', 'Unknown'),
-            total_packets=report_data.get('metadata', {}).get('total_packets', 0),
-            critical_count=report_data.get('threat_analysis', {}).get('scores', {}).get('critical', 0),
-            high_count=report_data.get('threat_analysis', {}).get('scores', {}).get('high', 0),
-            medium_count=report_data.get('threat_analysis', {}).get('scores', {}).get('medium', 0),
-            low_count=report_data.get('threat_analysis', {}).get('scores', {}).get('low', 0),
+            pdf_filename=pdf_filename,
+            file_path=metadata.get('file_path', 'Unknown'),
+            analysis_date=metadata.get('analysis_date', 'Unknown'),
+            analysis_duration=metadata.get('analysis_duration', 'Unknown'),
+            total_packets=metadata.get('total_packets', 0),
+            critical_count=threat_scores['critical'],
+            high_count=threat_scores['high'],
+            medium_count=threat_scores['medium'],
+            low_count=threat_scores['low'],
             report_filename=filename
         )
     except Exception as e:
