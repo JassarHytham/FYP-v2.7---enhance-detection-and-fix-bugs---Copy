@@ -64,35 +64,36 @@ class TrafficAnalyzer:
         return logger
 
     def run_analysis(self, generate_pdf=True) -> None:
-        """
-        Run the traffic analysis on the specified pcap file and generate reports.
-        """
+        """Run the traffic analysis on the specified pcap file and generate reports."""
         self.logger.info(f"Starting analysis of file: {self.file_path}")
         start_time = datetime.now()
 
         try:
-            # Set up a new event loop
             self._setup_event_loop()
-            # Process the capture file
-            packets = self._load_packets()
-            results = self._process_packets_in_chunks(packets, chunk_size=100)
-            # Sort and aggregate results
+            # Get the capture object (not the packets)
+            capture = self._load_packets()
+            
+            # Process directly from the capture object
+            results = self._process_packets_in_chunks(capture, chunk_size=100)
+            
+            # Close the capture when done
+            capture.close()
+            
+            # Rest of your processing...
             results.sort(key=lambda x: x['packet_info']['packet_number'])
             packet_reports = self.aggregate_results(results)
-
-            # Run analysis steps
+            
             self.apply_dynamic_threshold(packet_reports)
             self.apply_temporal_analysis(packet_reports)
             self.generate_json_report(packet_reports)
-            self.logger.info("Generating PDF report")
-            # Uncomment next line if PDF report generation is needed
-        # Conditional PDF generation
+            
             if generate_pdf:
                 self.logger.info("Generating PDF report")
                 self.pdf_file = self.generate_pdf_report(packet_reports)
             else:
                 self.logger.info("Skipping PDF report generation")
                 self.pdf_file = None
+                
         except Exception as e:
             self.logger.critical(f"Analysis failed: {str(e)}")
             self.logger.debug(traceback.format_exc())
@@ -101,42 +102,30 @@ class TrafficAnalyzer:
             duration = datetime.now() - start_time
             self.logger.info(f"Analysis completed in {duration.total_seconds():.2f} seconds")
 
-    def _setup_event_loop(self) -> None:
-        """Set up a new asyncio event loop to avoid deprecation warnings."""
-        self.logger.debug("Creating new event loop")
-        loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(loop)
-
-    def _load_packets(self) -> List[Any]:
-        """
-        Load packets using pyshark from the specified pcap file.
-        """
-        self.logger.debug("Opening pcap file with pyshark")
-        capture = pyshark.FileCapture(
-            self.file_path,
-            display_filter="arp or icmp or dns or tcp or udp",
-            keep_packets=False
-        )
-        packets = list(capture)
-        capture.close()
-        self.logger.info(f"Loaded {len(packets)} packets from capture file")
-        return packets
-
-    def _process_packets_in_chunks(self, packets: List[Any], chunk_size: int) -> List[Dict[str, Any]]:
-        """
-        Process packets in parallel using chunks.
-        """
+    def _process_packets_in_chunks(self, capture: pyshark.FileCapture, chunk_size: int) -> List[Dict[str, Any]]:
+        """Process packets in parallel using chunks directly from capture object."""
         max_workers = min(32, (os.cpu_count() or 4) * 2)
         self.logger.debug(f"Creating ThreadPoolExecutor with {max_workers} workers")
         results: List[Dict[str, Any]] = []
-        total_chunks = (len(packets) + chunk_size - 1) // chunk_size
-        self.logger.info(f"Processing {len(packets)} packets in {total_chunks} chunks")
-
+        
+        # Temporary list to hold current chunk
+        current_chunk = []
+        
         with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-            futures = [
-                executor.submit(self.process_packet_batch, packets[i:i + chunk_size])
-                for i in range(0, len(packets), chunk_size)
-            ]
+            futures = []
+            
+            for packet in capture:  # Iterate through capture object
+                current_chunk.append(packet)
+                if len(current_chunk) >= chunk_size:
+                    # Submit batch for processing
+                    futures.append(executor.submit(self.process_packet_batch, current_chunk))
+                    current_chunk = []
+                    
+            # Process any remaining packets in the last chunk
+            if current_chunk:
+                futures.append(executor.submit(self.process_packet_batch, current_chunk))
+                
+            # Get results from futures
             for future in concurrent.futures.as_completed(futures):
                 try:
                     batch_result = future.result()
@@ -145,6 +134,27 @@ class TrafficAnalyzer:
                 except Exception as e:
                     self.logger.error(f"Error processing batch: {str(e)}")
                     self.logger.debug(traceback.format_exc())
+                    
+        return results
+
+    def _setup_event_loop(self) -> None:
+        """Set up a new asyncio event loop to avoid deprecation warnings."""
+        self.logger.debug("Creating new event loop")
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+    def _load_packets(self) -> pyshark.FileCapture:
+        """Return the capture object for lazy iteration"""
+        self.logger.debug("Opening pcap file with pyshark")
+        return pyshark.FileCapture(
+            self.file_path,
+            display_filter="arp or icmp or dns or tcp or udp",
+            keep_packets=False,
+            use_json=True  # Faster parsing
+        )
+
+
+        
         return results
 
     def process_packet_batch(self, packets: List[Any]) -> List[Dict[str, Any]]:
@@ -894,40 +904,120 @@ class TrafficAnalyzer:
         """
         entries: List[Tuple[str, str]] = []
         details: List[str] = []
-        if hasattr(packet, 'arp') and packet.arp.opcode == '2':
-            entry = (packet.arp.src_proto_ipv4, packet.arp.src_hw_mac)
-            entries.append(entry)
+        
+        if hasattr(packet, 'arp'):
+            try:
+                # Updated field names for pyshark
+                opcode = getattr(packet.arp, 'opcode', None)
+                src_ip = getattr(packet.arp, 'src.proto_ipv4', None)  # Changed from src_proto_ipv4
+                src_mac = getattr(packet.arp, 'src.hw_mac', None)     # Changed from src_hw_mac
+                
+                if opcode == '2' and src_ip and src_mac:  # opcode 2 is ARP reply
+                    entry = (src_ip, src_mac)
+                    entries.append(entry)
+                    
+                    # Additional check for gratuitous ARP
+                    if getattr(packet.arp, 'dst.proto_ipv4', None) == src_ip:
+                        details.append(f"Gratuitous ARP detected from {src_ip} ({src_mac})")
+                        
+            except Exception as e:
+                self.logger.error(f"Error processing ARP packet: {str(e)}")
+                self.logger.debug(traceback.format_exc())
+                
         return entries, details
 
     def detect_icmp_tunneling(self, packet: Any) -> Tuple[int, List[str]]:
         """
         Detect potential ICMP tunneling by analyzing payload entropy.
+        Returns a tuple of (detection_score, detection_details)
         """
-        if hasattr(packet, 'icmp') and hasattr(packet.icmp, 'data'):
-            data_hex = getattr(packet.icmp, 'data', '')
-            try:
-                data_bytes = bytes.fromhex(data_hex)
-            except ValueError:
-                return 0, []
+        if not hasattr(packet, 'icmp') or not hasattr(packet.icmp, 'data'):
+            return 0, []
+
+        try:
+            data_layer = packet.icmp.data
+
+            # Extract the actual hex string from JsonLayer
+            if hasattr(data_layer, 'raw_value'):
+                data_bytes = data_layer.raw_value  # Already bytes
+            elif hasattr(data_layer, 'hex_value'):
+                data_bytes = bytes.fromhex(data_layer.hex_value)
+            else:
+                # Fallback: convert to string, clean it, then decode
+                data_str = str(data_layer)
+                cleaned_hex = ''.join(c for c in data_str if c.lower() in '0123456789abcdef')
+                if len(cleaned_hex) < 16:  # At least 8 bytes
+                    return 0, []
+                if len(cleaned_hex) % 2 != 0:
+                    cleaned_hex = cleaned_hex[:-1]
+                data_bytes = bytes.fromhex(cleaned_hex)
+
             data_length = len(data_bytes)
-            if data_length > 64:
-                entropy = self.compute_entropy(data_bytes)
-                if entropy > 5.0:
-                    return 1, [f"Potential ICMP tunneling detected (byte length={data_length}, entropy={entropy:.2f})"]
+            if data_length < 64:
+                return 0, []
+
+            entropy = self.compute_entropy(data_bytes)
+            if entropy > 5.0:
+                detail = (f"Potential ICMP tunneling detected "
+                        f"(payload length={data_length} bytes, entropy={entropy:.2f})")
+                return 1, [detail]
+
+        except Exception as e:
+            self.logger.error(f"Unexpected error in ICMP tunneling detection: {str(e)}")
+            self.logger.debug(traceback.format_exc())
+            return 0, []
+
         return 0, []
+
 
     def detect_dns_tunneling(self, packet: Any) -> Tuple[int, List[str]]:
         """
         Detect potential DNS tunneling based on query name length and entropy.
         """
-        if hasattr(packet, 'dns') and hasattr(packet.dns, 'qry_name'):
-            query_name = str(packet.dns.qry_name)
-            length = len(query_name)
-            if length > 20:
-                entropy = self.compute_entropy(query_name)
-                if entropy > 3.0:
-                    return 1, [f"Potential DNS tunneling detected (length={length}, entropy={entropy:.2f})"]
+        try:
+            if hasattr(packet, 'dns'):
+                self.logger.debug(f"Packet #{getattr(packet, 'number', 'N/A')}: DNS layer found")
+
+                all_fields = getattr(packet.dns, '_all_fields', {})
+                self.logger.debug(f"DNS all fields: {all_fields}")
+
+                queries = all_fields.get('Queries')
+                if not queries or not isinstance(queries, dict):
+                    self.logger.debug("No valid 'Queries' found in DNS packet.")
+                    return 0, []
+
+                # Get the first query in the dictionary
+                first_query_info = next(iter(queries.values()), {})
+                query_name = first_query_info.get('dns.qry.name')
+
+                if not query_name:
+                    self.logger.debug("No 'dns.qry.name' found inside Queries.")
+                    return 0, []
+
+                query_name_str = str(query_name)
+                self.logger.debug(f"Extracted DNS query name: {query_name_str}")
+
+                length = len(query_name_str)
+                self.logger.debug(f"Query name length: {length}")
+
+                if length > 20:
+                    entropy = self.compute_entropy(query_name_str)
+                    self.logger.debug(f"Query name entropy: {entropy:.2f}")
+                    if entropy > 3.0:
+                        detail = f"Potential DNS tunneling detected (length={length}, entropy={entropy:.2f})"
+                        return 1, [detail]
+
+            else:
+                self.logger.debug("No DNS layer present in packet.")
+
+        except Exception as e:
+            self.logger.error(f"Error detecting DNS tunneling: {str(e)}")
+            self.logger.debug(traceback.format_exc())
+
         return 0, []
+
+
+
 
     def generate_attack_stats(self, packet_reports: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
