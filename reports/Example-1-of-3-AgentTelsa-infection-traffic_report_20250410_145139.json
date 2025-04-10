@@ -1,0 +1,205 @@
+{
+    "metadata": {
+        "file_path": "uploads\\Example-1-of-3-AgentTelsa-infection-traffic.pcap",
+        "analysis_date": "2025-04-10T14:51:39.508767",
+        "analysis_duration": "644 days, 18:54:12.195611",
+        "total_packets": 2,
+        "first_packet": "2023-07-05T19:57:27.313166",
+        "last_packet": "2023-07-05T19:57:30.359542"
+    },
+    "statistics": {
+        "total_packets": 2,
+        "tcp_packets": 2,
+        "udp_packets": 0,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 1,
+        "unique_destination_ips": 2,
+        "unique_ports": 0,
+        "packets_with_detections": 2,
+        "total_detections": 2,
+        "average_packets_per_second": 0.6565177771883707,
+        "busiest_minute": {
+            "minute": "2023-07-05 19:57",
+            "packet_count": 2,
+            "percentage": 100.0
+        }
+    },
+    "temporal_analysis": {
+        "2023-07-05 19:57": {
+            "count": 2,
+            "protocols": {
+                "TCP": 2
+            },
+            "detections": [
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ],
+            "unique_src_ips": 1
+        }
+    },
+    "tcp_packets": 2,
+    "udp_packets": 0,
+    "protocol_distribution": {
+        "protocols": {
+            "TCP": 2
+        },
+        "protocol_pairs": {},
+        "most_common_protocol": "TCP"
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "10.7.5.101",
+                "packet_count": 2,
+                "detection_count": 2,
+                "protocols": [
+                    "TCP"
+                ],
+                "unique_detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "10.7.5.101",
+                "packet_count": 2,
+                "detection_count": 2,
+                "protocols": [
+                    "TCP"
+                ],
+                "unique_detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "10.7.5.101",
+                    "64.185.227.156"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "10.7.5.101",
+                    "162.241.169.155"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "10.7.5.101",
+                    "64.185.227.156"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "10.7.5.101",
+                    "162.241.169.155"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 0,
+            "high": 0,
+            "medium": 2,
+            "low": 0,
+            "scanning_score": 100,
+            "tunneling_score": 0,
+            "anomaly_score": 0,
+            "overall_score": 40,
+            "severity": "Medium"
+        },
+        "critical_findings": [],
+        "suspicious_ips": [
+            {
+                "ip": "10.7.5.101",
+                "score": 2
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 3,
+            "timestamp": "2023-07-05T19:57:27.313166",
+            "minute": "2023-07-05 19:57",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "10.7.5.101",
+            "dst_ip": "64.185.227.156",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 26,
+            "timestamp": "2023-07-05T19:57:30.359542",
+            "minute": "2023-07-05 19:57",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "10.7.5.101",
+            "dst_ip": "162.241.169.155",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        }
+    ],
+    "recommendations": [
+        "Review firewall rules to ensure only necessary ports are open",
+        "Implement intrusion detection/prevention systems",
+        "Consider implementing port knocking for sensitive services",
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}
