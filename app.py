@@ -8,10 +8,13 @@ import re
 from werkzeug.utils import secure_filename
 from TrafficAnalyzer import TrafficAnalyzer
 import json
+import requests
 
 app = Flask(__name__, static_url_path='/static')
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.secret_key = 'your_secret_key_here'  # Replace with a strong secret key
+VIRUSTOTAL_API_KEY = os.getenv("VT_API_KEY")  # Set this in your environment
+
 
 # Create upload directory if it doesn't exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
@@ -550,6 +553,64 @@ def format_output(text):
     ansi_escape = re.compile(r'\x1B\[[0-?]*[ -/]*[@-~]')
     cleaned = ansi_escape.sub('', text)
     return [section for section in cleaned.split('\n\n') if section.strip()]
+
+
+
+@app.route('/virustotal_check', methods=['POST'])
+def virustotal_check():
+    try:
+        app.logger.debug("Received VirusTotal check request")
+        data = request.get_json()
+        app.logger.debug(f"Request data: {data}")
+        data = request.get_json()
+        target = data.get('target')
+        target_type = data.get('type')  # 'ip' or 'domain'
+        
+        if not target or not target_type:
+            return jsonify({'error': 'Missing target or type'}), 400
+        
+        try:
+            # Configure your VirusTotal API key
+            VT_API_KEY = ('046c09eb9f8b3ff30c4c5fac4aee7ca12a60d692c244de8ca013e553e6563da0')  # Recommended: store in environment variables
+            
+            headers = {
+                'x-apikey': VT_API_KEY,
+                'Accept': 'application/json'
+            }
+            
+            if target_type == 'ip':
+                url = f'https://www.virustotal.com/api/v3/ip_addresses/{target}'
+            elif target_type == 'domain':
+                url = f'https://www.virustotal.com/api/v3/domains/{target}'
+            else:
+                return jsonify({'error': 'Invalid type'}), 400
+            
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()  # Raises exception for 4XX/5XX status codes
+            
+            return jsonify(response.json())
+        
+            
+        except requests.exceptions.RequestException as e:
+            return jsonify({
+                'error': f'VirusTotal API error: {str(e)}',
+                'details': f'Status code: {e.response.status_code if hasattr(e, "response") else "N/A"}'
+        }), 500
+    except Exception as e:
+        app.logger.error(f"Error in virustotal_check: {str(e)}", exc_info=True)
+        return jsonify({'error': str(e)}), 500
+    
+def test_vt_key(api_key, ip='8.8.8.8'):
+    headers = {'x-apikey': api_key}
+    response = requests.get(f'https://www.virustotal.com/api/v3/ip_addresses/{ip}', headers=headers)
+    print(f"Status: {response.status_code}")
+    print(response.json())
+    
+@app.template_filter('extract_ip')
+def extract_ip_filter(text):
+    import re
+    ip_match = re.search(r'(?:\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b)(?::\d+)?', text)
+    return ip_match.group(0).split(':')[0] if ip_match else None
 
 if __name__ == '__main__':
     app.run(debug=True)

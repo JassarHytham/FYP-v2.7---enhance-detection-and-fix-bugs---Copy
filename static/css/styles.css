@@ -560,3 +560,18 @@ body {
     content: "0";
     opacity: 0.5;
 }
+
+/* VirusTotal specific styles */
+.cyber-button-sm {
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    background: var(--cyber-dark);
+    border: 1px solid var(--cyber-accent);
+  }
+  
+  .vt-result {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
