@@ -396,6 +396,7 @@ class TrafficAnalyzer:
         """
         Generate a PDF report from the packet reports.
         """
+        #hi there
         self.logger.info("Generating PDF report")
         try:
             analysis_data = {
