@@ -318,75 +318,78 @@ class TrafficAnalyzer:
     def apply_dynamic_threshold(self, packet_reports: List[Dict[str, Any]]) -> None:
         """
         Apply dynamic threshold analysis using the Interquartile Range (IQR) method
-        to detect IP anomalies.
+        to detect IP anomalies based on packet counts.
         """
         self.logger.info("Applying dynamic threshold analysis using IQR")
         try:
-            ip_counts = Counter(packet["src_ip"] for packet in packet_reports if packet.get("src_ip"))
+            # 1. Count packets per source IP
+            ip_counts = Counter(packet.get("src_ip") for packet in packet_reports if packet.get("src_ip"))
             if not ip_counts:
                 self.logger.warning("No source IPs found for dynamic threshold analysis")
-                return
+                return  # Exit if no IPs
 
+            # 2. Calculate IQR
             counts = list(ip_counts.values())
-            # Compute the 25th and 75th percentiles
-            q1 = np.percentile(counts, 25)
-            q3 = np.percentile(counts, 75)
+            q1, q3 = np.percentile(counts, [25, 75])
             iqr = q3 - q1
-
-            # If there is no variance in the counts, skip dynamic threshold analysis
             if iqr == 0:
-                self.logger.debug("IQR is zero; insufficient variance for dynamic threshold analysis. Skipping anomaly detection.")
-                return
-
+                self.logger.debug("IQR is zero; insufficient variance. Skipping.")
+                return  # Exit if no variance
             threshold = q3 + 1.5 * iqr
-            self.logger.debug(f"IQR threshold calculated: Q1={q1}, Q3={q3}, IQR={iqr}, threshold={threshold:.2f}")
 
+            self.logger.debug(f"IQR threshold: {threshold:.2f} (Q1={q1}, Q3={q3})")
+
+            # 3. Identify and flag anomalies
             for ip, count in ip_counts.items():
                 if count > threshold:
-                    detail = f"Dynamic anomaly: IP {ip} sent {count} packets (threshold={threshold:.2f})"
+                    detail = f"Dynamic anomaly: IP {ip} sent {count} packets (>{threshold:.2f})"
                     self.logger.warning(detail)
-                    # Append the anomaly detail to all packets from this IP
                     for packet in packet_reports:
                         if packet.get("src_ip") == ip:
-                            packet['detection_details'].append(detail)
+                            packet['detection_details'].append(detail) # Append, don't overwrite
         except Exception as e:
-            self.logger.error(f"Dynamic threshold error: {str(e)}")
+            self.logger.error(f"Dynamic threshold error: {e}")
             self.logger.debug(traceback.format_exc())
 
 
 
     def apply_temporal_analysis(self, packet_reports: List[Dict[str, Any]]) -> None:
         """
-        Apply temporal analysis by grouping packets in time windows.
+        Apply temporal analysis by grouping packets into time windows (minutes)
+        and detecting IPs with unusually high packet counts within those windows.
         """
         self.logger.info("Applying temporal analysis")
         try:
-            window_map: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+            # 1. Group packets by minute
+            window_map = defaultdict(list)
             for packet in packet_reports:
                 minute = packet.get("minute")
                 if minute:
                     window_map[minute].append(packet)
 
+            # 2. Analyze each time window
             for window, packets in window_map.items():
-                counter = Counter(p.get("src_ip") for p in packets if p.get("src_ip"))
-                if not counter:
-                    continue
+                ip_counts = Counter(pkt.get("src_ip") for pkt in packets if pkt.get("src_ip"))
+                if not ip_counts:
+                    continue  # Skip empty windows
 
-                counts = list(counter.values())
-                avg = statistics.mean(counts)
-                stdev = statistics.stdev(counts) if len(counts) > 1 else 0
-                threshold = avg + 2 * stdev
-                self.logger.debug(f"Temporal threshold for {window}: {threshold:.2f}")
+                counts = list(ip_counts.values())
+                mean_count = statistics.mean(counts)
+                stdev = statistics.stdev(counts) if len(counts) > 1 else 0  # Handle single-count case
+                threshold = mean_count + 2 * stdev
 
-                for ip, count in counter.items():
+                self.logger.debug(f"Temporal window: {window}, threshold: {threshold:.2f}")
+
+                # 3. Flag IPs exceeding the threshold
+                for ip, count in ip_counts.items():
                     if count > threshold:
-                        detail = f"Temporal anomaly: In window {window}, IP {ip} sent {count} packets (threshold={threshold:.2f})"
+                        detail = f"Temporal anomaly: {ip} sent {count} packets in {window} (>{threshold:.2f})"
                         self.logger.warning(detail)
-                        for packet in packets:
-                            if packet.get("src_ip") == ip:
-                                packet['detection_details'].append(detail)
+                        for pkt in packets:
+                            if pkt.get("src_ip") == ip:
+                                pkt['detection_details'].append(detail)
         except Exception as e:
-            self.logger.error(f"Temporal analysis error: {str(e)}")
+            self.logger.error(f"Temporal analysis error: {e}")
             self.logger.debug(traceback.format_exc())
 
     def generate_pdf_report(self, packet_reports: List[Dict[str, Any]]) -> str:

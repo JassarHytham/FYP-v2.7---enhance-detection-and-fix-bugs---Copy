@@ -99,10 +99,27 @@
                         <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
                             <i class="fas fa-user-secret"></i> COVERT CHANNELS
                         </h2>
-                    {% elif trimmed.startswith('• Traffic Anomalies') %}
+                        {% elif trimmed.startswith('• Traffic Anomalies') %}
                         <h2 class="section-title" style="border-left: 3px solid var(--cyber-danger);">
                             <i class="fas fa-radiation"></i> TRAFFIC ANOMALIES
                         </h2>
+                        {% if all_anomalous_ips %}
+                            <ul>
+                            {% for anomalous_ip in all_anomalous_ips %}
+                                <li>
+                                    IP: {{ anomalous_ip.ip }}
+                                    {% if anomalous_ip.score is defined %}
+                                        (Suspiciousness Score: {{ anomalous_ip.score }})
+                                    {% else %}
+                                        (Packet Anomaly)
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p>No traffic anomalies detected.</p>
+                        {% endif %}
+                    
                     {% elif trimmed.startswith('• Security Posture Assessment') %}
                         <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
                             <i class="fas fa-shield-virus"></i> SECURITY POSTURE

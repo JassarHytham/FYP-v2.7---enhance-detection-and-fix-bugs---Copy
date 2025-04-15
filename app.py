@@ -298,25 +298,29 @@ from TrafficAnalyzer import TrafficAnalyzer  # adjust if needed
 def view_report(filename):
     try:
         report_path = os.path.join(app.root_path, 'reports', filename)
-        
+
         if not os.path.exists(report_path):
             flash('Report file not found', 'error')
             return redirect(url_for('view_history'))
-            
+
         with open(report_path) as f:
             report_data = json.load(f)
 
         analyzer = TrafficAnalyzer(file_path=report_data.get('metadata', {}).get('file_path', ''))
 
-        # Initialize counters
+        # Initialize data structures
         nmap_scans = Counter()
         arp_entries = defaultdict(set)
         icmp_tunnel = 0
         dns_tunnel = 0
         anomaly_ips = []
         anomaly_counts = Counter()
+        suspicious_ips = []
 
-        # First check temporal_analysis for ARP poisoning detections
+        if 'threat_analysis' in report_data and 'suspicious_ips' in report_data['threat_analysis']:
+            suspicious_ips = report_data['threat_analysis']['suspicious_ips']
+
+        # Temporal analysis for ARP poisoning
         if 'temporal_analysis' in report_data:
             for minute_data in report_data['temporal_analysis'].values():
                 for detection in minute_data.get('detections', []):
@@ -331,7 +335,6 @@ def view_report(filename):
             for detail in packet.get('detection_details', []):
                 detail_lower = detail.lower()
 
-                # Scan detections
                 if 'scan' in detail_lower:
                     if 'syn scan' in detail_lower:
                         nmap_scans['syn'] += 1
@@ -346,7 +349,6 @@ def view_report(filename):
                     elif 'tcp connect' in detail_lower:
                         nmap_scans['tcp_connect'] += 1
 
-                # ARP poisoning
                 elif 'arp poisoning' in detail_lower:
                     ip_match = re.search(r'IP ([\d.]+)', detail)
                     if ip_match:
@@ -359,13 +361,11 @@ def view_report(filename):
                         mac = ip_mac.group(2)
                         arp_entries[ip].add(mac)
 
-                # Tunneling
                 elif 'icmp tunnel' in detail_lower:
                     icmp_tunnel += 1
                 elif 'dns tunnel' in detail_lower:
                     dns_tunnel += 1
 
-                # Anomalies
                 elif 'anomal' in detail_lower or 'unusual' in detail_lower:
                     ip_match = re.search(r'IP ([\d.]+)', detail)
                     if ip_match:
@@ -374,18 +374,19 @@ def view_report(filename):
                         if ip not in anomaly_ips:
                             anomaly_ips.append(ip)
 
-        # Convert ARP entries to poisoning cases
+        # ARP poisoning cases
         arp_poisoning_cases = {}
         for ip, macs in arp_entries.items():
             if len(macs) > 1 or "multiple" in macs:
                 arp_poisoning_cases[ip] = list(macs)
 
-        # Convert anomaly_counts to the format print_results expects
-        anomaly_ips_with_counts = []
-        for ip, count in anomaly_counts.items():
-            anomaly_ips_with_counts.extend([ip] * count)
+        # Prepare anomaly data as list of dicts
+        anomaly_data = [{'ip': ip} for ip in anomaly_ips]
 
-        # Capture the print_results output
+        # Combine with suspicious_ips
+        all_anomalous_ips = anomaly_data + suspicious_ips
+
+        # Capture the output
         output_stream = io.StringIO()
         old_stdout = sys.stdout
         sys.stdout = output_stream
@@ -395,7 +396,7 @@ def view_report(filename):
             arp_poisoning_seen=arp_poisoning_cases,
             icmp_tunnel=icmp_tunnel,
             dns_tunnel=dns_tunnel,
-            anomaly_detected=anomaly_ips_with_counts
+            anomaly_detected=[item['ip'] if isinstance(item, dict) else item for item in all_anomalous_ips]
         )
 
         sys.stdout = old_stdout
@@ -417,7 +418,8 @@ def view_report(filename):
             if not os.path.exists(pdf_path):
                 pdf_filename = None
 
-        return render_template('results.html',
+        return render_template(
+            'results.html',
             analysis_output=analysis_output,
             pdf_filename=pdf_filename,
             file_path=metadata.get('file_path', 'Unknown'),
@@ -428,11 +430,14 @@ def view_report(filename):
             high_count=threat_scores['high'],
             medium_count=threat_scores['medium'],
             low_count=threat_scores['low'],
-            report_filename=filename
+            report_filename=filename,
+            suspicious_ips=suspicious_ips,
+            all_anomalous_ips=all_anomalous_ips
         )
     except Exception as e:
         flash(f"Error loading report: {str(e)}", 'error')
         return redirect(url_for('view_history'))
+
 
 def generate_analysis_output(report_data):
     """Generate formatted analysis output with properly organized findings"""

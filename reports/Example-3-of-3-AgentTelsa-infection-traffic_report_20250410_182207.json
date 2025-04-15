@@ -1,0 +1,317 @@
+{
+    "metadata": {
+        "file_path": "uploads\\Example-3-of-3-AgentTelsa-infection-traffic.pcap",
+        "analysis_date": "2025-04-10T18:22:07.143503",
+        "analysis_duration": "642 days, 18:25:46.692412",
+        "total_packets": 4,
+        "first_packet": "2023-07-07T23:56:20.451099",
+        "last_packet": "2023-07-07T23:56:26.933018"
+    },
+    "statistics": {
+        "total_packets": 4,
+        "tcp_packets": 2,
+        "udp_packets": 2,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 2,
+        "unique_source_ips": 2,
+        "unique_destination_ips": 4,
+        "unique_ports": 0,
+        "packets_with_detections": 4,
+        "total_detections": 4,
+        "average_packets_per_second": 0.6171012010486401,
+        "busiest_minute": {
+            "minute": "2023-07-07 23:56",
+            "packet_count": 4,
+            "percentage": 100.0
+        }
+    },
+    "temporal_analysis": {
+        "2023-07-07 23:56": {
+            "count": 4,
+            "protocols": {
+                "TCP": 2,
+                "UDP": 2,
+                "DNS": 2
+            },
+            "detections": [
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "Potential DNS tunneling detected (length=34, entropy=3.98)",
+                "Potential DNS tunneling detected (length=34, entropy=3.98)",
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ],
+            "unique_src_ips": 2
+        }
+    },
+    "tcp_packets": 2,
+    "udp_packets": 2,
+    "protocol_distribution": {
+        "protocols": {
+            "TCP": 2,
+            "UDP": 2,
+            "DNS": 2
+        },
+        "protocol_pairs": {
+            "DNS-UDP": 2
+        },
+        "most_common_protocol": "TCP"
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "10.7.7.101",
+                "packet_count": 3,
+                "detection_count": 3,
+                "protocols": [
+                    "DNS",
+                    "TCP",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=34, entropy=3.98)",
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "ip": "10.7.7.1",
+                "packet_count": 1,
+                "detection_count": 1,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=34, entropy=3.98)"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "10.7.7.101",
+                "packet_count": 3,
+                "detection_count": 3,
+                "protocols": [
+                    "DNS",
+                    "TCP",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=34, entropy=3.98)",
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "ip": "10.7.7.1",
+                "packet_count": 1,
+                "detection_count": 1,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "Potential DNS tunneling detected (length=34, entropy=3.98)"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "10.7.7.1",
+                    "10.7.7.101"
+                ],
+                "packet_count": 2,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "Potential DNS tunneling detected (length=34, entropy=3.98)"
+                ]
+            },
+            {
+                "hosts": [
+                    "10.7.7.101",
+                    "64.185.227.156"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "10.7.7.101",
+                    "192.254.225.166"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "10.7.7.101",
+                    "64.185.227.156"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "10.7.7.1",
+                    "10.7.7.101"
+                ],
+                "packet_count": 2,
+                "protocols": [
+                    "DNS",
+                    "UDP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "Potential DNS tunneling detected (length=34, entropy=3.98)"
+                ]
+            },
+            {
+                "hosts": [
+                    "10.7.7.101",
+                    "192.254.225.166"
+                ],
+                "packet_count": 1,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 2,
+            "high": 0,
+            "medium": 2,
+            "low": 0,
+            "scanning_score": 100,
+            "tunneling_score": 100,
+            "anomaly_score": 0,
+            "overall_score": 70,
+            "severity": "High"
+        },
+        "critical_findings": [
+            "Potential DNS tunneling detected (length=34, entropy=3.98)",
+            "Potential DNS tunneling detected (length=34, entropy=3.98)"
+        ],
+        "suspicious_ips": [
+            {
+                "ip": "10.7.7.101",
+                "score": 3
+            },
+            {
+                "ip": "10.7.7.1",
+                "score": 1
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 3,
+            "timestamp": "2023-07-07T23:56:20.451099",
+            "minute": "2023-07-07 23:56",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "10.7.7.101",
+            "dst_ip": "64.185.227.156",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 21,
+            "timestamp": "2023-07-07T23:56:26.916982",
+            "minute": "2023-07-07 23:56",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.7.7.101",
+            "dst_ip": "10.7.7.1",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=34, entropy=3.98)"
+            ]
+        },
+        {
+            "packet_number": 22,
+            "timestamp": "2023-07-07T23:56:26.932494",
+            "minute": "2023-07-07 23:56",
+            "protocols": [
+                "UDP",
+                "DNS"
+            ],
+            "src_ip": "10.7.7.1",
+            "dst_ip": "10.7.7.101",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "Potential DNS tunneling detected (length=34, entropy=3.98)"
+            ]
+        },
+        {
+            "packet_number": 23,
+            "timestamp": "2023-07-07T23:56:26.933018",
+            "minute": "2023-07-07 23:56",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "10.7.7.101",
+            "dst_ip": "192.254.225.166",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        }
+    ],
+    "recommendations": [
+        "Inspect ICMP and DNS traffic for unusual patterns",
+        "Implement rate limiting for ICMP and DNS queries",
+        "Consider using a next-gen firewall with tunneling detection",
+        "Review firewall rules to ensure only necessary ports are open",
+        "Implement intrusion detection/prevention systems",
+        "Consider implementing port knocking for sensitive services",
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}
