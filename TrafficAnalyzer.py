@@ -29,8 +29,9 @@ class TrafficAnalyzer:
         self.pdf_file: Optional[str] = None
         init(autoreset=True)
 
+        # Configure logging for the analyzer
         self.logger = self._configure_logging(verbose)
-        # Disable pyshark's internal logging
+        # Disable pyshark's internal logging to avoid clutter
         logging.getLogger('pyshark').setLevel(logging.WARNING)
 
     def _configure_logging(self, verbose: bool) -> logging.Logger:
@@ -46,9 +47,9 @@ class TrafficAnalyzer:
         # Ensure the logs directory exists
         os.makedirs('logs', exist_ok=True)
 
-        # File handler with rotation and delayed file opening
+        # File handler with rotation to manage log size
         file_handler = RotatingFileHandler(
-            os.path.join('logs', 'traffic_analysis.log'),  # Store logs in the logs folder
+            os.path.join('logs', 'traffic_analysis.log'),
             maxBytes=10 * 1024 * 1024,  # 10MB
             backupCount=5,
             encoding='utf-8',
@@ -58,7 +59,7 @@ class TrafficAnalyzer:
         file_handler.setLevel(logging.DEBUG)
         logger.addHandler(file_handler)
 
-        # Optional console handler
+        # Optional console handler for verbose mode
         if verbose:
             console_handler = logging.StreamHandler()
             console_handler.setFormatter(log_formatter)
@@ -68,67 +69,78 @@ class TrafficAnalyzer:
         return logger
 
     def run_analysis(self, generate_pdf=True) -> None:
-        """Run the traffic analysis on the specified pcap file and generate reports."""
+        """
+        Run the traffic analysis on the specified pcap file and generate reports.
+        """
         self.logger.info(f"Starting analysis of file: {self.file_path}")
         start_time = datetime.now()
 
         try:
+            # Set up an asyncio event loop to avoid deprecation warnings
             self._setup_event_loop()
-            # Get the capture object (not the packets)
+
+            # Load packets from the pcap file
             capture = self._load_packets()
-            
-            # Process directly from the capture object
+
+            # Process packets in chunks for efficiency
             results = self._process_packets_in_chunks(capture, chunk_size=100)
-            
-            # Close the capture when done
+
+            # Close the capture object to release resources
             capture.close()
-            
-            # Rest of your processing...
+
+            # Sort results by packet number for consistency
             results.sort(key=lambda x: x['packet_info']['packet_number'])
+
+            # Aggregate results into a summary report
             packet_reports = self.aggregate_results(results)
-            
+
+            # Apply dynamic threshold and temporal analysis
             self.apply_dynamic_threshold(packet_reports)
             self.apply_temporal_analysis(packet_reports)
+
+            # Generate JSON and optionally PDF reports
             self.generate_json_report(packet_reports)
-            
             if generate_pdf:
                 self.pdf_file = self.generate_pdf_report(packet_reports)
             else:
                 self.logger.info("Skipping PDF report generation")
                 self.pdf_file = None
-                
+
         except Exception as e:
+            # Log critical errors and print to the console
             self.logger.critical(f"Analysis failed: {str(e)}")
             self.logger.debug(traceback.format_exc())
             print(Fore.RED + f"Error during analysis: {str(e)}")
         finally:
+            # Log the total duration of the analysis
             duration = datetime.now() - start_time
             self.logger.info(f"Analysis completed in {duration.total_seconds():.2f} seconds")
 
     def _process_packets_in_chunks(self, capture: pyshark.FileCapture, chunk_size: int) -> List[Dict[str, Any]]:
-        """Process packets in parallel using chunks directly from capture object."""
-        max_workers = min(32, (os.cpu_count() or 4) * 2)
+        """
+        Process packets in parallel using chunks directly from the capture object.
+        """
+        max_workers = min(32, (os.cpu_count() or 4) * 2)  # Determine optimal thread pool size
         self.logger.debug(f"Creating ThreadPoolExecutor with {max_workers} workers")
         results: List[Dict[str, Any]] = []
-        
-        # Temporary list to hold current chunk
         current_chunk = []
-        
+
         with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = []
-            
-            for packet in capture:  # Iterate through capture object
+
+            # Iterate through packets and group them into chunks
+            for packet in capture:
                 current_chunk.append(packet)
                 if len(current_chunk) >= chunk_size:
-                    # Submit batch for processing
+                    # Submit the chunk for processing
                     futures.append(executor.submit(self.process_packet_batch, current_chunk))
                     current_chunk = []
-                    
+
             # Process any remaining packets in the last chunk
             if current_chunk:
                 futures.append(executor.submit(self.process_packet_batch, current_chunk))
-                
-            # Get results from futures
+
+            # Collect results from all futures
             for future in concurrent.futures.as_completed(futures):
                 try:
                     batch_result = future.result()
@@ -137,28 +149,28 @@ class TrafficAnalyzer:
                 except Exception as e:
                     self.logger.error(f"Error processing batch: {str(e)}")
                     self.logger.debug(traceback.format_exc())
-                    
+
         return results
 
     def _setup_event_loop(self) -> None:
-        """Set up a new asyncio event loop to avoid deprecation warnings."""
+        """
+        Set up a new asyncio event loop to avoid deprecation warnings.
+        """
         self.logger.debug("Creating new event loop")
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
 
     def _load_packets(self) -> pyshark.FileCapture:
-        """Return the capture object for lazy iteration"""
+        """
+        Return the capture object for lazy iteration.
+        """
         self.logger.debug("Opening pcap file with pyshark")
         return pyshark.FileCapture(
             self.file_path,
-            display_filter="arp or icmp or dns or tcp or udp",
-            keep_packets=False,
-            use_json=True  # Faster parsing
+            display_filter="arp or icmp or dns or tcp or udp",  # Filter for relevant protocols
+            keep_packets=False,  # Avoid keeping packets in memory
+            use_json=True  # Use JSON for faster parsing
         )
-
-
-        
-        return results
 
     def process_packet_batch(self, packets: List[Any]) -> List[Dict[str, Any]]:
         """
@@ -182,6 +194,7 @@ class TrafficAnalyzer:
         packet_number = int(packet.number)
         self.logger.debug(f"Processing packet #{packet_number}")
 
+        # Initialize packet information and result structure
         packet_info: Dict[str, Any] = {
             "packet_number": packet_number,
             "timestamp": packet.sniff_time.isoformat(),
@@ -203,6 +216,7 @@ class TrafficAnalyzer:
         }
 
         try:
+            # Extract IP information if available
             if hasattr(packet, 'ip'):
                 src_ip = packet.ip.src
                 dst_ip = packet.ip.dst
@@ -210,11 +224,13 @@ class TrafficAnalyzer:
                 result['src_ip_anomaly'] = src_ip
                 self.logger.debug(f"Packet #{packet_number} IP: {src_ip} -> {dst_ip}")
 
+                # Check for both TCP and UDP in the same packet
                 if hasattr(packet, 'tcp') and hasattr(packet, 'udp'):
                     detail = f"IP {src_ip} sent both TCP and UDP."
                     packet_info["detection_details"].append(detail)
                     self.logger.warning(f"Packet #{packet_number}: {detail}")
 
+                # Analyze payload entropy for potential anomalies
                 if hasattr(packet, 'data'):
                     raw_data = str(packet.data)
                     entropy = self.compute_entropy(raw_data)
@@ -223,12 +239,12 @@ class TrafficAnalyzer:
                         packet_info["detection_details"].append(detail)
                         self.logger.warning(f"Packet #{packet_number}: {detail}")
 
-            # Add protocol layers
+            # Add protocol layers to the packet info
             for layer in ['tcp', 'udp', 'arp', 'icmp', 'dns']:
                 if hasattr(packet, layer) and layer.upper() not in packet_info["protocols"]:
                     packet_info["protocols"].append(layer.upper())
 
-            # Detect various anomalies
+            # Detect various anomalies and update the result
             tcp_scans, tcp_details = self.detect_nmap_scans(packet)
             udp_scans, udp_details = self.detect_udp_scans(packet)
             arp_entries, arp_details = self.detect_arp_poisoning(packet)
