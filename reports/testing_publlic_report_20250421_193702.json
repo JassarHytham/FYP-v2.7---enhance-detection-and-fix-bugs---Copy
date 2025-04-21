@@ -1,0 +1,5453 @@
+{
+    "metadata": {
+        "file_path": "uploads\\testing_publlic.pcapng",
+        "analysis_date": "2025-04-21T19:37:02.196658",
+        "analysis_duration": "10 days, 22:59:45.649059",
+        "total_packets": 315,
+        "first_packet": "2025-04-10T20:37:16.547612",
+        "last_packet": "2025-04-10T20:37:26.661240"
+    },
+    "statistics": {
+        "total_packets": 315,
+        "tcp_packets": 315,
+        "udp_packets": 0,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 1,
+        "unique_destination_ips": 10,
+        "unique_ports": 0,
+        "packets_with_detections": 315,
+        "total_detections": 315,
+        "average_packets_per_second": 31.146093172499523,
+        "busiest_minute": {
+            "minute": "2025-04-10 20:37",
+            "packet_count": 315,
+            "percentage": 100.0
+        }
+    },
+    "temporal_analysis": {
+        "2025-04-10 20:37": {
+            "count": 315,
+            "protocols": {
+                "TCP": 315
+            },
+            "detections": [
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ],
+            "unique_src_ips": 1
+        }
+    },
+    "tcp_packets": 315,
+    "udp_packets": 0,
+    "protocol_distribution": {
+        "protocols": {
+            "TCP": 315
+        },
+        "protocol_pairs": {},
+        "most_common_protocol": "TCP"
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "192.168.1.198",
+                "packet_count": 315,
+                "detection_count": 315,
+                "protocols": [
+                    "TCP"
+                ],
+                "unique_detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "192.168.1.198",
+                "packet_count": 315,
+                "detection_count": 315,
+                "protocols": [
+                    "TCP"
+                ],
+                "unique_detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "89.248.172.16"
+                ],
+                "packet_count": 135,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "167.94.145.81",
+                    "192.168.1.198"
+                ],
+                "packet_count": 65,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "185.220.101.4",
+                    "192.168.1.198"
+                ],
+                "packet_count": 33,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "185.38.175.132",
+                    "192.168.1.198"
+                ],
+                "packet_count": 13,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "192.42.116.16"
+                ],
+                "packet_count": 12,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "23.154.177.5"
+                ],
+                "packet_count": 12,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "185.220.102.244",
+                    "192.168.1.198"
+                ],
+                "packet_count": 12,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "45.129.56.200"
+                ],
+                "packet_count": 11,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "91.219.236.102"
+                ],
+                "packet_count": 11,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "212.192.241.47"
+                ],
+                "packet_count": 11,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "167.94.145.81",
+                    "192.168.1.198"
+                ],
+                "packet_count": 65,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "45.129.56.200"
+                ],
+                "packet_count": 11,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "185.220.101.4",
+                    "192.168.1.198"
+                ],
+                "packet_count": 33,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "91.219.236.102"
+                ],
+                "packet_count": 11,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "192.42.116.16"
+                ],
+                "packet_count": 12,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "23.154.177.5"
+                ],
+                "packet_count": 12,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "89.248.172.16"
+                ],
+                "packet_count": 135,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "192.168.1.198",
+                    "212.192.241.47"
+                ],
+                "packet_count": 11,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "185.38.175.132",
+                    "192.168.1.198"
+                ],
+                "packet_count": 13,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            },
+            {
+                "hosts": [
+                    "185.220.102.244",
+                    "192.168.1.198"
+                ],
+                "packet_count": 12,
+                "protocols": [
+                    "TCP"
+                ],
+                "ports": [],
+                "detection_count": 1,
+                "detections": [
+                    "TCP connect scan detected: SYN flag with window size > 1024"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 0,
+            "high": 0,
+            "medium": 315,
+            "low": 0,
+            "scanning_score": 100,
+            "tunneling_score": 0,
+            "anomaly_score": 0,
+            "overall_score": 40,
+            "severity": "Medium"
+        },
+        "critical_findings": [],
+        "suspicious_ips": [
+            {
+                "ip": "192.168.1.198",
+                "score": 315
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 10,
+            "timestamp": "2025-04-10T20:37:16.547612",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 11,
+            "timestamp": "2025-04-10T20:37:16.549559",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 12,
+            "timestamp": "2025-04-10T20:37:16.552261",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 13,
+            "timestamp": "2025-04-10T20:37:16.556643",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 14,
+            "timestamp": "2025-04-10T20:37:16.557076",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 15,
+            "timestamp": "2025-04-10T20:37:16.560359",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 16,
+            "timestamp": "2025-04-10T20:37:16.562710",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 17,
+            "timestamp": "2025-04-10T20:37:16.564549",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 18,
+            "timestamp": "2025-04-10T20:37:16.566021",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 19,
+            "timestamp": "2025-04-10T20:37:16.567500",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 21,
+            "timestamp": "2025-04-10T20:37:16.638148",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 23,
+            "timestamp": "2025-04-10T20:37:16.643930",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 25,
+            "timestamp": "2025-04-10T20:37:16.702621",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 30,
+            "timestamp": "2025-04-10T20:37:16.711574",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 32,
+            "timestamp": "2025-04-10T20:37:16.718742",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 34,
+            "timestamp": "2025-04-10T20:37:16.784868",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 36,
+            "timestamp": "2025-04-10T20:37:16.859890",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 38,
+            "timestamp": "2025-04-10T20:37:16.861998",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 44,
+            "timestamp": "2025-04-10T20:37:16.872063",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 46,
+            "timestamp": "2025-04-10T20:37:16.937609",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 48,
+            "timestamp": "2025-04-10T20:37:17.011124",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 50,
+            "timestamp": "2025-04-10T20:37:17.019912",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 55,
+            "timestamp": "2025-04-10T20:37:17.085436",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 57,
+            "timestamp": "2025-04-10T20:37:17.158388",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 59,
+            "timestamp": "2025-04-10T20:37:17.174444",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 64,
+            "timestamp": "2025-04-10T20:37:17.182169",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 66,
+            "timestamp": "2025-04-10T20:37:17.233598",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 68,
+            "timestamp": "2025-04-10T20:37:17.308470",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 75,
+            "timestamp": "2025-04-10T20:37:17.336816",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 77,
+            "timestamp": "2025-04-10T20:37:17.384275",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 79,
+            "timestamp": "2025-04-10T20:37:17.459257",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 85,
+            "timestamp": "2025-04-10T20:37:17.487592",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 87,
+            "timestamp": "2025-04-10T20:37:17.495657",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 89,
+            "timestamp": "2025-04-10T20:37:17.535693",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 90,
+            "timestamp": "2025-04-10T20:37:17.553901",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 91,
+            "timestamp": "2025-04-10T20:37:17.559991",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 92,
+            "timestamp": "2025-04-10T20:37:17.563706",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 93,
+            "timestamp": "2025-04-10T20:37:17.565073",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 94,
+            "timestamp": "2025-04-10T20:37:17.568106",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 95,
+            "timestamp": "2025-04-10T20:37:17.569617",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 97,
+            "timestamp": "2025-04-10T20:37:17.610769",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 104,
+            "timestamp": "2025-04-10T20:37:17.650280",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 106,
+            "timestamp": "2025-04-10T20:37:17.687242",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 107,
+            "timestamp": "2025-04-10T20:37:17.721407",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 109,
+            "timestamp": "2025-04-10T20:37:17.762893",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 114,
+            "timestamp": "2025-04-10T20:37:17.802829",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 116,
+            "timestamp": "2025-04-10T20:37:17.807553",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 118,
+            "timestamp": "2025-04-10T20:37:17.838166",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 120,
+            "timestamp": "2025-04-10T20:37:17.914073",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 127,
+            "timestamp": "2025-04-10T20:37:17.963842",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 129,
+            "timestamp": "2025-04-10T20:37:17.986290",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 131,
+            "timestamp": "2025-04-10T20:37:18.060487",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 136,
+            "timestamp": "2025-04-10T20:37:18.111926",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 138,
+            "timestamp": "2025-04-10T20:37:18.126208",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 140,
+            "timestamp": "2025-04-10T20:37:18.136376",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 142,
+            "timestamp": "2025-04-10T20:37:18.211051",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 151,
+            "timestamp": "2025-04-10T20:37:18.283651",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 152,
+            "timestamp": "2025-04-10T20:37:18.284770",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 154,
+            "timestamp": "2025-04-10T20:37:18.358146",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 159,
+            "timestamp": "2025-04-10T20:37:18.424826",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 161,
+            "timestamp": "2025-04-10T20:37:18.432332",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 163,
+            "timestamp": "2025-04-10T20:37:18.441082",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 166,
+            "timestamp": "2025-04-10T20:37:18.504585",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 167,
+            "timestamp": "2025-04-10T20:37:18.557090",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 168,
+            "timestamp": "2025-04-10T20:37:18.562964",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 169,
+            "timestamp": "2025-04-10T20:37:18.567707",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 170,
+            "timestamp": "2025-04-10T20:37:18.569076",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 171,
+            "timestamp": "2025-04-10T20:37:18.572344",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 172,
+            "timestamp": "2025-04-10T20:37:18.574739",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 179,
+            "timestamp": "2025-04-10T20:37:18.581975",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 181,
+            "timestamp": "2025-04-10T20:37:18.599703",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 183,
+            "timestamp": "2025-04-10T20:37:18.659117",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 184,
+            "timestamp": "2025-04-10T20:37:18.724856",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 186,
+            "timestamp": "2025-04-10T20:37:18.733011",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 191,
+            "timestamp": "2025-04-10T20:37:18.741384",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 193,
+            "timestamp": "2025-04-10T20:37:18.755760",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 195,
+            "timestamp": "2025-04-10T20:37:18.806199",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 197,
+            "timestamp": "2025-04-10T20:37:18.889739",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 204,
+            "timestamp": "2025-04-10T20:37:18.910599",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 206,
+            "timestamp": "2025-04-10T20:37:18.977906",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 208,
+            "timestamp": "2025-04-10T20:37:19.052885",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 210,
+            "timestamp": "2025-04-10T20:37:19.067341",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 215,
+            "timestamp": "2025-04-10T20:37:19.073182",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 217,
+            "timestamp": "2025-04-10T20:37:19.128254",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 219,
+            "timestamp": "2025-04-10T20:37:19.202480",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 226,
+            "timestamp": "2025-04-10T20:37:19.230443",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 228,
+            "timestamp": "2025-04-10T20:37:19.287107",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 230,
+            "timestamp": "2025-04-10T20:37:19.362803",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 232,
+            "timestamp": "2025-04-10T20:37:19.385179",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 238,
+            "timestamp": "2025-04-10T20:37:19.390032",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 240,
+            "timestamp": "2025-04-10T20:37:19.439861",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 242,
+            "timestamp": "2025-04-10T20:37:19.515768",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 244,
+            "timestamp": "2025-04-10T20:37:19.542407",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 250,
+            "timestamp": "2025-04-10T20:37:19.559773",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 251,
+            "timestamp": "2025-04-10T20:37:19.566306",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 252,
+            "timestamp": "2025-04-10T20:37:19.571645",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 253,
+            "timestamp": "2025-04-10T20:37:19.572589",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 254,
+            "timestamp": "2025-04-10T20:37:19.576030",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 255,
+            "timestamp": "2025-04-10T20:37:19.578271",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 257,
+            "timestamp": "2025-04-10T20:37:19.591048",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 259,
+            "timestamp": "2025-04-10T20:37:19.671503",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 261,
+            "timestamp": "2025-04-10T20:37:19.700541",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 266,
+            "timestamp": "2025-04-10T20:37:19.708364",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 267,
+            "timestamp": "2025-04-10T20:37:19.727757",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 269,
+            "timestamp": "2025-04-10T20:37:19.747179",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 274,
+            "timestamp": "2025-04-10T20:37:19.753734",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 276,
+            "timestamp": "2025-04-10T20:37:19.826329",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 281,
+            "timestamp": "2025-04-10T20:37:19.835481",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 285,
+            "timestamp": "2025-04-10T20:37:19.862165",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 290,
+            "timestamp": "2025-04-10T20:37:19.899957",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 292,
+            "timestamp": "2025-04-10T20:37:19.973341",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 294,
+            "timestamp": "2025-04-10T20:37:20.020015",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 301,
+            "timestamp": "2025-04-10T20:37:20.024317",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 303,
+            "timestamp": "2025-04-10T20:37:20.045388",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 305,
+            "timestamp": "2025-04-10T20:37:20.119859",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 307,
+            "timestamp": "2025-04-10T20:37:20.175509",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 314,
+            "timestamp": "2025-04-10T20:37:20.195312",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 316,
+            "timestamp": "2025-04-10T20:37:20.270065",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 318,
+            "timestamp": "2025-04-10T20:37:20.332305",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 323,
+            "timestamp": "2025-04-10T20:37:20.340325",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 325,
+            "timestamp": "2025-04-10T20:37:20.345478",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 327,
+            "timestamp": "2025-04-10T20:37:20.419071",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 329,
+            "timestamp": "2025-04-10T20:37:20.487843",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 334,
+            "timestamp": "2025-04-10T20:37:20.494051",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 339,
+            "timestamp": "2025-04-10T20:37:20.564268",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 341,
+            "timestamp": "2025-04-10T20:37:20.568700",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 342,
+            "timestamp": "2025-04-10T20:37:20.570021",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 343,
+            "timestamp": "2025-04-10T20:37:20.575445",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 344,
+            "timestamp": "2025-04-10T20:37:20.580456",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 346,
+            "timestamp": "2025-04-10T20:37:20.640697",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 348,
+            "timestamp": "2025-04-10T20:37:20.642390",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 353,
+            "timestamp": "2025-04-10T20:37:20.649001",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 355,
+            "timestamp": "2025-04-10T20:37:20.717565",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 356,
+            "timestamp": "2025-04-10T20:37:20.731806",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 357,
+            "timestamp": "2025-04-10T20:37:20.755903",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 359,
+            "timestamp": "2025-04-10T20:37:20.792315",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 361,
+            "timestamp": "2025-04-10T20:37:20.794849",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 367,
+            "timestamp": "2025-04-10T20:37:20.839058",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 369,
+            "timestamp": "2025-04-10T20:37:20.864486",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 371,
+            "timestamp": "2025-04-10T20:37:20.939644",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 373,
+            "timestamp": "2025-04-10T20:37:20.949143",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 378,
+            "timestamp": "2025-04-10T20:37:20.960548",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 380,
+            "timestamp": "2025-04-10T20:37:21.012562",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 382,
+            "timestamp": "2025-04-10T20:37:21.088808",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 384,
+            "timestamp": "2025-04-10T20:37:21.104303",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 391,
+            "timestamp": "2025-04-10T20:37:21.164169",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 393,
+            "timestamp": "2025-04-10T20:37:21.240139",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 395,
+            "timestamp": "2025-04-10T20:37:21.258738",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 400,
+            "timestamp": "2025-04-10T20:37:21.290039",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 402,
+            "timestamp": "2025-04-10T20:37:21.317236",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 404,
+            "timestamp": "2025-04-10T20:37:21.392711",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 406,
+            "timestamp": "2025-04-10T20:37:21.413913",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 413,
+            "timestamp": "2025-04-10T20:37:21.468327",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 415,
+            "timestamp": "2025-04-10T20:37:21.544900",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 416,
+            "timestamp": "2025-04-10T20:37:21.567333",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 418,
+            "timestamp": "2025-04-10T20:37:21.570715",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 419,
+            "timestamp": "2025-04-10T20:37:21.573217",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 420,
+            "timestamp": "2025-04-10T20:37:21.573398",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 421,
+            "timestamp": "2025-04-10T20:37:21.578124",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 422,
+            "timestamp": "2025-04-10T20:37:21.583539",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 428,
+            "timestamp": "2025-04-10T20:37:21.601115",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 430,
+            "timestamp": "2025-04-10T20:37:21.618472",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 432,
+            "timestamp": "2025-04-10T20:37:21.693243",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 434,
+            "timestamp": "2025-04-10T20:37:21.727073",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 435,
+            "timestamp": "2025-04-10T20:37:21.734720",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 439,
+            "timestamp": "2025-04-10T20:37:21.758939",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 443,
+            "timestamp": "2025-04-10T20:37:21.767626",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 445,
+            "timestamp": "2025-04-10T20:37:21.842288",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 446,
+            "timestamp": "2025-04-10T20:37:21.843395",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 448,
+            "timestamp": "2025-04-10T20:37:21.883838",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 453,
+            "timestamp": "2025-04-10T20:37:21.913167",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 455,
+            "timestamp": "2025-04-10T20:37:21.916090",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 457,
+            "timestamp": "2025-04-10T20:37:21.991683",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 459,
+            "timestamp": "2025-04-10T20:37:22.042893",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 463,
+            "timestamp": "2025-04-10T20:37:22.064790",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 468,
+            "timestamp": "2025-04-10T20:37:22.138209",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 470,
+            "timestamp": "2025-04-10T20:37:22.204423",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 472,
+            "timestamp": "2025-04-10T20:37:22.215834",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 477,
+            "timestamp": "2025-04-10T20:37:22.229103",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 479,
+            "timestamp": "2025-04-10T20:37:22.291268",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 481,
+            "timestamp": "2025-04-10T20:37:22.361891",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 483,
+            "timestamp": "2025-04-10T20:37:22.368025",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 490,
+            "timestamp": "2025-04-10T20:37:22.441250",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 492,
+            "timestamp": "2025-04-10T20:37:22.513760",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 494,
+            "timestamp": "2025-04-10T20:37:22.519160",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 499,
+            "timestamp": "2025-04-10T20:37:22.559602",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 500,
+            "timestamp": "2025-04-10T20:37:22.570256",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 501,
+            "timestamp": "2025-04-10T20:37:22.576431",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 502,
+            "timestamp": "2025-04-10T20:37:22.580444",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 503,
+            "timestamp": "2025-04-10T20:37:22.587286",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 505,
+            "timestamp": "2025-04-10T20:37:22.593241",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 507,
+            "timestamp": "2025-04-10T20:37:22.667676",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 509,
+            "timestamp": "2025-04-10T20:37:22.673818",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 515,
+            "timestamp": "2025-04-10T20:37:22.736917",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 517,
+            "timestamp": "2025-04-10T20:37:22.741648",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 518,
+            "timestamp": "2025-04-10T20:37:22.760327",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 520,
+            "timestamp": "2025-04-10T20:37:22.818995",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 522,
+            "timestamp": "2025-04-10T20:37:22.827727",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 523,
+            "timestamp": "2025-04-10T20:37:22.847682",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 528,
+            "timestamp": "2025-04-10T20:37:22.892031",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 530,
+            "timestamp": "2025-04-10T20:37:22.898827",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 535,
+            "timestamp": "2025-04-10T20:37:22.953213",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 537,
+            "timestamp": "2025-04-10T20:37:22.974445",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 539,
+            "timestamp": "2025-04-10T20:37:22.986292",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 544,
+            "timestamp": "2025-04-10T20:37:23.049021",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 551,
+            "timestamp": "2025-04-10T20:37:23.126205",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 553,
+            "timestamp": "2025-04-10T20:37:23.144584",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 555,
+            "timestamp": "2025-04-10T20:37:23.201599",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 560,
+            "timestamp": "2025-04-10T20:37:23.221137",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 562,
+            "timestamp": "2025-04-10T20:37:23.275349",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 564,
+            "timestamp": "2025-04-10T20:37:23.301597",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 566,
+            "timestamp": "2025-04-10T20:37:23.350694",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 573,
+            "timestamp": "2025-04-10T20:37:23.425273",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 575,
+            "timestamp": "2025-04-10T20:37:23.456102",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 577,
+            "timestamp": "2025-04-10T20:37:23.500914",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 582,
+            "timestamp": "2025-04-10T20:37:23.552613",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 584,
+            "timestamp": "2025-04-10T20:37:23.572770",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 585,
+            "timestamp": "2025-04-10T20:37:23.575455",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 586,
+            "timestamp": "2025-04-10T20:37:23.579490",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 587,
+            "timestamp": "2025-04-10T20:37:23.583423",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 588,
+            "timestamp": "2025-04-10T20:37:23.590201",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 590,
+            "timestamp": "2025-04-10T20:37:23.612320",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 592,
+            "timestamp": "2025-04-10T20:37:23.650182",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 599,
+            "timestamp": "2025-04-10T20:37:23.723784",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 600,
+            "timestamp": "2025-04-10T20:37:23.739956",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 602,
+            "timestamp": "2025-04-10T20:37:23.769230",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 604,
+            "timestamp": "2025-04-10T20:37:23.797301",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 605,
+            "timestamp": "2025-04-10T20:37:23.850382",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 611,
+            "timestamp": "2025-04-10T20:37:23.858164",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 613,
+            "timestamp": "2025-04-10T20:37:23.869803",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 616,
+            "timestamp": "2025-04-10T20:37:23.927067",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 618,
+            "timestamp": "2025-04-10T20:37:23.945274",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 619,
+            "timestamp": "2025-04-10T20:37:23.955659",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 624,
+            "timestamp": "2025-04-10T20:37:24.017355",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 629,
+            "timestamp": "2025-04-10T20:37:24.079707",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 631,
+            "timestamp": "2025-04-10T20:37:24.091129",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 633,
+            "timestamp": "2025-04-10T20:37:24.164913",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 638,
+            "timestamp": "2025-04-10T20:37:24.176091",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 640,
+            "timestamp": "2025-04-10T20:37:24.233704",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 642,
+            "timestamp": "2025-04-10T20:37:24.238046",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 644,
+            "timestamp": "2025-04-10T20:37:24.317080",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 651,
+            "timestamp": "2025-04-10T20:37:24.388307",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 653,
+            "timestamp": "2025-04-10T20:37:24.391689",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 655,
+            "timestamp": "2025-04-10T20:37:24.468352",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 660,
+            "timestamp": "2025-04-10T20:37:24.487223",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 663,
+            "timestamp": "2025-04-10T20:37:24.545733",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 664,
+            "timestamp": "2025-04-10T20:37:24.546570",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 665,
+            "timestamp": "2025-04-10T20:37:24.578252",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 666,
+            "timestamp": "2025-04-10T20:37:24.581868",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 667,
+            "timestamp": "2025-04-10T20:37:24.586771",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 668,
+            "timestamp": "2025-04-10T20:37:24.594057",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 670,
+            "timestamp": "2025-04-10T20:37:24.625097",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 677,
+            "timestamp": "2025-04-10T20:37:24.700649",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 679,
+            "timestamp": "2025-04-10T20:37:24.705334",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 680,
+            "timestamp": "2025-04-10T20:37:24.742925",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 682,
+            "timestamp": "2025-04-10T20:37:24.774201",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 687,
+            "timestamp": "2025-04-10T20:37:24.801847",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 689,
+            "timestamp": "2025-04-10T20:37:24.846388",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 690,
+            "timestamp": "2025-04-10T20:37:24.852164",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 692,
+            "timestamp": "2025-04-10T20:37:24.860567",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 694,
+            "timestamp": "2025-04-10T20:37:24.921016",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 700,
+            "timestamp": "2025-04-10T20:37:24.958717",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 702,
+            "timestamp": "2025-04-10T20:37:24.997117",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 704,
+            "timestamp": "2025-04-10T20:37:25.016625",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 706,
+            "timestamp": "2025-04-10T20:37:25.072515",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 711,
+            "timestamp": "2025-04-10T20:37:25.113677",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 713,
+            "timestamp": "2025-04-10T20:37:25.146177",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 715,
+            "timestamp": "2025-04-10T20:37:25.176786",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 717,
+            "timestamp": "2025-04-10T20:37:25.223390",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 724,
+            "timestamp": "2025-04-10T20:37:25.299552",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 726,
+            "timestamp": "2025-04-10T20:37:25.331699",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 728,
+            "timestamp": "2025-04-10T20:37:25.373653",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 733,
+            "timestamp": "2025-04-10T20:37:25.420196",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 735,
+            "timestamp": "2025-04-10T20:37:25.448824",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 737,
+            "timestamp": "2025-04-10T20:37:25.492183",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 739,
+            "timestamp": "2025-04-10T20:37:25.526734",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 745,
+            "timestamp": "2025-04-10T20:37:25.579924",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 746,
+            "timestamp": "2025-04-10T20:37:25.584408",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 747,
+            "timestamp": "2025-04-10T20:37:25.589381",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 748,
+            "timestamp": "2025-04-10T20:37:25.597576",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 750,
+            "timestamp": "2025-04-10T20:37:25.601433",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 752,
+            "timestamp": "2025-04-10T20:37:25.646561",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 754,
+            "timestamp": "2025-04-10T20:37:25.677300",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 759,
+            "timestamp": "2025-04-10T20:37:25.737385",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 760,
+            "timestamp": "2025-04-10T20:37:25.746330",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.102.244",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 762,
+            "timestamp": "2025-04-10T20:37:25.751035",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 764,
+            "timestamp": "2025-04-10T20:37:25.802570",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 766,
+            "timestamp": "2025-04-10T20:37:25.825048",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 767,
+            "timestamp": "2025-04-10T20:37:25.855031",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 774,
+            "timestamp": "2025-04-10T20:37:25.900277",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 776,
+            "timestamp": "2025-04-10T20:37:25.957547",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 777,
+            "timestamp": "2025-04-10T20:37:25.961361",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 779,
+            "timestamp": "2025-04-10T20:37:25.975875",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 784,
+            "timestamp": "2025-04-10T20:37:26.044638",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 786,
+            "timestamp": "2025-04-10T20:37:26.048762",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 791,
+            "timestamp": "2025-04-10T20:37:26.106432",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "23.154.177.5",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 793,
+            "timestamp": "2025-04-10T20:37:26.110398",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 795,
+            "timestamp": "2025-04-10T20:37:26.122498",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 800,
+            "timestamp": "2025-04-10T20:37:26.152965",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.38.175.132",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 802,
+            "timestamp": "2025-04-10T20:37:26.196602",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 809,
+            "timestamp": "2025-04-10T20:37:26.267689",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 811,
+            "timestamp": "2025-04-10T20:37:26.270121",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 813,
+            "timestamp": "2025-04-10T20:37:26.349329",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 818,
+            "timestamp": "2025-04-10T20:37:26.355854",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 820,
+            "timestamp": "2025-04-10T20:37:26.425588",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 822,
+            "timestamp": "2025-04-10T20:37:26.428753",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 824,
+            "timestamp": "2025-04-10T20:37:26.498339",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 831,
+            "timestamp": "2025-04-10T20:37:26.576991",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 833,
+            "timestamp": "2025-04-10T20:37:26.584044",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "45.129.56.200",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 834,
+            "timestamp": "2025-04-10T20:37:26.585988",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "167.94.145.81",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 835,
+            "timestamp": "2025-04-10T20:37:26.588968",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "192.42.116.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 836,
+            "timestamp": "2025-04-10T20:37:26.593379",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "91.219.236.102",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 837,
+            "timestamp": "2025-04-10T20:37:26.600581",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "212.192.241.47",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 839,
+            "timestamp": "2025-04-10T20:37:26.653465",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "89.248.172.16",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 844,
+            "timestamp": "2025-04-10T20:37:26.661240",
+            "minute": "2025-04-10 20:37",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.1.198",
+            "dst_ip": "185.220.101.4",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        }
+    ],
+    "recommendations": [
+        "Review firewall rules to ensure only necessary ports are open",
+        "Implement intrusion detection/prevention systems",
+        "Consider implementing port knocking for sensitive services",
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}

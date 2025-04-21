@@ -80,14 +80,12 @@
             <!-- Analysis Results Sections -->
             <div class="analysis-results">
                 {% for section in analysis_output|format_output if section.strip() %}
+                {% set trimmed_section = section.strip() %}
+                {% if trimmed_section and not trimmed_section.startswith('=== ANALYSIS RESULTS SUMMARY ===') and not trimmed_section.startswith('=== END OF REPORT ===') %}
                 <div class="result-section" style="transition: all 0.3s ease;">
-                    {% for line in section.split('\n') %}
+                    {% for line in trimmed_section.split('\n') %}
                     {% set trimmed = line.strip() %}
-                    {% if trimmed.startswith('=== ANALYSIS RESULTS SUMMARY ===') %}
-                        <!-- Skip header -->
-                    {% elif trimmed.startswith('=== END OF REPORT ===') %}
-                        <!-- Skip footer -->
-                    {% elif trimmed.startswith('• Network Scan Detection') %}
+                    {% if trimmed.startswith('• Network Scan Detection') %}
                         <h2 class="section-title" style="border-left: 3px solid var(--cyber-warning);">
                             <i class="fas fa-search"></i> NETWORK SCAN DETECTION
                         </h2>
@@ -99,21 +97,19 @@
                         <h2 class="section-title" style="border-left: 3px solid var(--cyber-accent);">
                             <i class="fas fa-user-secret"></i> COVERT CHANNELS
                         </h2>
-                        {% elif trimmed.startswith('• Traffic Anomalies') %}
+                    {% elif trimmed.startswith('• Traffic Anomalies') %}
                         <h2 class="section-title" style="border-left: 3px solid var(--cyber-danger);">
                             <i class="fas fa-radiation"></i> TRAFFIC ANOMALIES
                         </h2>
                         {% if all_anomalous_ips %}
                             <ul>
                             {% for anomalous_ip in all_anomalous_ips %}
+                                {% if not anomalous_ip.score is defined %}
                                 <li>
                                     IP: {{ anomalous_ip.ip }}
-                                    {% if anomalous_ip.score is defined %}
-                                        (Suspiciousness Score: {{ anomalous_ip.score }})
-                                    {% else %}
-                                        (Packet Anomaly)
-                                    {% endif %}
+                                    (Packet Anomaly)
                                 </li>
+                                {% endif %}
                             {% endfor %}
                             </ul>
                         {% else %}
@@ -169,6 +165,7 @@
                     {% endif %}
                     {% endfor %}
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
             
@@ -192,11 +189,6 @@
                     <i class="fas fa-project-diagram"></i> NETWORK TOPOLOGY
                 </h2>
                 <div id="topologyViz"></div>
-            </div>
-
-            <!-- Report Footer -->
-            <div class="result-section" style="text-align: center; background: rgba(0,0,0,0.5);">
-                <i class="fas fa-terminal"></i> Report generated at {{ analysis_date }} by DeepSeek Traffic Analyzer
             </div>
             
             <!-- Action Buttons -->
@@ -321,3 +313,7 @@
     </script>
 </body>
 </html>
+
+
+
+

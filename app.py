@@ -240,7 +240,7 @@ def serve_report(filename):
 
 @app.route('/logs')
 def view_logs():
-    log_file = 'traffic_analysis.log'
+    log_file = os.path.join('logs', 'traffic_analysis.log')  # Updated path to include the logs folder
     try:
         with open(log_file, 'r') as f:
             log_entries = f.read().split('\n')
