@@ -605,12 +605,7 @@ def virustotal_check():
         app.logger.error(f"Error in virustotal_check: {str(e)}", exc_info=True)
         return jsonify({'error': str(e)}), 500
     
-def test_vt_key(api_key, ip='8.8.8.8'):
-    headers = {'x-apikey': api_key}
-    response = requests.get(f'https://www.virustotal.com/api/v3/ip_addresses/{ip}', headers=headers)
-    print(f"Status: {response.status_code}")
-    print(response.json())
-    
+   
 @app.template_filter('extract_ip')
 def extract_ip_filter(text):
     import re
