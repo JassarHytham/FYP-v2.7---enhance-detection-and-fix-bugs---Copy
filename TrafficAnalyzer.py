@@ -42,9 +42,13 @@ class TrafficAnalyzer:
         log_formatter = logging.Formatter(
             '%(asctime)s - %(name)s - %(levelname)s - %(module)s:%(lineno)d - %(message)s'
         )
+
+        # Ensure the logs directory exists
+        os.makedirs('logs', exist_ok=True)
+
         # File handler with rotation and delayed file opening
         file_handler = RotatingFileHandler(
-            'traffic_analysis.log',
+            os.path.join('logs', 'traffic_analysis.log'),  # Store logs in the logs folder
             maxBytes=10 * 1024 * 1024,  # 10MB
             backupCount=5,
             encoding='utf-8',
