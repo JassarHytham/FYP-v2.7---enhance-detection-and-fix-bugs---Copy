@@ -3,10 +3,11 @@ import re
 from colorama import Fore
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, PageBreak
-from reportlab.platypus.tableofcontents import TableOfContents
-
+from reportlab.platypus.flowables import Flowable
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
+from reportlab.pdfgen import canvas
+from reportlab.lib.enums import TA_CENTER
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -20,11 +21,9 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import hashlib
-from reportlab.pdfgen import canvas
-from reportlab.pdfbase import pdfdoc
-from reportlab.lib.enums import TA_CENTER, TA_LEFT
+
 import logging
-from reportlab.platypus.flowables import Flowable
+
 
 
 class ThreatMeter(Flowable):
@@ -65,17 +64,7 @@ class ThreatMeter(Flowable):
 
 
 class ReportGenerator:
-    """
-    Enhanced security report generator that creates PDF reports from network analysis data.
-    
-    Features:
-    - Concurrent processing of AI insights and visualizations
-    - Enhanced error handling and logging
-    - Memory-efficient PDF generation
-    - Improved chart visualization
-    - Rate limiting for API calls
-    - Configurable styling and output options
-    """
+
     
     DEFAULT_CONFIG = {
         'api_timeout': (30, 120),
@@ -86,7 +75,6 @@ class ReportGenerator:
         'rate_limit': 2,
         'log_level': logging.INFO,
         'threat_meter_level': 7,  # Default threat level for reports (0-10)
-        'enable_toc': True,       # Enable table of contents
         'theme_color': '#2c3e50'  # Default theme color for report elements
     }
         
@@ -152,15 +140,6 @@ class ReportGenerator:
             fontSize=8,
             textColor=colors.grey,
             alignment=TA_CENTER
-        ))
-        
-        # TOC styles
-        self.styles.add(ParagraphStyle(
-            name='TOCHeading',
-            fontSize=16,
-            fontName='Helvetica-Bold',
-            textColor=theme_color,
-            spaceAfter=20
         ))
         
         # Code style for raw JSON
@@ -529,17 +508,6 @@ class ReportGenerator:
             ))
             story.append(ThreatMeter(self.threat_score))
             story.append(Spacer(1, 24))
-
-            # Add table of contents if configured
-            if self.config.get('enable_toc', True):
-                story.append(Paragraph("Table of Contents", self.styles['TOCHeading']))
-                toc = TableOfContents()
-                toc.levelStyles = [
-                    ParagraphStyle(name='TOC1', fontSize=14, leading=16, leftIndent=20),
-                    ParagraphStyle(name='TOC2', fontSize=12, leading=14, leftIndent=40),
-                ]
-                story.append(toc)
-                story.append(PageBreak())
 
             # Executive Summary Section
             story.append(Paragraph("<h2>Executive Summary</h2>", self.styles['CustomHeading2']))

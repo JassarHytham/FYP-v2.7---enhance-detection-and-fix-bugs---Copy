@@ -245,7 +245,7 @@ class TrafficAnalyzer:
                     packet_info["protocols"].append(layer.upper())
 
             # Detect various anomalies and update the result
-            tcp_scans, tcp_details = self.detect_nmap_scans(packet)
+            tcp_scans, tcp_details = self.detect_tcp_scans(packet)
             udp_scans, udp_details = self.detect_udp_scans(packet)
             arp_entries, arp_details = self.detect_arp_poisoning(packet)
             icmp_tunnel, icmp_details = self.detect_icmp_tunneling(packet)
@@ -523,33 +523,6 @@ class TrafficAnalyzer:
             self.logger.error(f"JSON report generation failed: {str(e)}")
             self.logger.debug(traceback.format_exc())
             raise
-
-
-    def calculate_scanning_score(self, packet_reports):
-        return sum(1 for p in packet_reports 
-                if any('scan' in d.lower() for d in p.get('detection_details', [])))
-
-    def calculate_tunneling_score(self, packet_reports):
-        return sum(1 for p in packet_reports 
-                if any('tunneling' in d.lower() for d in p.get('detection_details', [])))
-
-    def calculate_overall_score(self, threat_scores):
-        # Weighted calculation
-        return (threat_scores['critical'] * 4 + 
-                threat_scores['high'] * 3 +
-                threat_scores['medium'] * 2 +
-                threat_scores['low'] * 1)
-
-    def determine_severity(self, threat_scores):
-        total = threat_scores['critical'] + threat_scores['high'] + threat_scores['medium'] + threat_scores['low']
-        if threat_scores['critical'] > 0 or total > 10:
-            return "Critical"
-        elif threat_scores['high'] > 0 or total > 5:
-            return "High"
-        elif threat_scores['medium'] > 0 or total > 2:
-            return "Medium"
-        return "Low"
-
 
     def generate_temporal_stats(self, packet_reports: List[Dict[str, Any]]) -> Dict[str, Any]:
         """Generate temporal statistics by minute"""
@@ -872,7 +845,7 @@ class TrafficAnalyzer:
             self.logger.debug(traceback.format_exc())
             return 0.0
 
-    def detect_nmap_scans(self, packet: Any) -> Tuple[List[str], List[str]]:
+    def detect_tcp_scans(self, packet: Any) -> Tuple[List[str], List[str]]:
         """
         Detect potential nmap scan types from a packet.
         """

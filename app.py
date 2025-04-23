@@ -12,9 +12,7 @@ import requests
 
 app = Flask(__name__, static_url_path='/static')
 app.config['UPLOAD_FOLDER'] = 'uploads'
-app.secret_key = 'your_secret_key_here'  # Replace with a strong secret key
-VIRUSTOTAL_API_KEY = os.getenv("VT_API_KEY")  # Set this in your environment
-
+app.secret_key = 'secret_key'  
 
 # Create upload directory if it doesn't exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
@@ -34,6 +32,11 @@ def analyze():
     file = request.files['file']
     if file.filename == '':
         flash('No file selected.')
+        return redirect(url_for('index'))
+    
+    # Restrict file uploads to .pcap and .pcapng files
+    if not (file.filename.endswith('.pcap') or file.filename.endswith('.pcapng')):
+        flash('Invalid file type. Only .pcap and .pcapng files are allowed.')
         return redirect(url_for('index'))
     
     # Save the file securely
