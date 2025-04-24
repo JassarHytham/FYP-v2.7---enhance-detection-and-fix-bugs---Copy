@@ -9,6 +9,7 @@ from werkzeug.utils import secure_filename
 from TrafficAnalyzer import TrafficAnalyzer
 import json
 import requests
+from pyshark import FileCapture  # Import for validating pcap files
 
 app = Flask(__name__, static_url_path='/static')
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -43,6 +44,31 @@ def analyze():
     filename = secure_filename(file.filename)
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file.save(filepath)
+    
+    # Check file size (limit to 1GB)
+    try:
+        file_size = os.path.getsize(filepath)
+        if file_size > 1 * 1024 * 1024 * 1024:  # 1GB in bytes
+            flash('File size exceeds the 1GB limit. Please upload a smaller file.')
+            os.remove(filepath)  # Remove the oversized file
+            return redirect(url_for('index'))
+    except Exception as e:
+        flash(f"Error checking file size: {str(e)}")
+        return redirect(url_for('index'))
+    
+    # Validate the pcap file to ensure it is not corrupted
+    try:
+        import asyncio
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        with FileCapture(filepath, keep_packets=False) as capture:
+            # Explicitly iterate over packets to validate the file
+            for packet in capture:
+                break  # Successfully read the first packet, file is valid
+    except Exception as e:
+        flash(f"The uploaded file appears to be corrupted or invalid: {str(e)}")
+        os.remove(filepath)  # Remove the invalid file
+        return redirect(url_for('index'))
     
     # Check PDF generation preference
     generate_pdf = 'generate_pdf' in request.form
