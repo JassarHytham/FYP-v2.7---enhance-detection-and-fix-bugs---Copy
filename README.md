@@ -1,4 +1,4 @@
-#A sophisticated network traffic analysis tool that detects and reports security threats, malicious activities, and network anomalies in PCAP files.
+# A sophisticated network traffic analysis tool that detects and reports security threats, malicious activities, and network anomalies in PCAP files.
 
 ## Features
 
