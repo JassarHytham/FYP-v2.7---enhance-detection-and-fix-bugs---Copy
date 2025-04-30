@@ -9,7 +9,9 @@ from werkzeug.utils import secure_filename
 from TrafficAnalyzer import TrafficAnalyzer
 import json
 import requests
-from pyshark import FileCapture  # Import for validating pcap files
+from pyshark import FileCapture 
+import logging
+from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__, static_url_path='/static')
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -18,6 +20,17 @@ app.secret_key = 'secret_key'
 # Create upload directory if it doesn't exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(os.path.join(app.root_path, 'reports'), exist_ok=True)
+
+# Configure logging for the Flask application
+log_file = os.path.join('logs', 'app.log')
+os.makedirs('logs', exist_ok=True)
+file_handler = RotatingFileHandler(log_file, maxBytes=10 * 1024 * 1024, backupCount=5)
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+# Add the handler to the Flask app logger
+app.logger.addHandler(file_handler)
+app.logger.setLevel(logging.DEBUG)
 
 
 @app.route('/')
@@ -28,32 +41,42 @@ def index():
 def analyze():
     if 'file' not in request.files:
         flash('No file part in the request.')
+        app.logger.warning("No file part in the request.")
         return redirect(url_for('index'))
     
     file = request.files['file']
     if file.filename == '':
         flash('No file selected.')
+        app.logger.warning("No file selected for upload.")
         return redirect(url_for('index'))
     
     # Restrict file uploads to .pcap and .pcapng files
     if not (file.filename.endswith('.pcap') or file.filename.endswith('.pcapng')):
         flash('Invalid file type. Only .pcap and .pcapng files are allowed.')
+        app.logger.error(f"Invalid file type uploaded: {file.filename}")
         return redirect(url_for('index'))
     
     # Save the file securely
     filename = secure_filename(file.filename)
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    file.save(filepath)
+    try:
+        file.save(filepath)
+    except Exception as e:
+        flash(f"Error saving file: {str(e)}")
+        app.logger.error(f"Error saving file {filename}: {str(e)}")
+        return redirect(url_for('index'))
     
     # Check file size (limit to 1GB)
     try:
         file_size = os.path.getsize(filepath)
         if file_size > 1 * 1024 * 1024 * 1024:  # 1GB in bytes
             flash('File size exceeds the 1GB limit. Please upload a smaller file.')
+            app.logger.error(f"File size exceeds limit: {file_size} bytes for file {filename}")
             os.remove(filepath)  # Remove the oversized file
             return redirect(url_for('index'))
     except Exception as e:
         flash(f"Error checking file size: {str(e)}")
+        app.logger.error(f"Error checking file size for {filename}: {str(e)}")
         return redirect(url_for('index'))
     
     # Validate the pcap file to ensure it is not corrupted
@@ -67,6 +90,7 @@ def analyze():
                 break  # Successfully read the first packet, file is valid
     except Exception as e:
         flash(f"The uploaded file appears to be corrupted or invalid: {str(e)}")
+        app.logger.error(f"File validation failed for {filename}: {str(e)}")
         os.remove(filepath)  # Remove the invalid file
         return redirect(url_for('index'))
     
@@ -101,7 +125,8 @@ def analyze():
         })
         
     except Exception as e:
-        print(f"Error during analysis: {e}")
+        app.logger.error(f"Error during analysis: {str(e)}")
+        app.logger.debug("Traceback:", exc_info=True)
         flash(f"Analysis error: {str(e)}")
         return redirect(url_for('index'))
     finally:
@@ -113,7 +138,7 @@ def analyze():
     pdf_filename = os.path.basename(analyzer.pdf_file) if generate_pdf and analyzer.pdf_file else None
     
     return render_template('results.html', 
-                         analysis_output=analysis_output,
+                       analysis_output=analysis_output,
                          pdf_filename=pdf_filename,
                          file_path=metadata.get('file_path', 'Unknown'),
                          analysis_date=metadata.get('analysis_date', 'Unknown'),
@@ -321,8 +346,7 @@ def view_history():
         flash(f'Error loading history: {str(e)}')
         return redirect(url_for('index'))
 
-from TrafficAnalyzer import TrafficAnalyzer  # adjust if needed
-
+from TrafficAnalyzer import TrafficAnalyzer  
 @app.route('/view_report/<filename>')
 def view_report(filename):
     try:

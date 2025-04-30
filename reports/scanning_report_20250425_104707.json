@@ -1,0 +1,268 @@
+{
+    "metadata": {
+        "file_path": "uploads\\scanning.pcapng",
+        "analysis_date": "2025-04-25T10:47:07.539809",
+        "analysis_duration": "35 days, 21:59:36.151096",
+        "total_packets": 6,
+        "first_packet": "2025-03-20T12:47:31.388726",
+        "last_packet": "2025-03-20T12:47:31.635098"
+    },
+    "statistics": {
+        "total_packets": 6,
+        "tcp_packets": 5,
+        "udp_packets": 1,
+        "icmp_packets": 0,
+        "arp_packets": 0,
+        "dns_packets": 0,
+        "unique_source_ips": 1,
+        "unique_destination_ips": 1,
+        "unique_ports": 0,
+        "packets_with_detections": 6,
+        "total_detections": 6,
+        "average_packets_per_second": 24.353416784374847,
+        "busiest_minute": {
+            "minute": "2025-03-20 12:47",
+            "packet_count": 6,
+            "percentage": 100.0
+        }
+    },
+    "temporal_analysis": {
+        "2025-03-20 12:47": {
+            "count": 6,
+            "protocols": {
+                "TCP": 5,
+                "UDP": 1
+            },
+            "detections": [
+                "SYN scan detected: SYN flag with window size <= 1024",
+                "TCP connect scan detected: SYN flag with window size > 1024",
+                "XMAS scan detected",
+                "NULL scan detected",
+                "FIN scan detected",
+                "UDP scan detected: Packet length <= 8"
+            ],
+            "unique_src_ips": 1
+        }
+    },
+    "tcp_packets": 5,
+    "udp_packets": 1,
+    "protocol_distribution": {
+        "protocols": {
+            "TCP": 5,
+            "UDP": 1
+        },
+        "protocol_pairs": {},
+        "most_common_protocol": "TCP"
+    },
+    "top_talkers": {
+        "by_packet_count": [
+            {
+                "ip": "192.168.100.95",
+                "packet_count": 6,
+                "detection_count": 6,
+                "protocols": [
+                    "TCP",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "FIN scan detected",
+                    "SYN scan detected: SYN flag with window size <= 1024",
+                    "UDP scan detected: Packet length <= 8",
+                    "NULL scan detected",
+                    "TCP connect scan detected: SYN flag with window size > 1024",
+                    "XMAS scan detected"
+                ]
+            }
+        ],
+        "by_detection_count": [
+            {
+                "ip": "192.168.100.95",
+                "packet_count": 6,
+                "detection_count": 6,
+                "protocols": [
+                    "TCP",
+                    "UDP"
+                ],
+                "unique_detections": [
+                    "FIN scan detected",
+                    "SYN scan detected: SYN flag with window size <= 1024",
+                    "UDP scan detected: Packet length <= 8",
+                    "NULL scan detected",
+                    "TCP connect scan detected: SYN flag with window size > 1024",
+                    "XMAS scan detected"
+                ]
+            }
+        ]
+    },
+    "conversations": {
+        "most_active": [
+            {
+                "hosts": [
+                    "192.168.100.95",
+                    "192.168.100.99"
+                ],
+                "packet_count": 6,
+                "protocols": [
+                    "TCP",
+                    "UDP"
+                ],
+                "ports": [],
+                "detection_count": 6,
+                "detections": [
+                    "FIN scan detected",
+                    "SYN scan detected: SYN flag with window size <= 1024",
+                    "UDP scan detected: Packet length <= 8",
+                    "NULL scan detected",
+                    "TCP connect scan detected: SYN flag with window size > 1024",
+                    "XMAS scan detected"
+                ]
+            }
+        ],
+        "most_suspicious": [
+            {
+                "hosts": [
+                    "192.168.100.95",
+                    "192.168.100.99"
+                ],
+                "packet_count": 6,
+                "protocols": [
+                    "TCP",
+                    "UDP"
+                ],
+                "ports": [],
+                "detection_count": 6,
+                "detections": [
+                    "FIN scan detected",
+                    "SYN scan detected: SYN flag with window size <= 1024",
+                    "UDP scan detected: Packet length <= 8",
+                    "NULL scan detected",
+                    "TCP connect scan detected: SYN flag with window size > 1024",
+                    "XMAS scan detected"
+                ]
+            }
+        ]
+    },
+    "threat_analysis": {
+        "scores": {
+            "critical": 2,
+            "high": 2,
+            "medium": 2,
+            "low": 0,
+            "scanning_score": 100,
+            "tunneling_score": 0,
+            "anomaly_score": 0,
+            "overall_score": 40,
+            "severity": "Medium"
+        },
+        "critical_findings": [
+            "XMAS scan detected",
+            "NULL scan detected"
+        ],
+        "suspicious_ips": [
+            {
+                "ip": "192.168.100.95",
+                "score": 6
+            }
+        ]
+    },
+    "detailed_findings": [
+        {
+            "packet_number": 199,
+            "timestamp": "2025-03-20T12:47:31.388726",
+            "minute": "2025-03-20 12:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "SYN scan detected: SYN flag with window size <= 1024"
+            ]
+        },
+        {
+            "packet_number": 201,
+            "timestamp": "2025-03-20T12:47:31.437189",
+            "minute": "2025-03-20 12:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "TCP connect scan detected: SYN flag with window size > 1024"
+            ]
+        },
+        {
+            "packet_number": 203,
+            "timestamp": "2025-03-20T12:47:31.489040",
+            "minute": "2025-03-20 12:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "XMAS scan detected"
+            ]
+        },
+        {
+            "packet_number": 205,
+            "timestamp": "2025-03-20T12:47:31.541120",
+            "minute": "2025-03-20 12:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "NULL scan detected"
+            ]
+        },
+        {
+            "packet_number": 207,
+            "timestamp": "2025-03-20T12:47:31.588889",
+            "minute": "2025-03-20 12:47",
+            "protocols": [
+                "TCP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "FIN scan detected"
+            ]
+        },
+        {
+            "packet_number": 209,
+            "timestamp": "2025-03-20T12:47:31.635098",
+            "minute": "2025-03-20 12:47",
+            "protocols": [
+                "UDP"
+            ],
+            "src_ip": "192.168.100.95",
+            "dst_ip": "192.168.100.99",
+            "src_port": null,
+            "dst_port": null,
+            "detection_details": [
+                "UDP scan detected: Packet length <= 8"
+            ]
+        }
+    ],
+    "recommendations": [
+        "Review firewall rules to ensure only necessary ports are open",
+        "Implement intrusion detection/prevention systems",
+        "Consider implementing port knocking for sensitive services",
+        "Review all critical findings in the report for specific actions",
+        "Monitor the top suspicious IPs for further malicious activity",
+        "Consider implementing network segmentation based on traffic patterns"
+    ]
+}

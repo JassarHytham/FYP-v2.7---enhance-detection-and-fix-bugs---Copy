@@ -1,0 +1,56 @@
+2025-04-25 10:35:44,401 - ERROR - File validation failed for Currputed.pcapng: TShark (pid 27084) seems to have crashed (retcode: 3).
+Last error line: tshark: The file "uploads/Currputed.pcapng" isn't a capture file in a format TShark understands.
+Try rerunning in debug mode [ capture_obj.set_debug() ] or try updating tshark.
+2025-04-25 10:36:18,381 - ERROR - Invalid file type uploaded: suspicious_email.eml
+2025-04-25 10:40:44,082 - INFO - Received request to analyze a file.
+2025-04-25 10:40:44,096 - INFO - File saved successfully: uploads\scanning.pcapng
+2025-04-25 10:40:44,097 - INFO - File size validated: 44908 bytes.
+2025-04-25 10:40:44,449 - INFO - File validation successful: scanning.pcapng
+2025-04-25 10:40:44,450 - INFO - PDF generation preference: enabled
+2025-04-25 10:40:44,451 - INFO - Starting traffic analysis.
+2025-04-25 10:41:11,701 - INFO - Analysis completed and JSON report loaded.
+2025-04-25 10:41:11,702 - INFO - Analysis output captured.
+2025-04-25 10:41:11,702 - INFO - PDF report generated: security_report_20250425_104045.pdf
+2025-04-25 10:41:38,753 - INFO - Rendering index page.
+2025-04-25 10:41:42,691 - INFO - Received request to analyze a file.
+2025-04-25 10:41:42,695 - INFO - File saved successfully: uploads\scanning.pcapng
+2025-04-25 10:41:42,695 - INFO - File size validated: 44908 bytes.
+2025-04-25 10:41:42,956 - INFO - File validation successful: scanning.pcapng
+2025-04-25 10:41:42,956 - INFO - PDF generation preference: enabled
+2025-04-25 10:41:42,957 - INFO - Starting traffic analysis.
+2025-04-25 10:42:18,385 - INFO - Analysis completed and JSON report loaded.
+2025-04-25 10:42:18,385 - INFO - Analysis output captured.
+2025-04-25 10:42:18,386 - INFO - PDF report generated: security_report_20250425_104143.pdf
+2025-04-25 10:43:57,823 - INFO - Rendering index page.
+2025-04-25 10:44:03,535 - INFO - Received request to analyze a file.
+2025-04-25 10:44:03,539 - INFO - File saved successfully: uploads\scanning.pcapng
+2025-04-25 10:44:03,540 - INFO - File size validated: 44908 bytes.
+2025-04-25 10:44:03,800 - INFO - File validation successful: scanning.pcapng
+2025-04-25 10:44:03,801 - INFO - PDF generation preference: enabled
+2025-04-25 10:44:03,802 - INFO - Starting traffic analysis.
+2025-04-25 10:44:31,368 - INFO - Analysis completed and JSON report loaded.
+2025-04-25 10:44:31,369 - INFO - Analysis output captured.
+2025-04-25 10:45:41,568 - INFO - Received request to analyze a file.
+2025-04-25 10:45:41,573 - INFO - File saved successfully: uploads\scanning.pcapng
+2025-04-25 10:45:41,574 - INFO - File size validated: 44908 bytes.
+2025-04-25 10:45:41,860 - INFO - File validation successful: scanning.pcapng
+2025-04-25 10:45:41,860 - INFO - PDF generation preference: enabled
+2025-04-25 10:45:41,862 - INFO - Starting traffic analysis.
+2025-04-25 10:46:13,053 - INFO - Analysis completed and JSON report loaded.
+2025-04-25 10:46:13,054 - INFO - Analysis output captured.
+2025-04-25 10:49:26,652 - DEBUG - Received VirusTotal check request
+2025-04-25 10:49:26,684 - DEBUG - Request data: {'target': '212.192.241.47', 'type': 'ip'}
+2025-04-25 11:09:21,664 - DEBUG - Received VirusTotal check request
+2025-04-25 11:09:23,777 - DEBUG - Request data: {'target': '212.192.241.47', 'type': 'ip'}
+2025-04-25 11:09:29,283 - DEBUG - Received VirusTotal check request
+2025-04-25 11:09:31,443 - DEBUG - Request data: {'target': '23.154.177.5', 'type': 'ip'}
+2025-04-30 15:00:50,803 - DEBUG - Received VirusTotal check request
+2025-04-30 15:00:50,805 - DEBUG - Request data: {'target': '104.199.241.202', 'type': 'ip'}
+2025-04-30 15:07:51,119 - DEBUG - Received VirusTotal check request
+2025-04-30 15:07:51,123 - DEBUG - Request data: {'target': '212.192.241.47', 'type': 'ip'}
+2025-04-30 15:07:53,773 - DEBUG - Received VirusTotal check request
+2025-04-30 15:07:53,781 - DEBUG - Request data: {'target': '23.154.177.5', 'type': 'ip'}
+2025-04-30 15:08:03,930 - DEBUG - Received VirusTotal check request
+2025-04-30 15:08:03,937 - DEBUG - Request data: {'target': '192.42.116.16', 'type': 'ip'}
+2025-04-30 15:14:09,141 - DEBUG - Received VirusTotal check request
+2025-04-30 15:14:09,215 - DEBUG - Request data: {'target': '104.199.241.202', 'type': 'ip'}
